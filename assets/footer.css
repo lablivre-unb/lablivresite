@@ -1,7 +1,6 @@
 /* Footer */
 .footer {
-    background-color: #F5F5F5; /* Cinza claro */
-    color: #333333; /* Cinza escuro */
+    background-color: #472c65;
     padding: 60px 40px 30px;
     margin-top: auto;
 }
@@ -28,7 +27,7 @@
     font-size: 16px;
     font-weight: 600;
     margin-bottom: 20px;
-    color: #333333;
+    color: #FFFFFF;
 }
 
 .footer-links ul {
@@ -42,14 +41,15 @@
 }
 
 .footer-links ul li a {
-    color: #333333;
+    color: #FFFFFF;
     text-decoration: none;
     font-size: 14px;
     transition: color 0.3s ease;
 }
 
 .footer-links ul li a:hover {
-    color: #422556; /* Cor primária do site */
+    opacity: 0.7;
+    transition: opacity 0.3s ease;
 }
 
 .footer-bottom {
@@ -64,7 +64,7 @@
 
 .footer-copyright {
     font-size: 14px;
-    color: #666666;
+    color: #FFFFFF;
 }
 
 .footer-legal {
@@ -73,14 +73,15 @@
 }
 
 .footer-legal a {
-    color: #333333;
+    color: #FFFFFF;
     text-decoration: none;
     font-size: 14px;
     transition: color 0.3s ease;
 }
 
 .footer-legal a:hover {
-    color: #422556;
+    opacity: 0.7;
+    transition: opacity 0.3s ease;
 }
 
 /* Responsive Footer */
