@@ -189,12 +189,12 @@ body {
     background-color: #ffffff;
 }
 
-.projects-container {
+.projects-section .container {
     max-width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    gap: 60px;
+}
+
+.projects-section .row:first-child {
+    margin-bottom: 60px;
 }
 
 .projects-title {
@@ -341,12 +341,12 @@ body {
     background-color: #ffffff;
 }
 
-.research-container {
+.research-section .container {
     max-width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
+}
+
+.research-section .row:first-child {
+    margin-bottom: 40px;
 }
 
 .research-title {
@@ -364,13 +364,6 @@ body {
     color: #000000;
     text-align: left;
     max-width: 800px;
-}
-
-.research-cards {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
-    margin-top: 20px;
 }
 
 .research-card {
@@ -421,11 +414,6 @@ body {
 
     .research-title {
         font-size: 36px;
-    }
-
-    .research-cards {
-        grid-template-columns: 1fr;
-        gap: 20px;
     }
 }
 
