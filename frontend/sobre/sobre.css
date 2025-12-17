@@ -18,7 +18,12 @@
 }
 
 .missao-row {
-    background-color: #FFFFFF;
+    background-color: #F7F7F7;
+}
+
+.missao-section {
+    background-color: #F7F7F7;
+    padding: 80px 0;
 }
 
 .sobre-title-wrapper {
