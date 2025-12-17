@@ -25,7 +25,7 @@ body {
 .collaborate-section {
     width: 100%;
     padding: 100px 40px;
-    background: var(--primary-05);
+    background: #8A5EB9;
 }
 
 .collaborate-container {
@@ -210,7 +210,7 @@ body {
 .projects-section {
     width: 100%;
     padding: 100px 40px;
-    background: var(--primary-03);
+    background: #9F72CE;
 }
 
 .projects-section .container {
@@ -432,7 +432,7 @@ body {
 .training-section {
     width: 100%;
     padding: 100px 40px;
-    background: var(--primary-03);
+    background: #9F72CE;
 }
 
 .training-section .container {
@@ -573,7 +573,7 @@ body {
 .capacitacao-section {
     width: 100%;
     padding: 100px 40px;
-    background: var(--primary-05);
+    background: #8A5EB9;
 }
 
 .capacitacao-section .container {
@@ -655,7 +655,7 @@ body {
 .news-section {
     width: 100%;
     padding: 100px 40px;
-    background: var(--primary-05);
+    background: #8A5EB9;
 }
 
 .news-section .container {
@@ -815,9 +815,17 @@ body {
     line-height: 0;
     margin: 0;
     padding: 0;
-    background-color: #422556;
+    background-color: transparent;
     overflow: hidden;
     position: relative;
+}
+
+.wave-1 {
+    background-color: #9F72CE; /* cor da seção anterior (projetos) */
+}
+
+.wave-2 {
+    background-color: #9F72CE; /* cor da seção anterior (training) */
 }
 
 .wave-divider svg {
