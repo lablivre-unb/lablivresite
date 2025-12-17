@@ -10,92 +10,118 @@
     margin: 0 auto;
 }
 
-.footer-logo {
-    margin-bottom: 40px;
+/* Logos */
+.footer-logo-lab {
+    margin-bottom: 20px;
 }
 
-.footer-logo img {
+.footer-logo-lab img {
     height: 60px;
     width: auto;
 }
 
-.footer-links {
-    margin-bottom: 40px;
+.footer-logo-unb {
+    margin-bottom: 20px;
 }
 
-.footer-links h5 {
+.footer-logo-unb img {
+    height: 50px;
+    width: auto;
+}
+
+/* Contato */
+.footer-contact h5 {
     font-size: 16px;
     font-weight: 600;
-    margin-bottom: 20px;
+    margin-bottom: 12px;
     color: #FFFFFF;
 }
 
-.footer-links ul {
+.contact-email {
+    color: #FFFFFF;
+    font-size: 14px;
+    margin: 0;
+}
+
+/* Redes Sociais */
+.footer-social h5 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 16px;
+    color: #FFFFFF;
+}
+
+.social-links {
     list-style: none;
     padding: 0;
     margin: 0;
 }
 
-.footer-links ul li {
+.social-links li {
     margin-bottom: 12px;
 }
 
-.footer-links ul li a {
-    color: #FFFFFF;
-    text-decoration: none;
-    font-size: 14px;
-    transition: color 0.3s ease;
-}
-
-.footer-links ul li a:hover {
-    opacity: 0.7;
-    transition: opacity 0.3s ease;
-}
-
-.footer-bottom {
-    border-top: 1px solid #E0E0E0;
-    padding-top: 20px;
+.social-link {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap;
-    gap: 20px;
-}
-
-.footer-copyright {
-    font-size: 14px;
-    color: #FFFFFF;
-}
-
-.footer-legal {
-    display: flex;
-    gap: 20px;
-}
-
-.footer-legal a {
+    gap: 10px;
     color: #FFFFFF;
     text-decoration: none;
     font-size: 14px;
-    transition: color 0.3s ease;
+    transition: opacity 0.3s ease;
 }
 
-.footer-legal a:hover {
+.social-link:hover {
     opacity: 0.7;
+}
+
+.social-icon {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+    filter: brightness(0) invert(1);
+}
+
+/* Licença Creative Commons */
+.footer-license {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.cc-icons {
+    flex-shrink: 0;
+}
+
+.cc-badge {
+    height: 31px;
+    width: auto;
+    filter: brightness(0) invert(1);
+}
+
+.license-text {
+    color: #FFFFFF;
+    font-size: 14px;
+    margin: 0;
+    line-height: 1.6;
+}
+
+.license-link {
+    color: #FFFFFF;
+    text-decoration: underline;
     transition: opacity 0.3s ease;
+}
+
+.license-link:hover {
+    opacity: 0.7;
 }
 
 /* Responsive Footer */
 @media (max-width: 992px) {
     .footer {
         padding: 50px 30px 25px;
-    }
-    
-    .footer-logo {
-        margin-bottom: 30px;
-    }
-    
-    .footer-links {
-        margin-bottom: 30px;
     }
 }
 
@@ -108,50 +134,51 @@
         text-align: center;
     }
     
-    .footer-logo {
+    .footer-logo-lab,
+    .footer-logo-unb {
         display: flex;
         justify-content: center;
-        margin-bottom: 30px;
+        margin-bottom: 20px;
     }
     
-    .footer-links {
+    .footer-contact,
+    .footer-social {
         text-align: center;
     }
     
-    .footer-links h5 {
+    .footer-contact h5,
+    .footer-social h5 {
         text-align: center;
     }
     
-    .footer-links ul {
-        text-align: center;
+    .social-links {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
     
-    .footer-bottom {
+    .footer-license {
         flex-direction: column;
         align-items: center;
         text-align: center;
-    }
-    
-    .footer-legal {
-        flex-direction: column;
-        gap: 10px;
-        align-items: center;
+        gap: 12px;
     }
 }
 
 @media (max-width: 576px) {
-    .footer-links h5 {
+    .footer-contact h5,
+    .footer-social h5 {
         font-size: 15px;
-        margin-bottom: 15px;
     }
     
-    .footer-links ul li a {
+    .contact-email,
+    .social-link,
+    .license-text {
         font-size: 13px;
     }
     
-    .footer-copyright,
-    .footer-legal a {
-        font-size: 13px;
+    .social-icon {
+        width: 20px;
+        height: 20px;
     }
 }
-
