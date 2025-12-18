@@ -123,13 +123,8 @@
 .team-track {
     display: flex;
     gap: 16px;
-    animation: marquee-left 230s linear infinite;
     width: max-content;
-}
-
-.marquee-bottom .team-track {
-    animation: marquee-right 230s linear infinite;
-    width: max-content;
+    will-change: transform;
 }
 
 .team-card {
@@ -154,15 +149,6 @@
     object-position: center top;
 }
 
-@keyframes marquee-left {
-    0% { transform: translateX(0); }
-    100% { transform: translateX(-50%); }
-}
-
-@keyframes marquee-right {
-    0% { transform: translateX(-50%); }
-    100% { transform: translateX(0); }
-}
 
 .sobre-title-wrapper {
     display: flex;
@@ -435,23 +421,4 @@
         padding: 15px;
     }
     
-    /* Ajustar velocidade do marquee em telas menores */
-    .team-track {
-        animation: marquee-left 320s linear infinite;
-    }
-    
-    .marquee-bottom .team-track {
-        animation: marquee-right 320s linear infinite;
-    }
-}
-
-/* Telas muito grandes - velocidade ainda mais lenta */
-@media (min-width: 1920px) {
-    .team-track {
-        animation: marquee-left 240s linear infinite;
-    }
-    
-    .marquee-bottom .team-track {
-        animation: marquee-right 240s linear infinite;
-    }
 }
