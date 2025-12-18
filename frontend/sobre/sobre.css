@@ -258,6 +258,14 @@
 .sobre-contact {
     padding: 80px 20px 100px 20px;
     background: #ffffff;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.sobre-contact.animate-in {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 .contact-title {
