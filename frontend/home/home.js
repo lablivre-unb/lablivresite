@@ -58,4 +58,22 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     }
+
+    // Animação de entrada para a seção de ciência aplicada
+    const collaborateSection = document.querySelector('.collaborate-section');
+    if (collaborateSection) {
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate-in');
+                    observer.unobserve(entry.target); // Para de observar após animar uma vez
+                }
+            });
+        }, {
+            threshold: 0.2, // Dispara quando 20% da seção estiver visível
+            rootMargin: '0px 0px -100px 0px' // Adiciona um pequeno offset
+        });
+
+        observer.observe(collaborateSection);
+    }
 });

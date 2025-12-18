@@ -26,6 +26,14 @@ body {
     width: 100%;
     padding: 100px 40px;
     background: #FFFFFF;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.collaborate-section.animate-in {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 .collaborate-container {
