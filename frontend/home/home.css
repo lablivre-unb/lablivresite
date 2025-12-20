@@ -555,6 +555,40 @@ body {
     }
 }
 
+.training-section .training-card {
+    background-color: transparent;
+    border: 0;
+    padding: 0;
+    box-shadow: none;
+}
+
+.training-section .training-card:hover {
+    transform: none;
+}
+
+.training-section .training-card-description {
+    display: block;
+}
+
+.training-section .training-card-title {
+    color: #000000;
+    text-decoration: underline;
+    text-decoration-thickness: 3px;
+    text-underline-offset: 8px;
+}
+
+.training-section .training-row-custom > div:nth-child(3n + 1) .training-card-title {
+    text-decoration-color: var(--primary-05);
+}
+
+.training-section .training-row-custom > div:nth-child(3n + 2) .training-card-title {
+    text-decoration-color: var(--primary-01);
+}
+
+.training-section .training-row-custom > div:nth-child(3n) .training-card-title {
+    text-decoration-color: var(--primary-02);
+}
+
 .capacitacao-section {
     width: 100%;
     padding: 100px 40px;
@@ -586,7 +620,7 @@ body {
     flex-direction: column;
     align-items: center;
     gap: 20px;
-    border: 2px solid var(--primary-04);
+    border: 0;
     transition: transform 0.3s ease;
     height: 100%;
 }
