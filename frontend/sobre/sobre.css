@@ -297,6 +297,11 @@
     .team-content-wrapper {
         padding: 0 20px;
     }
+    
+    .team-card {
+        width: 250px;
+        height: 270px;
+    }
 }
 
 .sobre-image-wrapper {
@@ -391,6 +396,23 @@
     .sobre-image-wrapper {
         padding: 20px;
     }
+    
+    .team-section {
+        padding: 60px 0;
+    }
+    
+    .team-title {
+        font-size: 36px;
+    }
+    
+    .team-card {
+        width: 200px;
+        height: 220px;
+    }
+    
+    .team-track {
+        gap: 12px;
+    }
 }
 
 @media (max-width: 576px) {
@@ -422,6 +444,29 @@
     
     .sobre-image-wrapper {
         padding: 15px;
+    }
+    
+    .team-section {
+        padding: 40px 0;
+    }
+    
+    .team-title {
+        font-size: 28px;
+        margin-bottom: 12px;
+    }
+    
+    .team-subtitle {
+        font-size: 14px;
+        margin-bottom: 24px;
+    }
+    
+    .team-card {
+        width: 160px;
+        height: 180px;
+    }
+    
+    .team-track {
+        gap: 10px;
     }
     
 }

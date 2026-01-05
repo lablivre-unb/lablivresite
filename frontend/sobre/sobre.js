@@ -60,7 +60,19 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Animação JavaScript para velocidade constante - otimizada
     const marquees = document.querySelectorAll('.team-marquee');
-    const speed = 50; // pixels por segundo - velocidade constante
+    
+    // Velocidade responsiva baseada no tamanho da tela
+    const getSpeed = () => {
+        if (window.innerWidth <= 576) {
+            return 25; // Mais lento no mobile pequeno
+        } else if (window.innerWidth <= 768) {
+            return 35; // Velocidade média no tablet
+        } else {
+            return 50; // Velocidade normal no desktop
+        }
+    };
+    
+    let speed = getSpeed();
     
     marquees.forEach(marquee => {
         const track = marquee.querySelector('.team-track');
@@ -79,8 +91,10 @@ document.addEventListener('DOMContentLoaded', () => {
             const cards = track.querySelectorAll('.team-card');
             const cardCount = cards.length / 2; // Metade são originais
             let width = 0;
+            // Gap responsivo baseado no tamanho da tela
+            const gap = window.innerWidth <= 576 ? 10 : window.innerWidth <= 768 ? 12 : 16;
             for (let i = 0; i < cardCount; i++) {
-                width += cards[i].offsetWidth + 16; // 16px é o gap
+                width += cards[i].offsetWidth + gap;
             }
             return width;
         };
@@ -172,6 +186,7 @@ document.addEventListener('DOMContentLoaded', () => {
         window.addEventListener('resize', () => {
             clearTimeout(resizeTimeout);
             resizeTimeout = setTimeout(() => {
+                speed = getSpeed(); // Atualiza velocidade
                 if (isAnimating) {
                     trackWidth = calculateTrackWidth();
                 }
