@@ -1,5 +1,24 @@
+// Função para preload de imagens
+function preloadImages(imagePaths) {
+    imagePaths.forEach(imagePath => {
+        const img = new Image();
+        img.src = imagePath;
+    });
+}
+
+// Array de imagens para preload - adicione os caminhos das imagens aqui
+const imagesToPreload = [
+    '../assets/img/nossa-missao.png',
+    '../assets/img/nossos-principios.png',
+    '../assets/img/lab-livre.png',
+];
+
 // Clona os cards do marquee para criar loop infinito e anima com JavaScript
 document.addEventListener('DOMContentLoaded', () => {
+    // Executa o preload das imagens
+    if (imagesToPreload.length > 0) {
+        preloadImages(imagesToPreload);
+    }
     const tracks = document.querySelectorAll('.team-track');
     
     tracks.forEach(track => {
@@ -41,7 +60,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Animação JavaScript para velocidade constante - otimizada
     const marquees = document.querySelectorAll('.team-marquee');
-    const speed = 30; // pixels por segundo - velocidade constante
+    const speed = 50; // pixels por segundo - velocidade constante
     
     marquees.forEach(marquee => {
         const track = marquee.querySelector('.team-track');
