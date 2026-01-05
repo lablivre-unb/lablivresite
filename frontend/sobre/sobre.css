@@ -285,13 +285,62 @@
     color: #000000;
 }
 
+.contact-row {
+    gap: 60px;
+}
+
 .contact-wrapper {
     padding: 0 40px;
 }
 
+.contact-image-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 40px;
+}
+
+.contact-image {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+.contact-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
 @media (max-width: 992px) {
+    .contact-row {
+        gap: 40px;
+        justify-content: center;
+    }
+    
     .contact-wrapper {
         padding: 0 20px;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .contact-list {
+        width: 100%;
+        max-width: 500px;
+    }
+    
+    .contact-image-wrapper {
+        padding: 0 20px;
+        margin-top: 40px;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .contact-image {
+        max-width: 280px;
     }
     
     .team-content-wrapper {
@@ -354,8 +403,21 @@
         font-size: 15px;
     }
 
+    .contact-row {
+        gap: 30px;
+    }
+    
     .contact-wrapper {
         padding: 0 20px;
+    }
+    
+    .contact-image-wrapper {
+        padding: 0 20px;
+        margin-top: 30px;
+    }
+    
+    .contact-image {
+        max-width: 250px;
     }
 }
 
@@ -467,6 +529,19 @@
     
     .team-track {
         gap: 10px;
+    }
+    
+    .contact-row {
+        gap: 20px;
+    }
+    
+    .contact-image-wrapper {
+        padding: 0 15px;
+        margin-top: 30px;
+    }
+    
+    .contact-image {
+        max-width: 220px;
     }
     
 }
