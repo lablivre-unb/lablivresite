@@ -151,9 +151,6 @@ body {
     background: #F7F7F7;
 }
 
-.projects-section .row:first-child {
-    margin-bottom: 60px;
-}
 
 .projects-title {
     font-size: 48px;
@@ -161,6 +158,7 @@ body {
     line-height: 1.2;
     color: #000000;
     text-align: left;
+    margin-bottom: 60px;
 }
 
 .projects-carousel-wrapper {
@@ -421,7 +419,7 @@ body {
     line-height: 1.2;
     color: #000000;
     text-align: left;
-    margin-bottom: 60px;
+    margin-bottom: 40px;
 }
 
 .training-description {
@@ -595,13 +593,14 @@ body {
     line-height: 1.2;
     color: #000000;
     text-align: left;
+    margin-bottom: 60px;
 }
 
 
 .capacitacao-card {
     background-color: #ffffff;
     border-radius: 8px;
-    padding: 30px 30px 0px 0px;
+    padding: 0 30px 0 0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -719,9 +718,6 @@ body {
     background: #FFFFFF;
 }
 
-.news-section .row:first-child {
-    margin-bottom: 60px;
-}
 
 .news-title {
     font-size: 48px;
@@ -729,7 +725,7 @@ body {
     line-height: 1.2;
     color: #000000;
     text-align: left;
-    margin: 0;
+    margin-bottom: 60px;
 }
 
 .news-card-link {

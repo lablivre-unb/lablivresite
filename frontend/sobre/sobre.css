@@ -85,10 +85,6 @@
     background: #F7F7F7;
 }
 
-.team-content-wrapper {
-    padding: 0 40px;
-}
-
 .team-title {
     font-size: 52px;
     font-weight: 700;
@@ -159,7 +155,6 @@
     display: flex;
     align-items: flex-start;
     gap: 20px;
-    padding: 40px 40px 0 40px;
 }
 
 
@@ -176,7 +171,6 @@
 }
 
 .sobre-content-wrapper {
-    padding: 0 40px 0px 40px;
     display: flex;
     flex-direction: column;
 }
@@ -200,10 +194,6 @@
 
 
 @media (max-width: 992px) {
-    .team-content-wrapper {
-        padding: 0 20px;
-    }
-    
     .team-card {
         width: 250px;
         height: 270px;
@@ -213,10 +203,14 @@
 .sobre-image-wrapper {
     width: 100%;
     height: 100%;
-    padding: 40px;
+    padding: 0 0 0 40px;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.missao-section .sobre-image-wrapper {
+    padding: 0 40px 0 0;
 }
 
 .sobre-image {
@@ -235,7 +229,7 @@
     }
     
     .sobre-title-wrapper {
-        padding: 30px 20px 0 20px;
+        padding: 30px 0;
         gap: 15px;
     }
     
@@ -244,11 +238,11 @@
     }
     
     .sobre-content-wrapper {
-        padding: 15px 20px 30px 20px;
+        padding: 15px 0 30px 0;
     }
     
     .sobre-image-wrapper {
-        padding: 20px;
+        padding: 20px 0;
     }
 }
 
@@ -262,7 +256,7 @@
     }
     
     .sobre-title-wrapper {
-        padding: 20px 20px 0 20px;
+        padding: 20px 0;
         flex-direction: row;
         align-items: center;
         gap: 15px;
@@ -273,7 +267,7 @@
     }
     
     .sobre-content-wrapper {
-        padding: 15px 20px 20px 20px;
+        padding: 15px 0;
     }
     
     .sobre-text {
@@ -282,7 +276,7 @@
     }
     
     .sobre-image-wrapper {
-        padding: 20px;
+        padding: 20px 0;
     }
     
     .team-section {
@@ -362,7 +356,6 @@
 
 .parceiros-title-wrapper {
     margin-bottom: 60px;
-    padding: 0 40px;
 }
 
 .parceiros-title {
@@ -388,7 +381,6 @@
 .parceiros-category-row {
     margin-top: 50px;
     margin-bottom: 30px;
-    padding: 0 40px;
 }
 
 .parceiros-category-row:first-of-type {
@@ -403,7 +395,6 @@
 }
 
 .parceiros-logos-row {
-    padding: 0 40px;
     margin-bottom: 20px;
 }
 
@@ -445,18 +436,6 @@
 @media (max-width: 992px) {
     .parceiros-section {
         padding: 80px 0;
-    }
-    
-    .parceiros-title-wrapper {
-        padding: 0 20px;
-    }
-    
-    .parceiros-category-row {
-        padding: 0 20px;
-    }
-    
-    .parceiros-logos-row {
-        padding: 0 20px;
     }
     
     .parceiro-logo-wrapper {

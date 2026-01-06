@@ -1,14 +1,11 @@
 /* Footer */
 .footer {
     background-color: #472c65;
-    padding: 60px 40px 30px;
+    padding: 60px 0 30px;
     margin-top: auto;
 }
 
-.footer-container {
-    max-width: 1200px;
-    margin: 0 auto;
-}
+/* Footer usa .container do Bootstrap para alinhar com o conteúdo */
 
 /* Logos */
 .footer-logo-lab {
@@ -18,7 +15,6 @@
 .footer-logo-lab img {
     height: 50px;
     width: auto;
-    filter: brightness(0) invert(1);
 }
 
 .footer-logo-unb {
@@ -123,16 +119,16 @@
 /* Responsive Footer */
 @media (max-width: 992px) {
     .footer {
-        padding: 50px 30px 25px;
+        padding: 50px 0 25px;
     }
 }
 
 @media (max-width: 768px) {
     .footer {
-        padding: 40px 20px 20px;
+        padding: 40px 0 20px;
     }
     
-    .footer-container {
+    .footer .container {
         text-align: center;
     }
     
