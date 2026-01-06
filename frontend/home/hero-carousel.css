@@ -198,12 +198,24 @@
     align-self: flex-start;
     opacity: 0;
     transform: translateX(30px);
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
 }
 
 .hero-btn:hover {
     background-color: rgba(255, 255, 255, 0.1);
     border-color: #ffffff;
     transform: translateY(-2px);
+}
+
+.hero-btn:hover .hero-btn-arrow {
+    transform: translateX(4px);
+}
+
+.hero-btn-arrow {
+    transition: transform 0.3s ease;
+    flex-shrink: 0;
 }
 
 /* Hero Slide Dark (Gradient Background) */

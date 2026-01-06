@@ -36,9 +36,10 @@
                     </button>
                     <nav class="navbar-nav">
                         <a href="#colabore" class="nav-link">Colabore</a>
-                        <a href="#treinamentos" class="nav-link">Linhas de Pesquisa</a>
                         <a href="#projetos" class="nav-link">Projetos</a>
                         <a href="#capacitacao" class="nav-link">Capacitação</a>
+                        <a href="#treinamentos" class="nav-link">Linhas de Pesquisa</a>
+                        <a href="#publicacoes" class="nav-link">Publicações</a>
                         <a href="./frontend/sobre/index.html" class="nav-link">Sobre</a>
                     </nav>
                 </div>
@@ -62,7 +63,12 @@
                                 O futuro da tecnologia é aberto, inclusivo e colaborativo. No Lab Livre, acreditamos no poder do conhecimento compartilhado para transformar vidas. Conecte-se, colabore e seja parte da mudança!
                             </p>
                             <a href="./frontend/sobre/index.html">
-                                <button class="hero-btn">Saiba mais ></button>
+                                <button class="hero-btn">
+                                    Saiba mais
+                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" class="hero-btn-arrow">
+                                        <path d="M5 10H15M15 10L11 6M15 10L11 14" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </button>
                             </a>
                         </div>
                     </div>
@@ -79,7 +85,12 @@
                             <p class="hero-text">
                                 O Brasil Participativo é reconhecido como a maior experiência de participação social digital do Poder Executivo, reunindo mais de 1,5 milhão de cidadãos cadastrados.  Desenvolvida em software livre pela Secretaria Nacional de Participação Social, em parceria com o LabLivre.
                             </p>
-                            <button class="hero-btn" onclick="window.open('https://brasilparticipativo.presidencia.gov.br/', '_blank')">Saiba mais ></button>
+                            <button class="hero-btn" onclick="window.open('https://brasilparticipativo.presidencia.gov.br/', '_blank')">
+                                Saiba mais
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" class="hero-btn-arrow">
+                                    <path d="M5 10H15M15 10L11 6M15 10L11 14" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -95,7 +106,12 @@
                             <p class="hero-text">
                                 Plataforma de eficiência energética que utiliza pesquisas em inteligência artificial para análise de dados com objetivo de otimizar contratos de energia e reduzir custos em instituições públicas, promovendo sustentabilidade financeira e ambiental.
                             </p>
-                            <button class="hero-btn" onclick="window.open('https://mepaenergia.org/', '_blank')">Saiba mais ></button>
+                            <button class="hero-btn" onclick="window.open('https://mepaenergia.org/', '_blank')">
+                                Saiba mais
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" class="hero-btn-arrow">
+                                    <path d="M5 10H15M15 10L11 6M15 10L11 14" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -109,7 +125,8 @@
         </div>
     </section>
 
-    <section class="collaborate-section" id="colabore">
+    <div id="colabore"></div>
+    <section class="collaborate-section">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-6 col-md-12">
@@ -251,13 +268,13 @@
         </div>
     </section>
 
-    <div class="wave-divider wave-1">
+    <div class="wave-divider wave-1" id="capacitacao">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" preserveAspectRatio="none">
             <path fill="#FFFFFF" fill-opacity="1" d="M0,128L40,144C80,160,160,192,240,197.3C320,203,400,181,480,197.3C560,213,640,267,720,256C800,245,880,171,960,144C1040,117,1120,139,1200,170.7C1280,203,1360,245,1400,266.7L1440,288L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"></path>
         </svg>
     </div>
 
-    <section class="capacitacao-section" id="capacitacao">
+    <section class="capacitacao-section">
         <div class="container">
             <div class="row">
                 <div class="col-12">
@@ -369,13 +386,13 @@
         </div>
     </section>
 
-    <div class="wave-divider wave-2">
+    <div class="wave-divider wave-2" id="publicacoes">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" preserveAspectRatio="none">
                 <path fill="#FFFFFF" fill-opacity="1" d="M0,128L40,144C80,160,160,192,240,197.3C320,203,400,181,480,197.3C560,213,640,267,720,256C800,245,880,171,960,144C1040,117,1120,139,1200,170.7C1280,203,1360,245,1400,266.7L1440,288L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"></path>
         </svg>
     </div>
 
-    <section class="news-section" id="noticias">
+    <section class="news-section">
         <div class="container">
             <div class="row">
                 <div class="col-12">
