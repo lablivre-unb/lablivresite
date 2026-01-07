@@ -165,6 +165,12 @@
     align-items: center;
     justify-content: center;
     flex-shrink: 0;
+    opacity: 0;
+    transform: translateX(30px);
+}
+
+.hero-logo.animate-in {
+    animation: fadeInRight 0.8s ease-out 0.8s forwards;
 }
 
 .hero-logo img {

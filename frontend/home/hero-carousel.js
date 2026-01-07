@@ -5,6 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const title = slide.querySelector('.hero-title');
         const texts = slide.querySelectorAll('.hero-text');
         const btn = slide.querySelector('.hero-btn');
+        const logo = slide.querySelector('.hero-logo');
         
         // Remove classes anteriores
         if (title) {
@@ -21,6 +22,11 @@ document.addEventListener('DOMContentLoaded', () => {
             btn.classList.remove('animate-in');
             btn.style.opacity = '0';
             btn.style.transform = 'translateX(30px)';
+        }
+        if (logo) {
+            logo.classList.remove('animate-in');
+            logo.style.opacity = '0';
+            logo.style.transform = 'translateX(30px)';
         }
         
         // Força reflow
@@ -40,6 +46,11 @@ document.addEventListener('DOMContentLoaded', () => {
                 setTimeout(() => {
                     btn.classList.add('animate-in');
                 }, 400);
+            }
+            if (logo) {
+                setTimeout(() => {
+                    logo.classList.add('animate-in');
+                }, 800);
             }
         }, 100);
     }
