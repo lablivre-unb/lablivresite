@@ -60,10 +60,10 @@ document.addEventListener('DOMContentLoaded', () => {
         slidesPerView: 1,
         spaceBetween: 0,
         loop: true,
-        autoplay: {
-            delay: 5000,
-            disableOnInteraction: false,
-        },
+                autoplay: {
+                    delay: 8000,
+                    disableOnInteraction: false,
+                },
         effect: 'fade',
         fadeEffect: {
             crossFade: true
