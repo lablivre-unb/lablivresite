@@ -186,91 +186,109 @@
                     <h2 class="projects-title">Projetos de Pesquisa</h2>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-12">
-                    <div class="projects-carousel-wrapper">
-                        <div class="swiper projects-carousel">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide">
-                                    <div class="project-card-front">
-                                        <div class="project-image-placeholder">
-                                            <img src="./frontend/assets/img/bp-logo.png" alt="Brasil Participativo" class="project-logo">
-                                        </div>
-                                        <div class="project-content">
-                                            <h3 class="project-title">Brasil Participativo</h3>
-                                            <p class="project-description">
-                                                O Brasil Participativo é reconhecido como a maior experiência de participação social digital do Poder Executivo, reunindo mais de 1,5 milhão de cidadãos cadastrados. Desenvolvida em software livre pela Secretaria Nacional de Participação Social, em parceria com o LabLivre.
-                                            </p>
-                                            <a href="https://brasilparticipativo.presidencia.gov.br/" target="_blank" class="project-link">Saiba mais →</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="project-card-front">
-                                        <div class="project-image-placeholder">
-                                            <img src="./frontend/assets/img/mepa-logo.png" alt="MEPA" class="project-logo">
-                                        </div>
-                                        <div class="project-content">
-                                            <h3 class="project-title">MEPA</h3>
-                                            <p class="project-description">
-                                                Plataforma de eficiência energética que utiliza inteligência artificial e análise de dados para otimizar contratos de energia e reduzir custos em instituições públicas, promovendo sustentabilidade financeira e ambiental.
-                                            </p>
-                                            <p class="project-financing"><strong>Financiamento:</strong> MEC</p>
-                                            <a href="https://mepaenergia.org/" target="_blank" class="project-link">Saiba mais →</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="project-card-front">
-                                        <div class="project-image-placeholder">
-                                            <img src="./frontend/assets/img/govhub-logo.png" alt="Gov Hub" class="project-logo">
-                                        </div>
-                                        <div class="project-content">
-                                            <h3 class="project-title">Gov Hub</h3>
-                                            <p class="project-description">
-                                                Plataforma de dados para a integração dos sistemas estruturantes do Governo Federal, transformando-os em informações estratégicas para uma gestão pública baseada em dados.
-                                            </p>
-                                            <p class="project-financing"><strong>Financiamento/Apoiador:</strong> IPEA, Ministério da Igualdade Racial (MIR)</p>
-                                            <a href="https://gov-hub.io/" target="_blank" class="project-link">Saiba mais →</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="project-card-front">
-                                        <div class="project-image-placeholder">
-                                            <img src="./frontend/assets/img/dermalert-logo.png" alt="Dermalert" class="project-logo">
-                                        </div>
-                                        <div class="project-content">
-                                            <h3 class="project-title">Dermalert</h3>
-                                            <p class="project-description">
-                                                Sistema Inteligente de Detecção de Lesões Dermatológicas voltado para a triagem de pacientes com suspeita de câncer de pele, facilitando a identificação precoce e o encaminhamento adequado.
-                                            </p>
-                                            <p class="project-financing"><strong>Financiamento/Apoiador:</strong> FAP-DF</p>
-                                            <a href="https://www.dermalert.ai/" target="_blank" class="project-link">Saiba mais →</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="project-card-front">
-                                        <div class="project-image-placeholder">
-                                            <span class="project-text-logo">ThinkAds</span>
-                                        </div>
-                                        <div class="project-content">
-                                            <h3 class="project-title">É fake?</h3>
-                                            <p class="project-description">
-                                                Sistema avançado de inteligência artificial que identifica conteúdos desinformativos em matérias jornalísticas com precisão e transparência, fortalecendo o ecossistema de informação confiável no Brasil.
-                                            </p>
-                                            <p class="project-financing"><strong>Financiamento:</strong> Edital Dex/UnB</p>
-                                            <p class="project-financing"><strong>Parceiro:</strong> Sleeping Giants</p>
-                                            <a href="https://think-ads.vercel.app/" target="_blank" class="project-link">Saiba mais →</a>
-                                        </div>
-                                    </div>
+            <!-- Grid de Cards -->
+            <div class="projects-grid" id="projects-grid">
+                <div class="row g-4">
+                    <div class="col-lg-4 col-md-6 col-12">
+                        <div class="project-card-clickable" data-project="brasil-participativo">
+                            <div class="project-card-content">
+                                <h3 class="project-card-title">Brasil Participativo</h3>
+                                <p class="project-card-description">
+                                    O Brasil Participativo é reconhecido como a maior experiência de participação social digital do Poder Executivo, reunindo mais de 1,5 milhão de cidadãos cadastrados.
+                                </p>
+                            </div>
+                            <div class="project-card-decoration">
+                                <div class="project-card-decoration-circle">
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M6 4L10 8L6 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
                                 </div>
                             </div>
                         </div>
-                        <div class="swiper-pagination"></div>
-                        <div class="swiper-button-prev"></div>
-                        <div class="swiper-button-next"></div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-12">
+                        <div class="project-card-clickable" data-project="mepa">
+                            <div class="project-card-content">
+                                <h3 class="project-card-title">MEPA</h3>
+                                <p class="project-card-description">
+                                    Plataforma de eficiência energética que utiliza inteligência artificial e análise de dados para otimizar contratos de energia e reduzir custos em instituições públicas.
+                                </p>
+                            </div>
+                            <div class="project-card-decoration">
+                                <div class="project-card-decoration-circle">
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M6 4L10 8L6 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-12">
+                        <div class="project-card-clickable" data-project="govhub">
+                            <div class="project-card-content">
+                                <h3 class="project-card-title">Gov Hub</h3>
+                                <p class="project-card-description">
+                                    Plataforma de dados para a integração dos sistemas estruturantes do Governo Federal, transformando-os em informações estratégicas para uma gestão pública baseada em dados.
+                                </p>
+                            </div>
+                            <div class="project-card-decoration">
+                                <div class="project-card-decoration-circle">
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M6 4L10 8L6 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-12">
+                        <div class="project-card-clickable" data-project="dermalert">
+                            <div class="project-card-content">
+                                <h3 class="project-card-title">Dermalert</h3>
+                                <p class="project-card-description">
+                                    Sistema Inteligente de Detecção de Lesões Dermatológicas voltado para a triagem de pacientes com suspeita de câncer de pele, facilitando a identificação precoce e o encaminhamento adequado.
+                                </p>
+                            </div>
+                            <div class="project-card-decoration">
+                                <div class="project-card-decoration-circle">
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M6 4L10 8L6 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-12">
+                        <div class="project-card-clickable" data-project="efake">
+                            <div class="project-card-content">
+                                <h3 class="project-card-title">É fake?</h3>
+                                <p class="project-card-description">
+                                    Sistema avançado de inteligência artificial que identifica conteúdos desinformativos em matérias jornalísticas com precisão e transparência, fortalecendo o ecossistema de informação confiável no Brasil.
+                                </p>
+                            </div>
+                            <div class="project-card-decoration">
+                                <div class="project-card-decoration-circle">
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M6 4L10 8L6 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Card Informativo Expandido -->
+            <div class="project-expanded" id="project-expanded" style="display: none;">
+                <div class="project-expanded-content">
+                    <button class="project-expanded-decoration" id="project-expanded-close">
+                        <div class="project-expanded-decoration-circle">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 4L4 12M4 4L12 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                    </button>
+                    <div class="project-expanded-body" id="project-expanded-body">
+                        <!-- Conteúdo será inserido via JavaScript -->
                     </div>
                 </div>
             </div>
