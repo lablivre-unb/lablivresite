@@ -13,6 +13,109 @@ const imagesToPreload = [
     '../assets/img/lab-livre.png',
 ];
 
+// Função para embaralhar array usando Fisher-Yates
+function shuffleArray(array) {
+    const shuffled = [...array];
+    for (let i = shuffled.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+    }
+    return shuffled;
+}
+
+// Função para obter o nome da imagem de um card
+function getCardImageName(card) {
+    const img = card.querySelector('img');
+    if (!img) return null;
+    const src = img.getAttribute('src') || img.src;
+    const parts = src.split('/');
+    const encodedFileName = parts[parts.length - 1];
+    return decodeURIComponent(encodedFileName);
+}
+
+// Função para embaralhar dois arrays evitando que o mesmo card apareça próximo nas duas faixas
+function shuffleWithoutOverlap(array1, array2) {
+    const DISTANCE_THRESHOLD = 7; // Distância mínima entre cards iguais
+    
+    // Embaralha o array1 normalmente
+    let shuffled1 = shuffleArray(array1);
+    let imageNames1 = shuffled1.map(card => getCardImageName(card));
+    
+    // Embaralha o array2
+    let shuffled2 = shuffleArray(array2);
+    let imageNames2 = shuffled2.map(card => getCardImageName(card));
+    
+    // Função para verificar se há conflitos
+    const hasConflicts = () => {
+        for (let i = 0; i < imageNames1.length; i++) {
+            const name1 = imageNames1[i];
+            if (!name1) continue;
+            
+            // Verifica posições próximas na segunda faixa (considerando sentido contrário)
+            // Como as faixas se movem em sentidos contrários, verificamos posições próximas
+            for (let j = 0; j < imageNames2.length; j++) {
+                const name2 = imageNames2[j];
+                if (!name2 || name1 !== name2) continue;
+                
+                // Calcula a distância considerando o sentido contrário
+                // Como a segunda faixa está invertida visualmente, a posição equivalente é length - j
+                const distance = Math.abs(i - j);
+                if (distance <= DISTANCE_THRESHOLD) {
+                    return true;
+                }
+            }
+        }
+        return false;
+    };
+    
+    // Tenta resolver conflitos através de trocas
+    let attempts = 0;
+    const maxAttempts = 50;
+    
+    while (hasConflicts() && attempts < maxAttempts) {
+        let improved = false;
+        
+        // Para cada conflito encontrado, tenta trocar cards na segunda faixa
+        for (let i = 0; i < imageNames1.length; i++) {
+            const name1 = imageNames1[i];
+            if (!name1) continue;
+            
+            for (let j = 0; j < imageNames2.length; j++) {
+                const name2 = imageNames2[j];
+                if (!name2 || name1 !== name2) continue;
+                
+                const distance = Math.abs(i - j);
+                if (distance <= DISTANCE_THRESHOLD) {
+                    // Tenta encontrar uma posição melhor para este card na segunda faixa
+                    for (let k = 0; k < shuffled2.length; k++) {
+                        if (k === j) continue;
+                        const distanceNew = Math.abs(i - k);
+                        if (distanceNew > DISTANCE_THRESHOLD) {
+                            // Troca os cards
+                            [shuffled2[j], shuffled2[k]] = [shuffled2[k], shuffled2[j]];
+                            [imageNames2[j], imageNames2[k]] = [imageNames2[k], imageNames2[j]];
+                            improved = true;
+                            break;
+                        }
+                    }
+                    if (improved) break;
+                }
+            }
+            if (improved) break;
+        }
+        
+        // Se não conseguiu melhorar, reembaralha a segunda faixa
+        if (!improved) {
+            shuffled2 = shuffleArray(array2);
+            imageNames2 = shuffled2.map(card => getCardImageName(card));
+        }
+        
+        attempts++;
+    }
+    
+    return [shuffled1, shuffled2];
+}
+
 // Clona os cards do marquee para criar loop infinito e anima com JavaScript
 document.addEventListener('DOMContentLoaded', () => {
     // Executa o preload das imagens
@@ -20,6 +123,35 @@ document.addEventListener('DOMContentLoaded', () => {
         preloadImages(imagesToPreload);
     }
     const tracks = document.querySelectorAll('.team-track');
+    
+    // Se houver exatamente 2 tracks (marquee-top e marquee-bottom)
+    if (tracks.length === 2) {
+        const track1 = tracks[0];
+        const track2 = tracks[1];
+        
+        const cards1 = Array.from(track1.querySelectorAll('.team-card'));
+        const cards2 = Array.from(track2.querySelectorAll('.team-card'));
+        
+        // Embaralha evitando sobreposição
+        const [shuffled1, shuffled2] = shuffleWithoutOverlap(cards1, cards2);
+        
+        // Remove todos os cards
+        cards1.forEach(card => card.remove());
+        cards2.forEach(card => card.remove());
+        
+        // Adiciona os cards na ordem embaralhada
+        shuffled1.forEach(card => track1.appendChild(card));
+        shuffled2.forEach(card => track2.appendChild(card));
+    } else {
+        // Fallback: embaralha cada track independentemente
+        tracks.forEach(track => {
+            const cards = Array.from(track.querySelectorAll('.team-card'));
+            const shuffledCards = shuffleArray(cards);
+            
+            cards.forEach(card => card.remove());
+            shuffledCards.forEach(card => track.appendChild(card));
+        });
+    }
     
     tracks.forEach(track => {
         // Adiciona lazy loading em todas as imagens originais
@@ -233,7 +365,7 @@ document.addEventListener('DOMContentLoaded', () => {
         'Victor Silva.jpg': { name: 'Victor Silva', role: 'Membro da Equipe', linkedin: 'https://www.linkedin.com' },
         'Luiza Davison.jpg': { name: 'Luiza Davison', role: 'Membro da Equipe', linkedin: 'https://www.linkedin.com' },
         'Maicon Mares.jpg': { name: 'Maicon Mares', role: 'Membro da Equipe', linkedin: 'https://www.linkedin.com' },
-        'Leo.jpg': { name: 'Leo', role: 'Membro da Equipe', linkedin: 'https://www.linkedin.com' },
+        'Leo Michalski.jpg': { name: 'Leo Michalski', role: 'Membro da Equipe', linkedin: 'https://www.linkedin.com' },
         'Leonardo Moreno.jpg': { name: 'Leonardo Moreno', role: 'Membro da Equipe', linkedin: 'https://www.linkedin.com' },
         'Lucca Meds.jpg': { name: 'Lucca Meds', role: 'Membro da Equipe', linkedin: 'https://www.linkedin.com' },
         'Isaque Alves.jpg': { name: 'Isaque Alves', role: 'Membro da Equipe', linkedin: 'https://www.linkedin.com' },

@@ -202,8 +202,8 @@
 
 .team-card-caption-linkedin {
     flex-shrink: 0;
-    width: 32px;
-    height: 32px;
+    width: 28px;
+    height: 28px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -220,8 +220,8 @@
 }
 
 .team-card-caption-linkedin svg {
-    width: 18px;
-    height: 18px;
+    width: 16px;
+    height: 16px;
     fill: #000000;
 }
 
