@@ -1,0 +1,29 @@
+site_name: LabLivre
+site_url: https://lablivre.unb.br/
+
+theme:
+  name: null
+  custom_dir: theme
+  static_templates:
+    - 404.html
+
+use_directory_urls: true
+
+plugins:
+  - search
+  - publications
+  
+extra_css:
+  - assets/navbar.css
+  - assets/footer.css
+  - assets/home/home.css
+  - assets/home/hero-carousel.css
+  
+extra_javascript:
+  - assets/navbar.js
+  - assets/home/home.js
+  - assets/home/hero-carousel.js
+
+watch:
+  - theme
+  - plugins
