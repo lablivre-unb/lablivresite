@@ -5,3 +5,4 @@ mkdocs_publications_plugin.egg-info/dependency_links.txt
 mkdocs_publications_plugin.egg-info/entry_points.txt
 mkdocs_publications_plugin.egg-info/top_level.txt
 publications/__init__.py
+publications/plugin.py
