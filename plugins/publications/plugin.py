@@ -40,12 +40,12 @@ class PublicationsPlugin(BasePlugin):
                 proj_data['url'] = item.url
                 
                 projects.append(proj_data)
-                
+            
             elif 'capacitacao/' in item.url:
                 cap_data = item.meta.copy() if item.meta else {}
                 cap_data['url'] = item.url
                 capacitacao.append(cap_data)
-                
+            
             elif 'treinamentos/' in item.url:
                 tr_data = item.meta.copy() if item.meta else {}
                 tr_data['url'] = item.url
