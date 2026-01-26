@@ -21,6 +21,8 @@
     {% for path in extra_css %}
     <link href="{{ path }}" rel="stylesheet">
     {% endfor %}
+    
+    {% block extrahead %}{% endblock %}
 </head>
 
 <body>
@@ -41,11 +43,10 @@
                         <span></span>
                     </button>
                     <nav class="navbar-nav">
-                        <a href="{{ base_url }}/#colabore" class="nav-link">Colabore</a>
                         <a href="{{ base_url }}/#projetos" class="nav-link">Projetos</a>
+                        <a href="{{ base_url }}/gsoc/" class="nav-link">GSoC</a>
                         <a href="{{ base_url }}/#capacitacao" class="nav-link">Capacitação</a>
                         <a href="{{ base_url }}/#treinamentos" class="nav-link">Linhas de Pesquisa</a>
-                        <a href="{{ base_url }}/#publicacoes" class="nav-link">Publicações</a>
                         <a href="{{ base_url }}/sobre/" class="nav-link">Sobre</a>
                     </nav>
                 </div>

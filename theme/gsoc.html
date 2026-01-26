@@ -1,0 +1,117 @@
+{% extends "main.html" %}
+
+{% block extrahead %}
+<link rel="stylesheet" href="{{ base_url }}/assets/gsoc/gsoc.css">
+{% endblock %}
+
+{% block content %}
+<!-- Google Summer of Code Page -->
+<section class="gsoc-page-section">
+    <div class="container">
+        <!-- Header -->
+        <div class="row">
+            <div class="col-12">
+                <h1 class="gsoc-page-title">Google Summer of Code</h1>
+                <p class="gsoc-page-subtitle">LAPPIS in GSOC 2024: Our experience can be seen <a href="#" class="gsoc-subtitle-link">here</a></p>
+            </div>
+        </div>
+
+        <!-- What is it? -->
+        <div class="row">
+            <div class="col-12">
+                <h2 class="gsoc-what-title">What is it?</h2>
+            </div>
+        </div>
+
+        <!-- Two-Column Content Blocks -->
+        <div class="row g-4">
+            <div class="col-md-6 col-12">
+                <div class="gsoc-content-block">
+                    <div class="gsoc-content-header">
+                        <h3 class="gsoc-content-title">Google Summer of Code</h3>
+                    </div>
+                    <div class="gsoc-content-body">
+                        <p class="gsoc-content-text">
+                            Google Summer of Code is a worldwide online program aimed at attracting new contributors to open-source software development. Participants are matched with mentors from open-source organizations, gain insights into real-world development practices, learn from seasoned developers, and receive a small stipend.
+                        </p>
+                        <p class="gsoc-content-text">
+                            LAPPIS was one of the 195 mentoring organizations for GSoC 2024—and one of only 30 organizations participating for the first time. We mentored four newcomers, which brought fresh perspectives to our local community while deepening our understanding of the platform.
+                        </p>
+                        <p class="gsoc-content-text">
+                            Participating in GSoC allowed us to connect with students globally. This was more than just a technical exchange; it was also a social and cultural opportunity that broadened the professional horizons of both mentors and participants. We learned a great deal from this experience and look forward to participating again.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-12">
+                <div class="gsoc-content-block">
+                    <div class="gsoc-content-header">
+                        <h3 class="gsoc-content-title">Lab Livre</h3>
+                    </div>
+                    <div class="gsoc-content-body">
+                        <p class="gsoc-content-text">
+                            LAPPIS is a Brazilian Free and Open-Source Software (FOSS) lab at the University of Brasilia (UnB), led by women, and dedicated to fostering collaboration in free and open-source communities. Our mission is to increase the participation of young South Americans, women, and other underrepresented groups in high-impact open-source projects.
+                        </p>
+                        <p class="gsoc-content-text">
+                            We achieve this by collaborating with government agencies and private-sector partners on open-source initiatives. We have awarded over 100 scholarships to students, enabling contributions to Brazil's open-source ecosystem. LAPPIS also advocates for open standards, participates in policy discussions, and raises awareness about the benefits of open-source development and adoption—while helping to strengthen the local industry.
+                        </p>
+                        <p class="gsoc-content-text">
+                            In 2024, we had four exceptional contributors join our community through Google Summer of Code (GSoC), supported by eight dedicated mentors who also gained valuable experience from the program.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Brasil Participativo -->
+        <div class="row">
+            <div class="col-12">
+                <div class="gsoc-content-block">
+                    <div class="gsoc-content-header">
+                        <h3 class="gsoc-content-title">Brasil Participativo</h3>
+                    </div>
+                    <div class="gsoc-content-body">
+                        <p class="gsoc-content-text">
+                            Brasil Participativo is the largest social participation platform ever launched by Brazil's Federal Government, empowering citizens to help create and enhance public policies. It's built as open-source software with support from Dataprev, the Decidim-Brasil community, the Ministry of Management and Innovation in Public Services (MGI), and the University of Brasilia (UnB) through LAPPIS, representing a significant step forward in inclusive governance.
+                        </p>
+                        <p class="gsoc-content-text">
+                            A notable achievement was the Participatory Pluriannual Plan (PPA) in July 2023, which gathered more than 1.4 million proposals from citizens. Building on this, the Brasil Participativo team is now part of the OECD Gov2Gov Innovation Incubator with the challenge "Voices Unheard: Inclusive Design Challenge," aiming to foster broader, more equitable digital participation in policy-making and develop an open-source solution for marginalized communities.
+                        </p>
+                        <p class="gsoc-content-text">
+                            The sheer volume and complexity of information generated by social participation platforms requires advanced technological solutions for effective interpretation and use. Without a comprehensive analysis of these data, we miss valuable opportunities to create more impactful public policies.
+                        </p>
+                        <p class="gsoc-content-text">
+                            Looking ahead to 2025, our mission is to develop machine learning models that can analyze the intersectional nature of proposals on these platforms, recognize individual user interests, and leverage segmented, LLM-based communication to boost user engagement across integrated communication channels. We welcome open-source enthusiasts to join our community and help shape the future of inclusive public policy.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Decidim -->
+        <div class="row">
+            <div class="col-12">
+                <div class="gsoc-content-block">
+                    <div class="gsoc-content-header">
+                        <h3 class="gsoc-content-title">Decidim</h3>
+                    </div>
+                    <div class="gsoc-content-body">
+                        <p class="gsoc-content-text">
+                            Decidim, derived from Catalan for "let's decide" or "we decide," is a digital infrastructure designed for participatory democracy. It's built entirely as free software, a Ruby on Rails-based framework that anyone can use to create and customize a web platform for democratic engagement.
+                        </p>
+                        <p class="gsoc-content-text">
+                            With robust features and a user-friendly interface, Decidim fosters a more participatory and inclusive democratic process. In Brazil, the Brasil Participativo platform leverages Decidim to empower individuals to create profiles, share ideas, and directly influence the policies that affect their lives.
+                        </p>
+                        <p class="gsoc-content-text">
+                            We actively contribute to the Decidim community and ecosystem by adopting and enhancing various community-developed plugins, further promoting open-source collaboration and innovation.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{{ page.content }}
+{% endblock %}
+

@@ -1,0 +1,120 @@
+/* Google Summer of Code Page Section */
+.gsoc-page-section {
+    padding: 120px 0;
+    background: #FFFFFF;
+}
+
+.gsoc-page-title {
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 1.2;
+    color: #000000;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.gsoc-page-subtitle {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.6;
+    color: #666666;
+    margin: 0 0 60px 0;
+    text-align: left;
+}
+
+.gsoc-subtitle-link {
+    color: #000000;
+    text-decoration: underline;
+    font-weight: 400;
+}
+
+.gsoc-subtitle-link:hover {
+    color: #333333;
+    text-decoration: underline;
+}
+
+.gsoc-what-title {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 1.2;
+    color: #000000;
+    text-align: left;
+    margin: 0 0 40px 0;
+}
+
+.gsoc-content-block {
+    background: #FFFFFF;
+    border-radius: 0;
+    overflow: hidden;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+
+.gsoc-content-header {
+    background-color: #333333;
+    padding: 20px 30px;
+}
+
+.gsoc-content-title {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.2;
+    color: #FFFFFF;
+    margin: 0;
+}
+
+.gsoc-content-body {
+    padding: 30px;
+    flex: 1;
+}
+
+.gsoc-content-text {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.6;
+    color: #000000;
+    margin: 0 0 20px 0;
+}
+
+.gsoc-content-text:last-child {
+    margin-bottom: 0;
+}
+
+/* Responsive GSOC Page Section */
+@media (max-width: 768px) {
+    .gsoc-page-section {
+        padding: 80px 20px;
+    }
+
+    .gsoc-page-title {
+        font-size: 42px;
+        text-align: center;
+    }
+
+    .gsoc-page-subtitle {
+        font-size: 16px;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    .gsoc-what-title {
+        font-size: 36px;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .gsoc-content-header {
+        padding: 15px 20px;
+    }
+
+    .gsoc-content-title {
+        font-size: 20px;
+    }
+
+    .gsoc-content-body {
+        padding: 20px;
+    }
+}
+
