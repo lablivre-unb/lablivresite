@@ -1,0 +1,258 @@
+{% extends "main.html" %}
+
+{% block content %}
+<!-- Render the content from index.md (Hero, Projects, etc) -->
+{{ page.content }}
+
+
+<!-- Dynamic Projects Section -->
+<section class="projects-section" id="projetos">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h2 class="projects-title">Projetos de Pesquisa</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <div class="projects-carousel-wrapper">
+                    <div class="swiper projects-carousel">
+                        <div class="swiper-wrapper">
+                            {% for proj in projects %}
+                            <div class="swiper-slide">
+                                <div class="project-card-front">
+                                    <div class="project-image-placeholder">
+                                        {% if proj.text_logo %}
+                                        <span class="project-text-logo">{{ proj.text_logo }}</span>
+                                        {% else %}
+                                        <img src="{{ base_url }}/{{ proj.image }}" alt="{{ proj.title }}"
+                                            class="project-logo">
+                                        {% endif %}
+                                    </div>
+                                    <div class="project-content">
+                                        <h3 class="project-title">{{ proj.title }}</h3>
+                                        <p class="project-description">{{ proj.description }}</p>
+
+                                        {% if proj.financing %}
+                                        <p class="project-financing"><strong>Financiamento:</strong> {{ proj.financing
+                                            }}</p>
+                                        {% endif %}
+
+                                        {% if proj.partner %}
+                                        <p class="project-financing"><strong>Parceiro:</strong> {{ proj.partner }}</p>
+                                        {% endif %}
+
+                                        <a href="{{ proj.link }}" target="_blank" class="project-link">Saiba mais →</a>
+                                    </div>
+                                </div>
+                            </div>
+                            {% endfor %}
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Google Summer of Code Section -->
+<section class="gsoc-section" id="gsoc">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h2 class="gsoc-title"><strong>Google Summer of Code</strong></h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <p class="gsoc-description">
+                    O Lab Livre participa do Google Summer of Code, um programa internacional do Google que conecta estudantes a projetos reais de software livre, com mentoria especializada.
+                </p>
+            </div>
+        </div>
+        <div class="row g-4 gsoc-features">
+            <div class="col-md-4 col-12">
+                <div class="gsoc-feature-item">
+                    <div class="gsoc-icon-circle">
+                        <img src="{{ base_url }}/assets/img/programa-global-google.png" alt="Programa global do Google" class="gsoc-icon-image">
+                    </div>
+                    <p class="gsoc-feature-text">Programa global do Google</p>
+                </div>
+            </div>
+            <div class="col-md-4 col-12">
+                <div class="gsoc-feature-item">
+                    <div class="gsoc-icon-circle">
+                        <img src="{{ base_url }}/assets/img/projeto-open-source.png" alt="Projetos open source reais" class="gsoc-icon-image">
+                    </div>
+                    <p class="gsoc-feature-text">Projetos open source reais</p>
+                </div>
+            </div>
+            <div class="col-md-4 col-12">
+                <div class="gsoc-feature-item">
+                    <div class="gsoc-icon-circle">
+                        <img src="{{ base_url }}/assets/img/mentoria-tecnica.png" alt="Mentoria técnica e acadêmica" class="gsoc-icon-image">
+                    </div>
+                    <p class="gsoc-feature-text">Mentoria técnica e acadêmica</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 text-center">
+                <a href="https://summerofcode.withgoogle.com/" target="_blank" class="gsoc-button">Saiba mais</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="wave-divider wave-1" id="capacitacao">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" preserveAspectRatio="none">
+        <path fill="#F7F7F7" fill-opacity="1"
+            d="M0,128L40,144C80,160,160,192,240,197.3C320,203,400,181,480,197.3C560,213,640,267,720,256C800,245,880,171,960,144C1040,117,1120,139,1200,170.7C1280,203,1360,245,1400,266.7L1440,288L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z">
+        </path>
+    </svg>
+</div>
+
+<section class="capacitacao-section">
+    <div class="container">
+        <!-- Capacitacao Content -->
+        <div class="row">
+            <div class="col-12">
+                <h2 class="capacitacao-title">Capacitação</h2>
+            </div>
+        </div>
+        <div class="row g-4">
+            {% for item in capacitacao %}
+            <div class="col-md-6 col-12">
+                <div class="capacitacao-card">
+                    <div class="capacitacao-logo-wrapper">
+                        <img src="{{ base_url }}/{{ item.image }}" alt="{{ item.title }}"
+                            class="capacitacao-logo {{ item.image_class if item.image_class else '' }}">
+                    </div>
+                    <div class="capacitacao-card-body">
+                        <h3 class="capacitacao-card-title">{{ item.title }}</h3>
+                        <p class="capacitacao-card-description">
+                            {{ item.description }}
+                        </p>
+
+                        {% if item.financing %}
+                        <p class="capacitacao-financing"><strong>Financiamento:</strong> {{ item.financing }}</p>
+                        {% endif %}
+
+                        {% if item.links %}
+                        <div class="capacitacao-links">
+                            {% for link in item.links %}
+                            <a href="{{ link.url }}" target="_blank" class="capacitacao-link">{{ link.text }}</a>
+                            {% endfor %}
+                        </div>
+                        {% elif item.link %}
+                        <a href="{{ item.link }}" target="_blank" class="capacitacao-link">Saiba mais →</a>
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+<section class="training-section" id="treinamentos">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h2 class="training-title">Linhas de Pesquisa</h2>
+            </div>
+        </div>
+        <div class="row training-row-custom g-4">
+            {% for item in treinamentos %}
+            <div class="col-md-6 col-12">
+                <div class="training-card">
+                    <h3 class="training-card-title">{{ item.title }}</h3>
+                    <p class="training-card-description">
+                        {{ item.description }}
+                    </p>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+<div class="wave-divider wave-2" id="publicacoes">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" preserveAspectRatio="none">
+        <path fill="#F7F7F7" fill-opacity="1"
+            d="M0,128L40,144C80,160,160,192,240,197.3C320,203,400,181,480,197.3C560,213,640,267,720,256C800,245,880,171,960,144C1040,117,1120,139,1200,170.7C1280,203,1360,245,1400,266.7L1440,288L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z">
+        </path>
+    </svg>
+</div>
+
+<!-- Dynamic Publications Section -->
+{% if publications %}
+<section class="news-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h2 class="news-title">Publicações</h2>
+            </div>
+        </div>
+        <div class="row g-4" id="publications-container">
+            {% for pub in publications %}
+            <div class="col-md-4 col-sm-6 col-12 {% if loop.index0 >= 3 %}publicacao-card-hidden{% endif %}">
+                <a href="{{ pub.link }}" target="_blank" class="news-card-link">
+                    <div class="news-card">
+                        <div class="news-card-header">
+                            <div class="news-card-icon {% if pub.type == 'ebook' %}news-card-icon-book{% endif %}">
+                                {% if pub.type == 'ebook' %}
+                                <!-- Double image structure for Ebooks to enable animation -->
+                                {% if pub.image %}
+                                <img src="{{ base_url }}/{{ pub.image }}" alt="Publicação"
+                                    class="book-image book-image-1">
+                                <img src="{{ base_url }}/{{ pub.image }}" alt="Publicação"
+                                    class="book-image book-image-2">
+                                {% else %}
+                                <img src="{{ base_url }}/assets/img/publications/book.png" alt="Publicação"
+                                    class="book-image book-image-1">
+                                <img src="{{ base_url }}/assets/img/publications/book.png" alt="Publicação"
+                                    class="book-image book-image-2">
+                                {% endif %}
+                                {% else %}
+                                <!-- Regular single image for other publications -->
+                                {% if pub.image %}
+                                <img src="{{ base_url }}/{{ pub.image }}" alt="Publicação">
+                                {% else %}
+                                <img src="{{ base_url }}/assets/img/publications/book.png" alt="Publicação">
+                                {% endif %}
+                                {% endif %}
+                            </div>
+                        </div>
+                        <div class="news-card-body">
+                            <p class="news-card-date">{{ pub.date_formatted if pub.date_formatted else '' }}</p>
+                            <h3 class="news-card-title">{{ pub.title }}</h3>
+                            <p class="news-card-description">
+                                {% if pub.venue %}<strong>{{ pub.venue }}</strong><br>{% endif %}
+                                {{ pub.description if pub.description else 'Clique para acessar.' }}
+                            </p>
+                            <div class="news-card-arrow">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            {% endfor %}
+        </div>
+        <div class="row">
+            <div class="col-12 text-center">
+                <button class="news-view-more-btn" id="publicacao-view-more-btn">Ver mais</button>
+            </div>
+        </div>
+    </div>
+</section>
+{% endif %}
+{% endblock %}
