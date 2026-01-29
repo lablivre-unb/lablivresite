@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Summer of Code - LabLivre</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Site CSS -->
+    <link rel="stylesheet" href="../assets/navbar.css">
+    <link rel="stylesheet" href="../assets/footer.css">
+    <link rel="stylesheet" href="../assets/home/home.css">
+    <link rel="stylesheet" href="../assets/home/hero-carousel.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!-- Extra CSS from mkdocs.yml -->
+    
+    <link href="../assets/navbar.css" rel="stylesheet">
+    
+    <link href="../assets/footer.css" rel="stylesheet">
+    
+    <link href="../assets/home/home.css" rel="stylesheet">
+    
+    <link href="../assets/home/hero-carousel.css" rel="stylesheet">
+    
+    
+    
+<link rel="stylesheet" href="../assets/gsoc/gsoc.css">
+
+</head>
+
+<body>
+    <header class="navbar">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-auto">
+                    <div class="navbar-logo">
+                        <a href="../">
+                            <img src="../assets/img/lab-livre-white.png" alt="LabLivre Logo">
+                        </a>
+                    </div>
+                </div>
+                <div class="col">
+                    <button class="hamburger" aria-label="Menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    <nav class="navbar-nav">
+                        <a href="../#projetos" class="nav-link">Projetos</a>
+                        <a href="../gsoc/" class="nav-link">GSoC</a>
+                        <a href="../#capacitacao" class="nav-link">Capacitação</a>
+                        <a href="../#treinamentos" class="nav-link">Linhas de Pesquisa</a>
+                        <a href="../sobre/" class="nav-link">Sobre</a>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    
+<!-- Google Summer of Code Page -->
+<section class="gsoc-page-section">
+    <div class="container">
+        <!-- Header -->
+        <div class="row">
+            <div class="col-12">
+                <h1 class="gsoc-page-title">Google Summer of Code</h1>
+                <p class="gsoc-page-subtitle">Lab Livre in GSOC 2026: Our experience can be seen <a href="#" class="gsoc-subtitle-link">here</a></p>
+            </div>
+        </div>
+
+        <!-- What is it? -->
+        <div class="row">
+            <div class="col-12">
+                <h2 class="gsoc-what-title">What is it?</h2>
+            </div>
+        </div>
+
+        <!-- Two-Column Content Blocks -->
+        <div class="row g-4">
+            <div class="col-md-6 col-12">
+                <div class="gsoc-content-block">
+                    <div class="gsoc-content-header">
+                        <h3 class="gsoc-content-title">Google Summer of Code</h3>
+                    </div>
+                    <div class="gsoc-content-body">
+                        <p class="gsoc-content-text">
+                            Google Summer of Code is a worldwide online program aimed at attracting new contributors to open-source software development. Participants are matched with mentors from open-source organizations, gain insights into real-world development practices, learn from seasoned developers, and receive a small stipend.
+                        </p>
+                        <p class="gsoc-content-text">
+                            LAPPIS was one of the 195 mentoring organizations for GSoC 2024—and one of only 30 organizations participating for the first time. We mentored four newcomers, which brought fresh perspectives to our local community while deepening our understanding of the platform.
+                        </p>
+                        <p class="gsoc-content-text">
+                            Participating in GSoC allowed us to connect with students globally. This was more than just a technical exchange; it was also a social and cultural opportunity that broadened the professional horizons of both mentors and participants. We learned a great deal from this experience and look forward to participating again.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-12">
+                <div class="gsoc-content-block">
+                    <div class="gsoc-content-header">
+                        <h3 class="gsoc-content-title">Lab Livre</h3>
+                    </div>
+                    <div class="gsoc-content-body">
+                        <p class="gsoc-content-text">
+                            Lab Livre is a women-led FOSS lab based at the University of Brasília. Our mission is to increase engagement among young South Americans and underrepresented groups in high-impact open source, overcoming barriers such as language and impostor syndrome. We have established several OSS local communities with AI-driven solutions for social good, including: Empurrando Juntas (a social participation app), GovHub (a federal data transparency platform), ThinkAds (fake news detection), and a Portuguese-trained chatbot architecture.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Brasil Participativo -->
+        <div class="row">
+            <div class="col-12">
+                <div class="gsoc-content-block">
+                    <div class="gsoc-content-header">
+                        <h3 class="gsoc-content-title">GovHub</h3>
+                    </div>
+                    <div class="gsoc-content-body">
+                        <p class="gsoc-content-text">
+                            GovHub is an open-source software platform developed to transform raw data into strategic information, supporting public managers in making data-driven decisions.
+                        </p>
+                        <p class="gsoc-content-text">
+                            The project adopts a technology stack based on open-source solutions, including Apache Airflow for data pipeline orchestration, DBT for information transformation and modeling, Apache Superset for visualization and exploration, PostgreSQL as a relational database, and Docker for containerization and deployment. The choice of these technologies allows for greater flexibility, scalability, and integration with different government systems.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Decidim -->
+        <div class="row">
+            <div class="col-12">
+                <div class="gsoc-content-block">
+                    <div class="gsoc-content-header">
+                        <h3 class="gsoc-content-title">Decidim</h3>
+                    </div>
+                    <div class="gsoc-content-body">
+                        <p class="gsoc-content-text">
+                            Decidim, derived from Catalan for "let's decide" or "we decide," is a digital infrastructure designed for participatory democracy. It's built entirely as free software, a Ruby on Rails-based framework that anyone can use to create and customize a web platform for democratic engagement.
+                        </p>
+                        <p class="gsoc-content-text">
+                            With robust features and a user-friendly interface, Decidim fosters a more participatory and inclusive democratic process. In Brazil, the Brasil Participativo platform leverages Decidim to empower individuals to create profiles, share ideas, and directly influence the policies that affect their lives.
+                        </p>
+                        <p class="gsoc-content-text">
+                            We actively contribute to the Decidim community and ecosystem by adopting and enhancing various community-developed plugins, further promoting open-source collaboration and innovation.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Get Started (bottom of page) -->
+<section class="gsoc-get-started-section">
+    <div class="container">
+        <div class="row gsoc-get-started-row">
+            <div class="col-12">
+                <h2 class="gsoc-get-started-title">Get Started</h2>
+            </div>
+        </div>
+        <div class="row g-4 gsoc-get-started-grid">
+            <div class="col-lg-6 col-md-12">
+                <article class="gsoc-step-card">
+                    <div class="gsoc-step-card-header">
+                        <span class="gsoc-step-badge">Step 1</span>
+                        <div class="gsoc-step-icon" aria-hidden="true">
+                            <img src="../assets/img/conexao 1.png" alt="" />
+                        </div>
+                    </div>
+                    <h3 class="gsoc-step-title">Join our Community Channel</h3>
+                    <p class="gsoc-step-text">
+                        Join the GovHub community on Telegram and connect with other developers, mentors, and organizers. Our Telegram server is a great place to ask questions, share ideas, and get support throughout about Decidim.
+                    </p>
+                    <a href="https://t.me/+SyeDX5Rplsw0M2Jh" class="gsoc-step-button" target="_blank" rel="noopener noreferrer">Join Telegram</a>
+                </article>
+            </div>
+            <div class="col-lg-6 col-md-12">
+                <article class="gsoc-step-card">
+                    <div class="gsoc-step-card-header">
+                        <span class="gsoc-step-badge">Step 2</span>
+                        <div class="gsoc-step-icon" aria-hidden="true">
+                            <img src="../assets/img/codificacao 1.png" alt="" />
+                        </div>
+                    </div>
+                    <h3 class="gsoc-step-title">Start Contributing</h3>
+                    <p class="gsoc-step-text">
+                        Contribute to the project and make your mark on open-source development with LAPPIS.
+                        By making a Pull Request (PR) to one of our existing projects, you will have the opportunity to
+                        showcase your skills and demonstrate your understanding of the project.
+                    </p>
+                    <div class="gsoc-step-actions">
+                        <a href="https://github.com/GovHub-br/data-application-gov-hub/blob/main/README.md" class="gsoc-step-button gsoc-step-button-secondary">Onboarding</a>
+                        <a href="https://github.com/GovHub-br/data-application-gov-hub" class="gsoc-step-button gsoc-step-button-secondary">Documentation</a>
+                    </div>
+                </article>
+            </div>
+            <div class="col-lg-6 col-md-12">
+                <article class="gsoc-step-card">
+                    <div class="gsoc-step-card-header">
+                        <span class="gsoc-step-badge">Step 3</span>
+                        <div class="gsoc-step-icon" aria-hidden="true">
+                            <img src="../assets/img/contrato 1.png" alt="" />
+                        </div>
+                    </div>
+                    <h3 class="gsoc-step-title">Write a Draft Application</h3>
+                    <p class="gsoc-step-text">
+                        Select an Idea and write a draft application that expands this ideas with your own proposals and showcases how you will execute and complete your project . This is your chance to demonstrate your understanding of the project, your skills, and your passion for open-source development. Our mentors will provide feedback and help you refine your proposal, increasing your chances of being selected for the program.
+                    </p>
+                    <a href="#" class="gsoc-step-button" target="_blank" rel="noopener noreferrer">Ideas</a>
+                </article>
+            </div>
+            <div class="col-lg-6 col-md-12">
+                <article class="gsoc-step-card">
+                    <div class="gsoc-step-card-header">
+                        <span class="gsoc-step-badge">Step 4</span>
+                        <div class="gsoc-step-icon" aria-hidden="true">
+                            <img src="../assets/img/forum 1.png" alt="" />
+                        </div>
+                    </div>
+                    <h3 class="gsoc-step-title">Discuss with Mentors</h3>
+                    <p class="gsoc-step-text">
+                        By having a discussion with our mentors, you'll have the opportunity to ask questions, get feedback, and fine-tune your proposal. This will ensure that your proposal is well-aligned with the project goals and that you fully understand the expectations for the project. Our mentors will provide guidance and support to help you craft the best possible proposal, increasing your chances of being selected for the program.
+                    </p>
+                </article>
+            </div>
+            <div class="col-12">
+                <article class="gsoc-step-card gsoc-step-card-final">
+                    <div class="gsoc-step-card-header">
+                        <span class="gsoc-step-badge">Step 5</span>
+                        <div class="gsoc-step-icon" aria-hidden="true">
+                            <img src="../assets/img/superar 1.png" alt="" />
+                        </div>
+                    </div>
+                    <h3 class="gsoc-step-title">Submit Final Application</h3>
+                    <p class="gsoc-step-text">
+                        By submitting your final application for GSoC, you'll be taking the last step in your journey to becoming a part of our community and contributing to projects that are shaping the future of technology. Make sure to submit your application before the deadline and include all the details correctly that are asked by Google. Wait for the selection process to take place and cross your fingers!
+                    </p>
+                </article>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- How to start -->
+<section class="gsoc-how-start-section">
+    <div class="container">
+        <div class="row align-items-center g-4">
+            <div class="col-lg-6 col-md-12">
+                <h2 class="gsoc-how-title">How to start?</h2>
+                <p class="gsoc-how-text">
+                    Here, Ludimila brings us an introductory video about Google Summer of Code (GSoC), where
+                    she explains how you can become a contributor to our projects and join our community!
+                </p>
+            </div>
+            <div class="col-lg-6 col-md-12">
+                <div class="gsoc-how-video-wrapper">
+                    <div class="gsoc-how-video-ratio">
+                        <iframe
+                            src="https://www.youtube.com/embed/MNk3EcHmzR4"
+                            title="How to start in GSoC with LabLivre"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin"
+                            allowfullscreen
+                        ></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row g-4 mb-4">
+                <div class="col-lg-3 col-md-6 col-12">
+                    <div class="footer-logo-lab">
+                        <img src="../assets/img/lab-livre-white.png" alt="Lab Livre Logo">
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-12">
+                    <div class="footer-logo-unb">
+                        <img src="../assets/img/unb-logo.png" alt="UnB Logo">
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-12">
+                    <div class="footer-contact">
+                        <h5>Contato</h5>
+                        <p class="contact-email">caguiar@unb.br</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-12">
+                    <div class="footer-social">
+                        <h5>Acompanhe nossas redes</h5>
+                        <ul class="social-links">
+                            <li>
+                                <a href="https://www.instagram.com/lab.livre/" class="social-link" target="_blank">
+                                    <img src="../assets/img/instagram.png" alt="Instagram"
+                                        class="social-icon">
+                                    <span>lab.livre</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.linkedin.com/company/lab-livre/posts/?feedView=all"
+                                    class="social-link" target="_blank">
+                                    <img src="../assets/img/linkedin.png" alt="LinkedIn"
+                                        class="social-icon">
+                                    <span>Lab-Livre</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/lablivre-unb" class="social-link" target="_blank">
+                                    <img src="../assets/img/github.png" alt="GitHub" class="social-icon">
+                                    <span>lablivre-unb</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12">
+                    <div class="footer-license">
+                        <div class="cc-icons">
+                            <img src="../assets/img/cc-by.png" alt="CC BY" class="cc-badge">
+                        </div>
+                        <p class="license-text">
+                            Except where otherwise <a href="#" class="license-link">noted</a>, content on this site is
+                            licensed under a <a href="https://creativecommons.org/licenses/by/4.0/" class="license-link"
+                                target="_blank">Creative Commons Attribution 4.0 International license</a>.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    
+    <script src="../assets/navbar.js"></script>
+    
+    <script src="../assets/home/home.js"></script>
+    
+    <script src="../assets/home/hero-carousel.js"></script>
+    
+    <script src="../search/main.js"></script>
+    
+</body>
+
+</html>
