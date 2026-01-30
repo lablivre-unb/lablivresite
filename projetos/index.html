@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projetos GSoC - LabLivre</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../frontend/assets/navbar.css">
+    <link rel="stylesheet" href="../frontend/assets/footer.css">
+    <link rel="stylesheet" href="./projetos.css">
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../frontend/assets/navbar.js"></script>
+</head>
+<body>
+    <header class="navbar">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-auto">
+                    <div class="navbar-logo">
+                        <a href="../index.html">
+                            <img src="../frontend/assets/img/lab-livre-white.png" alt="LabLivre Logo">
+                        </a>
+                    </div>
+                </div>
+                <div class="col">
+                    <button class="hamburger" aria-label="Menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    <nav class="navbar-nav">
+                        <a href="../index.html" class="nav-link">Home</a>
+                        <a href="../index.html" class="nav-link">Projetos</a>
+                        <a href="../gsoc/index.html" class="nav-link">GSoC</a>
+                        <a href="../sobre/index.html" class="nav-link">Sobre</a>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Projetos Page -->
+    <section class="projetos-page-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h1 class="projetos-page-title">GSoC 2026 Projects</h1>
+                    <p class="projetos-page-subtitle">
+                        Explore the project proposals for Google Summer of Code. Each project offers a unique opportunity to contribute to open source and develop advanced technical skills.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Proposal 1 -->
+            <div class="row">
+                <div class="col-12">
+                    <article class="projeto-card">
+                        <div class="projeto-card-header">
+                            <div class="projeto-badge">Proposal 1</div>
+                            <div class="projeto-meta">
+                                <span class="projeto-size">Medium (175 hours)</span>
+                                <span class="projeto-difficulty projeto-difficulty-medium">Medium</span>
+                            </div>
+                        </div>
+                        <div class="projeto-card-body">
+                            <h2 class="projeto-title">Pipeline for Data Quality Verification and Anomaly Detection in Governmental Data with Automated Reports</h2>
+                            <p class="projeto-description">
+                                Currently, GovHub performs daily ingestions of data from various public sources, organizing it into data layers (bronze, silver, and gold). Although there are some point validations, the systematic identification of anomalies, inconsistencies, and data quality issues still depends on manual inspections or ad hoc checks.
+                            </p>
+                            <p class="projeto-description">
+                                The objective of this project is to build an automated data quality verification module for the databases of the core government systems (ComprasNet, SIAFI, TransfereGov, SIAPE, and SIORG), capable of analyzing daily ingestions and generating consolidated periodic reports (weekly or monthly) highlighting statistical anomalies, semantic inconsistencies, and potential structural issues. The focus is not on automatically correcting the data, but on providing visibility, traceability, and issue prioritization for pipeline maintainers.
+                            </p>
+                            <p class="projeto-description">
+                                As the desired final state, the student should deliver a system integrated into the existing GovHub pipeline that applies automated (statistical and semantic) checks on processed tables and produces structured, versioned, and auditable reports, facilitating data governance and the reliability of published data.
+                            </p>
+                            
+                            <div class="projeto-section">
+                                <h3 class="projeto-section-title">Expected Outcomes</h3>
+                                <ul class="projeto-outcomes">
+                                    <li>Functional data quality verification module integrated into the GovHub ingestion pipeline.</li>
+                                    <li>Automatic generation of periodic reports (e.g., weekly) listing anomalies, affected tables, type of issue, and severity.</li>
+                                    <li>Technical documentation of the module and usage examples.</li>
+                                </ul>
+                            </div>
+
+                            <div class="projeto-section">
+                                <h3 class="projeto-section-title">Required Skills</h3>
+                                <div class="projeto-skills">
+                                    <div class="skill-category">
+                                        <strong>Languages:</strong> Python, SQL
+                                    </div>
+                                    <div class="skill-category">
+                                        <strong>Knowledge:</strong> Basic statistics, exploratory data analysis, data engineering
+                                    </div>
+                                    <div class="skill-category">
+                                        <strong>Tools:</strong> Pandas, PostgreSQL (or equivalent)
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="projeto-section">
+                                <h3 class="projeto-section-title">Nice to Have Skills</h3>
+                                <ul class="projeto-nice-to-have">
+                                    <li>Familiarity with dbt</li>
+                                    <li>Docker</li>
+                                    <li>Experience with data pipelines and Airflow</li>
+                                </ul>
+                            </div>
+
+                            <div class="projeto-section">
+                                <h3 class="projeto-section-title">Mentors</h3>
+                                <div class="projeto-mentors">
+                                    <span class="mentor-tag">Mateus de Castro (@mat054)</span>
+                                    <span class="mentor-tag">Davi de Aguiar (@davi-aguiar-vieira)</span>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+
+            <!-- Proposal 2 -->
+            <div class="row">
+                <div class="col-12">
+                    <article class="projeto-card">
+                        <div class="projeto-card-header">
+                            <div class="projeto-badge">Proposal 2</div>
+                            <div class="projeto-meta">
+                                <span class="projeto-size">Large (350 hours)</span>
+                                <span class="projeto-difficulty projeto-difficulty-difficult">Difficult</span>
+                            </div>
+                        </div>
+                        <div class="projeto-card-body">
+                            <h2 class="projeto-title">RAG for Natural Language Queries over Gold Data</h2>
+                            <p class="projeto-subtitle">Transforming complex governmental data into clear answers through natural language.</p>
+                            <p class="projeto-description">
+                                Brazil is a global reference in budgetary transparency, with milestones such as the Fiscal Responsibility Law and the Freedom of Information Law (LAI). However, a paradox remains: despite the vast availability of open data, these datasets often become "unexplored digital archives." The technical barrier is high; to monitor public policies in GovHub, a citizen or researcher must master SQL and understand complex data models (bronze, silver, and gold layers), which restricts active transparency to technical specialists.
+                            </p>
+                            <p class="projeto-description">
+                                This project proposes to democratize access by transforming natural language into structured queries. The goal is not to create a generic chatbot that hallucinates answers, but a precise analytical agent.
+                            </p>
+                            <p class="projeto-description">
+                                This project aims to develop a system based on Retrieval-Augmented Generation (RAG) that enables natural language queries to be executed directly over qualified GovHub data. The system should leverage metadata, table descriptions, and vectorized schemas to feed the LLM, automatically generate SQL queries, manage them, and return structured responses.
+                            </p>
+                            <p class="projeto-description">
+                                The desired final state is a tool that abstracts the complexity of SQL queries while maintaining traceability of user questions, generated queries, and the data used—operating not as a generic chatbot, but as an analytical component integrated into the data pipeline and ensuring data governance.
+                            </p>
+                            
+                            <div class="projeto-section">
+                                <h3 class="projeto-section-title">Expected Outcomes</h3>
+                                <ul class="projeto-outcomes">
+                                    <li>Functional RAG pipeline (Haystack) with SQL generation, query execution, and final response, operating on the GovHub database and prioritizing the gold layer.</li>
+                                    <li>Integration with Open WebUI to enable practical user interaction with the model and the RAG+SQL pipeline.</li>
+                                    <li>Full observability with Langfuse, including traceability of prompts, retrieved documents, generated SQL, execution logs, metrics, and technical documentation of the system.</li>
+                                </ul>
+                            </div>
+
+                            <div class="projeto-section">
+                                <h3 class="projeto-section-title">Required Skills</h3>
+                                <div class="projeto-skills">
+                                    <div class="skill-category">
+                                        <strong>Languages:</strong> Python, SQL
+                                    </div>
+                                    <div class="skill-category">
+                                        <strong>Frameworks/Stacks:</strong> Haystack (pipelines), LLM APIs, Qdrant (Vector Database)
+                                    </div>
+                                    <div class="skill-category">
+                                        <strong>Theoretical Knowledge:</strong>
+                                        <ul class="skill-list">
+                                            <li>Data modeling and SQL queries</li>
+                                            <li>RAG fundamentals (embeddings, retrieval, ranking)</li>
+                                            <li>Security and best practices for executing LLM-generated SQL</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="projeto-section">
+                                <h3 class="projeto-section-title">Nice to Have Skills</h3>
+                                <ul class="projeto-nice-to-have">
+                                    <li>Familiarity with Open WebUI and application deployment</li>
+                                    <li>Experience with vector databases / stores (Qdrant)</li>
+                                    <li>Knowledge of hybrid retrieval (BM25 + embeddings)</li>
+                                    <li>Docker and observability (tracing, metrics)</li>
+                                    <li>Experience with Langfuse or similar tools</li>
+                                </ul>
+                            </div>
+
+                            <div class="projeto-section">
+                                <h3 class="projeto-section-title">Mentors</h3>
+                                <div class="projeto-mentors">
+                                    <span class="mentor-tag">Mateus de Castro (@mat054)</span>
+                                    <span class="mentor-tag">Davi de Aguiar (@davi-aguiar-vieira)</span>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+
+            <!-- Proposal 3 -->
+            <div class="row">
+                <div class="col-12">
+                    <article class="projeto-card">
+                        <div class="projeto-card-header">
+                            <div class="projeto-badge">Proposal 3</div>
+                            <div class="projeto-meta">
+                                <span class="projeto-size">Large (350 hours)</span>
+                                <span class="projeto-difficulty projeto-difficulty-difficult">Difficult</span>
+                            </div>
+                        </div>
+                        <div class="projeto-card-body">
+                            <h2 class="projeto-title">Data Lakehouse (MinIO + Iceberg) for Versioning (Time Travel) and AI Consumption in GovHub</h2>
+                            <p class="projeto-description">
+                                Currently, GovHub operates on a solid architecture for analytical processing and consumption, with processed data organized into Medallion architecture layers and stored in Postgres. However, as a database oriented toward the current state (a typical OLTP characteristic), Postgres presents some limitations:
+                            </p>
+                            <ul class="projeto-description-list">
+                                <li>Native historical versioning (time travel) in a standardized and efficient manner;</li>
+                                <li>Traceability and reproducibility of datasets for AI consumption (ML, embeddings, RAG);</li>
+                                <li>Cost-efficient scalability for large volumes and frequent reprocessing;</li>
+                                <li>Retention governance and auditing at the snapshot and file level.</li>
+                            </ul>
+                            <p class="projeto-description">
+                                This project proposes evolving the GovHub architecture toward a versioned Data Lakehouse, built on widely adopted open-source technologies: MinIO (object storage) and Apache Iceberg (table format), with Spark as the processing engine and Trino as the federated query layer. The goal is to enable time travel, schema/partition evolution, and metadata governance, while keeping the team experience close to the current Airflow + dbt workflow, avoiding significant rework.
+                            </p>
+                            <p class="projeto-description">
+                                The scope also includes analyzing and documenting essential operational considerations for the lakehouse, such as retention and maintenance of Iceberg metadata, strategies to handle small files, organization of layers, catalog patterns, and infrastructure patterns for execution on Kubernetes.
+                            </p>
+                            
+                            <div class="projeto-section">
+                                <h3 class="projeto-section-title">Expected Outcomes</h3>
+                                <ul class="projeto-outcomes">
+                                    <li>Functional lakehouse architecture on Kubernetes with MinIO + Iceberg, including catalog configuration and data organization standards.</li>
+                                    <li>Ingestion/processing pipeline (e.g., using Spark) writing Iceberg tables with versioning and time travel enabled, including a minimal partitioning strategy and schema evolution.</li>
+                                    <li>Operational federated querying via Trino, enabling analytical consumption of Iceberg tables (and, if necessary, integration with existing sources such as Postgres).</li>
+                                    <li>Proposed and documented integration with Airflow + dbt, showing how the current workflow adapts to the lakehouse with minimal day-to-day changes.</li>
+                                    <li>Documented and/or automated strategy for handling small files and compaction (optimize), with batch routines.</li>
+                                    <li>Complete technical documentation covering architecture, components, decisions, operational costs, retention policies, observability, security, and an operational guide.</li>
+                                </ul>
+                            </div>
+
+                            <div class="projeto-section">
+                                <h3 class="projeto-section-title">Required Skills</h3>
+                                <div class="projeto-skills">
+                                    <div class="skill-category">
+                                        <strong>Languages:</strong> Python, SQL
+                                    </div>
+                                    <div class="skill-category">
+                                        <strong>Frameworks/Stacks:</strong> Spark (processing), Trino (query engine), MinIO (S3-compatible storage), Iceberg (table format)
+                                    </div>
+                                    <div class="skill-category">
+                                        <strong>Theoretical Knowledge:</strong>
+                                        <ul class="skill-list">
+                                            <li>Data architectures (lakehouse, bronze/silver/gold layers);</li>
+                                            <li>Fundamentals of transactional tables in data lakes (snapshots, manifests, catalogs);</li>
+                                            <li>Data modeling/partitioning and performance (pruning, small files, compaction);</li>
+                                            <li>Best practices for operating on Kubernetes (storage, deployment, security).</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="projeto-section">
+                                <h3 class="projeto-section-title">Nice to Have Skills</h3>
+                                <ul class="projeto-nice-to-have">
+                                    <li>Experience with Airflow and DAG patterns for data pipelines</li>
+                                    <li>Familiarity with dbt and layered analytical modeling</li>
+                                    <li>Experience with observability (logs, metrics, tracing)</li>
+                                    <li>Knowledge of catalogs and governance (e.g., Nessie, Hive Metastore, Glue-like patterns)</li>
+                                    <li>Experience with object storage and S3 tuning (MinIO policies, lifecycle, performance)</li>
+                                </ul>
+                            </div>
+
+                            <div class="projeto-section">
+                                <h3 class="projeto-section-title">Mentors</h3>
+                                <div class="projeto-mentors">
+                                    <span class="mentor-tag">Arthur Alves Melo (@arthrok)</span>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+
+            <!-- Proposal 4 -->
+            <div class="row">
+                <div class="col-12">
+                    <article class="projeto-card">
+                        <div class="projeto-card-header">
+                            <div class="projeto-badge">Proposal 4</div>
+                            <div class="projeto-meta">
+                                <span class="projeto-size">Large (350 hours)</span>
+                                <span class="projeto-difficulty projeto-difficulty-difficult">Difficult</span>
+                            </div>
+                        </div>
+                        <div class="projeto-card-body">
+                            <h2 class="projeto-title">Pipeline for Extraction, Structuring, and Ingestion of Unstructured Data into a Governmental Datalakehouse</h2>
+                            <p class="projeto-description">
+                                A significant portion of relevant government information remains in unstructured documents, such as PDFs, presentations, and technical reports. Although these documents are publicly available, their content remains difficult to access for systematic analysis, integration with analytical pipelines, and reuse in data-driven applications.
+                            </p>
+                            <p class="projeto-description">
+                                This project proposes developing a modular, reprocessable pipeline to ingest unstructured documents into GovHub, combining visual layout analysis, region-based OCR, and semantic enrichment. The pipeline should automatically identify the structural elements of documents (titles, paragraphs, tables, and images), extract textual content in a contextualized manner, and transform it into semi-structured and structured data.
+                            </p>
+                            <p class="projeto-description">
+                                Unlike approaches focused on immediate indexing or search, the main focus of this project is the structuring and persistence of these data in a datalakehouse, organized into well-defined layers (raw, parsed, and enriched), enabling governance, versioning, auditing, and reprocessing. The desired final state is a structured data foundation derived from documents, ready to support analyses, reports, and future analytical or AI-based applications within the GovHub ecosystem.
+                            </p>
+                            
+                            <div class="projeto-section">
+                                <h3 class="projeto-section-title">Expected Outcomes</h3>
+                                <ul class="projeto-outcomes">
+                                    <li>Functional pipeline for ingesting unstructured documents, including layout analysis, region-based OCR, and generation of normalized intermediate structures.</li>
+                                    <li>Structured and enriched data persisted in a datalakehouse, organized into layers, with metadata, versioning, and traceability back to the original document.</li>
+                                    <li>Complete technical documentation of the pipeline, including quality metrics, logs, validation criteria, and guidelines for reprocessing and data model evolution.</li>
+                                </ul>
+                            </div>
+
+                            <div class="projeto-section">
+                                <h3 class="projeto-section-title">Required Skills</h3>
+                                <div class="projeto-skills">
+                                    <div class="skill-category">
+                                        <strong>Languages:</strong> Python
+                                    </div>
+                                    <div class="skill-category">
+                                        <strong>Frameworks/Stacks:</strong> Document processing pipelines, OCR libraries, LLM APIs
+                                    </div>
+                                    <div class="skill-category">
+                                        <strong>Theoretical Knowledge:</strong>
+                                        <ul class="skill-list">
+                                            <li>Unstructured data processing</li>
+                                            <li>OCR concepts and document layout analysis</li>
+                                            <li>Fundamentals of NLP and semantic enrichment</li>
+                                            <li>Principles of data engineering and datalakehouse architectures (layers, versioning, and governance)</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="projeto-section">
+                                <h3 class="projeto-section-title">Nice to Have Skills</h3>
+                                <ul class="projeto-nice-to-have">
+                                    <li>Experience with document layout analysis</li>
+                                    <li>Knowledge of analytical data modeling</li>
+                                    <li>Familiarity with datalakehouse architectures</li>
+                                    <li>Docker and observability practices (logs, metrics, tracing)</li>
+                                    <li>Experience with data governance and auditing</li>
+                                </ul>
+                            </div>
+
+                            <div class="projeto-section">
+                                <h3 class="projeto-section-title">Mentors</h3>
+                                <div class="projeto-mentors">
+                                    <span class="mentor-tag">Mateus de Castro (@mat054)</span>
+                                    <span class="mentor-tag">Davi de Aguiar (@davi-aguiar-vieira)</span>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row g-4 mb-4">
+                <div class="col-lg-3 col-md-6 col-12">
+                    <div class="footer-logo-lab">
+                        <img src="../frontend/assets/img/lab-livre-white.png" alt="Lab Livre Logo">
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-12">
+                    <div class="footer-logo-unb">
+                        <img src="../frontend/assets/img/unb-logo.png" alt="UnB Logo">
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-12">
+                    <div class="footer-contact">
+                        <h5>Contato</h5>
+                        <p class="contact-email">caguiar@unb.br</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-12">
+                    <div class="footer-social">
+                        <h5>Acompanhe nossas redes</h5>
+                        <ul class="social-links">
+                            <li>
+                                <a href="https://www.instagram.com/lab.livre/" class="social-link" target="_blank">
+                                    <img src="../frontend/assets/img/instagram.png" alt="Instagram"
+                                        class="social-icon">
+                                    <span>lab.livre</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.linkedin.com/company/lab-livre/posts/?feedView=all"
+                                    class="social-link" target="_blank">
+                                    <img src="../frontend/assets/img/linkedin.png" alt="LinkedIn"
+                                        class="social-icon">
+                                    <span>Lab-Livre</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/lablivre-unb" class="social-link" target="_blank">
+                                    <img src="../frontend/assets/img/github.png" alt="GitHub" class="social-icon">
+                                    <span>lablivre-unb</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12">
+                    <div class="footer-license">
+                        <div class="cc-icons">
+                            <img src="../frontend/assets/img/cc-by.png" alt="CC BY" class="cc-badge">
+                        </div>
+                        <p class="license-text">
+                            Except where otherwise <a href="#" class="license-link">noted</a>, content on this site is
+                            licensed under a <a href="https://creativecommons.org/licenses/by/4.0/" class="license-link"
+                                target="_blank">Creative Commons Attribution 4.0 International license</a>.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

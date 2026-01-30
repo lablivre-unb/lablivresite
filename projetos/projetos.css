@@ -1,0 +1,341 @@
+/* Projetos Page Section */
+.projetos-page-section {
+    padding: 120px 0;
+    background: #FFFFFF;
+}
+
+.projetos-page-title {
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 1.2;
+    color: #000000;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.projetos-page-subtitle {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.6;
+    color: #666666;
+    margin: 0 0 60px 0;
+    text-align: left;
+    max-width: 800px;
+}
+
+/* Projeto Card */
+.projeto-card {
+    background: #FFFFFF;
+    border: 1px solid #E5E5E5;
+    border-radius: 12px;
+    overflow: hidden;
+    margin-bottom: 40px;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.projeto-card:hover {
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    transform: translateY(-2px);
+}
+
+.projeto-card-header {
+    background-color: #333333;
+    padding: 20px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.projeto-badge {
+    display: inline-block;
+    padding: 6px 16px;
+    border-radius: 999px;
+    background: #FFFFFF;
+    color: #333333;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.projeto-meta {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.projeto-size {
+    font-size: 14px;
+    font-weight: 500;
+    color: #FFFFFF;
+    padding: 4px 12px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 4px;
+}
+
+.projeto-difficulty {
+    display: inline-block;
+    padding: 4px 12px;
+    border-radius: 4px;
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.projeto-difficulty-medium {
+    background: #F9A10E;
+    color: #000000;
+}
+
+.projeto-difficulty-difficult {
+    background: #CF2B6B;
+    color: #FFFFFF;
+}
+
+.projeto-card-body {
+    padding: 40px;
+}
+
+.projeto-title {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 1.3;
+    color: #000000;
+    margin: 0 0 16px 0;
+}
+
+.projeto-subtitle {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.5;
+    color: #666666;
+    margin: 0 0 24px 0;
+    font-style: italic;
+}
+
+.projeto-description {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.7;
+    color: #333333;
+    margin: 0 0 20px 0;
+}
+
+.projeto-description-list {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.7;
+    color: #333333;
+    margin: 0 0 20px 0;
+    padding-left: 24px;
+}
+
+.projeto-description-list li {
+    margin-bottom: 8px;
+}
+
+.projeto-section {
+    margin-top: 32px;
+    padding-top: 32px;
+    border-top: 1px solid #E5E5E5;
+}
+
+.projeto-section:first-of-type {
+    margin-top: 0;
+    padding-top: 0;
+    border-top: none;
+}
+
+.projeto-section-title {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.2;
+    color: #000000;
+    margin: 0 0 16px 0;
+}
+
+.projeto-outcomes {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.projeto-outcomes li {
+    font-size: 16px;
+    line-height: 1.7;
+    color: #333333;
+    margin-bottom: 12px;
+    padding-left: 24px;
+    position: relative;
+}
+
+.projeto-outcomes li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: #5C348B;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.projeto-skills {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.skill-category {
+    font-size: 16px;
+    line-height: 1.7;
+    color: #333333;
+}
+
+.skill-category strong {
+    color: #000000;
+    font-weight: 600;
+}
+
+.skill-list {
+    list-style: none;
+    padding: 0;
+    margin: 8px 0 0 0;
+}
+
+.skill-list li {
+    padding-left: 20px;
+    position: relative;
+    margin-bottom: 6px;
+}
+
+.skill-list li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: #5C348B;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.projeto-nice-to-have {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.projeto-nice-to-have li {
+    font-size: 15px;
+    line-height: 1.6;
+    color: #666666;
+    padding-left: 24px;
+    position: relative;
+}
+
+.projeto-nice-to-have li::before {
+    content: "○";
+    position: absolute;
+    left: 0;
+    color: #999999;
+    font-size: 14px;
+}
+
+.projeto-mentors {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.mentor-tag {
+    display: inline-block;
+    padding: 8px 16px;
+    border-radius: 6px;
+    background: #F7F7F7;
+    color: #333333;
+    font-size: 14px;
+    font-weight: 500;
+    border: 1px solid #E5E5E5;
+}
+
+/* Responsive Projetos Page */
+@media (max-width: 768px) {
+    .projetos-page-section {
+        padding: 80px 20px;
+    }
+
+    .projetos-page-title {
+        font-size: 42px;
+        text-align: center;
+    }
+
+    .projetos-page-subtitle {
+        font-size: 16px;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    .projeto-card-header {
+        padding: 16px 20px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .projeto-card-body {
+        padding: 24px 20px;
+    }
+
+    .projeto-title {
+        font-size: 24px;
+    }
+
+    .projeto-subtitle {
+        font-size: 18px;
+    }
+
+    .projeto-description {
+        font-size: 15px;
+    }
+
+    .projeto-section-title {
+        font-size: 18px;
+    }
+
+    .projeto-meta {
+        width: 100%;
+        justify-content: flex-start;
+    }
+}
+
+@media (max-width: 576px) {
+    .projetos-page-title {
+        font-size: 36px;
+    }
+
+    .projeto-title {
+        font-size: 20px;
+    }
+
+    .projeto-card-header {
+        padding: 14px 16px;
+    }
+
+    .projeto-card-body {
+        padding: 20px 16px;
+    }
+
+    .projeto-badge {
+        font-size: 12px;
+        padding: 4px 12px;
+    }
+
+    .projeto-size,
+    .projeto-difficulty {
+        font-size: 12px;
+        padding: 3px 10px;
+    }
+}
