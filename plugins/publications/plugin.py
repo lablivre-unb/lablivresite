@@ -34,8 +34,9 @@ class PublicationsPlugin(BasePlugin):
                         pub_data['date_formatted'] = str(pub_data['date'])
                 
                 publications.append(pub_data)
-            
-            elif 'projects/' in item.url:
+
+            # Projetos de pesquisa (somente docs/projects/, NUNCA inclui gsoc-projects/)
+            elif 'projects/' in item.url and 'gsoc-projects/' not in item.url:
                 proj_data = item.meta.copy() if item.meta else {}
                 proj_data['url'] = item.url
                 
@@ -79,7 +80,7 @@ class PublicationsPlugin(BasePlugin):
         
         # Sort treinamentos
         treinamentos.sort(key=lambda x: x.get('order', 999))
-        
+
         context['publications'] = publications
         context['projects'] = projects
         context['capacitacao'] = capacitacao

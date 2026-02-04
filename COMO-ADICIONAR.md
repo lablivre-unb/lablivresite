@@ -68,6 +68,72 @@ partner: "Secretaria Nacional de Participação Social"
 
 ---
 
+## Projetos GSoC
+
+### Onde criar:
+```
+docs/gsoc-projects/proposal-N.md
+```
+
+### Estrutura do arquivo:
+
+```yaml
+---
+title: "Título do projeto"
+order: 1                        # define a ordem (Proposal 1, 2, 3…)
+size: "Medium (175 hours)"      # ou "Large (350 hours)"
+difficulty: "Medium"            # ou "Difficult"
+subtitle: "Frase opcional abaixo do título"
+external_link: "https://link-externo.com"      # opcional
+external_label: "Texto do botão externo"       # ex.: "Visitar GovHub"
+
+outcomes:
+  - "Resultado esperado 1"
+  - "Resultado esperado 2"
+
+required_skills:
+  - "Languages: Python, SQL"
+  - "Knowledge: ..."
+  - "Tools: ..."
+
+nice_to_have:
+  - "Skill extra 1"
+  - "Skill extra 2"
+
+mentors:
+  - "Nome do mentor (@github)"
+  - "Outro mentor (@github)"
+---
+
+Texto longo da descrição do projeto em Markdown.
+
+Pode ter vários parágrafos separados por linhas em branco.
+```
+
+### Campos disponíveis:
+
+| Campo            | Obrigatório | Descrição                                                   | Onde aparece no template                         |
+|------------------|-------------|-------------------------------------------------------------|--------------------------------------------------|
+| `title`          | Sim         | Título da proposal                                         | Título do card (`{{ project.title }}`)           |
+| `order`          | Sim         | Ordem de exibição (1, 2, 3…)                              | Define `Proposal {{ ns.idx }}`                   |
+| `size`           | Sim         | Tamanho (ex.: Medium/ Large + horas)                      | Badge de tamanho (`.projeto-size`)               |
+| `difficulty`     | Sim         | Nível (Medium / Difficult)                                | Badge de dificuldade (`.projeto-difficulty-*`)   |
+| `subtitle`       | Não         | Frase logo abaixo do título                               | `{{ project.subtitle }}`                         |
+| `external_link`  | Não         | URL do botão no final do card                             | `href` do botão preto                            |
+| `external_label` | Não         | Texto do botão                                             | `{{ project.external_label }}`                   |
+| `outcomes`       | Não         | Lista de resultados esperados                             | Lista em “Expected Outcomes”                     |
+| `required_skills`| Não         | Lista de habilidades requeridas                           | Seção “Required Skills”                          |
+| `nice_to_have`   | Não         | Lista de habilidades desejáveis                           | Seção “Nice to Have Skills”                      |
+| `mentors`        | Não         | Lista de mentores                                          | Chips com os nomes na seção “Mentors”           |
+
+### Comportamento da página
+
+- A página `docs/projeto-gsoc/index.md` usa o template `projeto-gsoc.html`.
+- O template percorre o `nav` do MkDocs, encontra todas as páginas sob `docs/gsoc-projects/` e monta os cards dinamicamente.
+- O texto **abaixo do frontmatter** de cada `proposal-N.md` é renderizado como parágrafos dentro do card (corpo da descrição).
+
+---
+
 ## Publicações
 
 ### Onde criar:
