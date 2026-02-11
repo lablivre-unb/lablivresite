@@ -1,7 +1,8 @@
 /* Google Summer of Code Page Section */
 .gsoc-page-section {
     padding: 120px 0;
-    background: #FFFFFF; /* page stays white; only Get Started section gets gray background */
+    background: #FFFFFF;
+    /* page stays white; only Get Started section gets gray background */
 }
 
 .gsoc-page-title {
@@ -107,7 +108,8 @@
 .gsoc-step-card {
     background: #FFFFFF;
     border-radius: 12px;
-    padding: 24px 24px 28px; /* steps 1–4: slightly higher cards */
+    padding: 24px 24px 28px;
+    /* steps 1–4: slightly higher cards */
     display: flex;
     flex-direction: column;
     height: 100%;
@@ -177,19 +179,24 @@
     justify-content: center;
     padding: 8px 16px;
     border-radius: 999px;
-    background-color: #000000;
-    color: #FFFFFF;
+    background-color: #F9A10E;
+    color: #000000;
     font-size: 13px;
+    min-width: 140px;
+    align-self: flex-start;
     font-weight: 500;
     text-decoration: none;
     border: none;
+    transition: background 0.3s ease, transform 0.3s ease;
 }
 
 .gsoc-step-button:hover {
-    background-color: #333333;
-    color: #FFFFFF;
+    background-color: #F9A10E;
+    color: #000000;
+    transform: translateY(-3px);
 }
 
+/*
 .gsoc-step-button-secondary {
     background-color: #FFFFFF;
     color: #000000;
@@ -199,11 +206,13 @@
 .gsoc-step-button-secondary:hover {
     background-color: #F3F3F3;
 }
+*/
 
 .gsoc-step-card-final {
     margin-top: 8px;
     padding-top: 18px;
-    padding-bottom: 20px; /* step 5: a bit shorter than steps 1–4 */
+    padding-bottom: 20px;
+    /* step 5: a bit shorter than steps 1–4 */
 }
 
 /* How to start Section */
@@ -235,7 +244,8 @@
 .gsoc-how-video-ratio {
     position: relative;
     width: 100%;
-    padding-bottom: 56.25%; /* 16:9 ratio */
+    padding-bottom: 56.25%;
+    /* 16:9 ratio */
     background: #000000;
     border-radius: 8px;
     overflow: hidden;
