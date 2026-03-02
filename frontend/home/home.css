@@ -363,6 +363,36 @@ body {
         padding: 0 50px 40px;
     }
 
+    /* Ajuste de tipografia dos cards no mobile
+       para garantir espaço para o botão "Saiba mais" */
+    .project-card-front {
+        height: 560px;
+    }
+
+    .project-content {
+        padding: 20px;
+        gap: 10px;
+    }
+
+    .project-title {
+        font-size: 20px;
+    }
+
+    .project-description {
+        font-size: 14px;
+        line-height: 1.4;
+    }
+
+    .project-financing {
+        font-size: 13px;
+        line-height: 1.4;
+    }
+
+    .project-link {
+        font-size: 14px;
+        padding-top: 6px;
+    }
+
     .projects-carousel-wrapper .swiper-button-prev {
         left: -50px;
     }
