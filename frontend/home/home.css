@@ -438,7 +438,7 @@ body {
 /* Training Section */
 .training-section {
     padding: 100px 0;
-    background: #FFFFFF;
+    background: #F7F7F7;
 }
 
 .training-section .row:first-child {
@@ -727,7 +727,7 @@ body {
 
 .capacitacao-section {
     padding: 100px 0;
-    background: #F7F7F7;
+    background: #FFFFFF;
 }
 
 .capacitacao-title {
@@ -858,7 +858,7 @@ body {
 /* News Section */
 .news-section {
     padding: 100px 0;
-    background: #F7F7F7;
+    background: #FFFFFF;
 }
 
 
@@ -1232,12 +1232,12 @@ body {
 }
 
 .wave-1 {
-    background-color: #FFFFFF;
-    /* cor da seção anterior (GSOC) */
+    background-color: #F7F7F7;
+    /* cor da seção anterior (Projetos) */
 }
 
 .wave-2 {
-    background-color: #FFFFFF;
+    background-color: #F7F7F7;
     /* cor da seção anterior (Linhas de Pesquisa) */
 }
 
