@@ -1,0 +1,2 @@
+mkdocs
+-e ./plugins

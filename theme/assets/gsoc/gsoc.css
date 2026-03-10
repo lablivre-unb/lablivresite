@@ -1,0 +1,323 @@
+/* Google Summer of Code Page Section */
+.gsoc-page-section {
+    padding: 120px 0;
+    background: #FFFFFF; /* page stays white; only Get Started section gets gray background */
+}
+
+.gsoc-page-title {
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 1.2;
+    color: #000000;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.gsoc-page-subtitle {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.6;
+    color: #666666;
+    margin: 0 0 60px 0;
+    text-align: left;
+}
+
+.gsoc-subtitle-link {
+    color: #000000;
+    text-decoration: underline;
+    font-weight: 400;
+}
+
+.gsoc-subtitle-link:hover {
+    color: #333333;
+    text-decoration: underline;
+}
+
+.gsoc-what-title {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 1.2;
+    color: #000000;
+    text-align: left;
+    margin: 0 0 40px 0;
+}
+
+.gsoc-content-block {
+    background: #FFFFFF;
+    border-radius: 0;
+    overflow: hidden;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+
+.gsoc-content-header {
+    background-color: #333333;
+    padding: 20px 30px;
+}
+
+.gsoc-content-title {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.2;
+    color: #FFFFFF;
+    margin: 0;
+}
+
+.gsoc-content-body {
+    padding: 30px;
+    flex: 1;
+}
+
+.gsoc-content-text {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.6;
+    color: #000000;
+    margin: 0 0 20px 0;
+}
+
+.gsoc-content-text:last-child {
+    margin-bottom: 0;
+}
+
+/* Get Started Section */
+.gsoc-get-started-section {
+    padding: 120px 0;
+    background: #F7F7F7;
+}
+
+.gsoc-get-started-row {
+    margin-bottom: 30px;
+}
+
+.gsoc-get-started-title {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 1.2;
+    color: #000000;
+    margin: 0;
+}
+
+.gsoc-get-started-grid {
+    margin-bottom: 0;
+}
+
+.gsoc-step-card {
+    background: #FFFFFF;
+    border-radius: 12px;
+    padding: 24px 24px 28px; /* steps 1–4: slightly higher cards */
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.gsoc-step-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 18px;
+}
+
+.gsoc-step-badge {
+    display: inline-block;
+    padding: 4px 10px;
+    border-radius: 999px;
+    background: #FFFFFF;
+    border: 1px solid #DDDDDD;
+    font-size: 12px;
+    font-weight: 500;
+    color: #555555;
+}
+
+.gsoc-step-icon {
+    width: 96px;
+    height: 96px;
+    border-radius: 16px;
+    background: transparent;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.gsoc-step-icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+}
+
+.gsoc-step-title {
+    font-size: 18px;
+    font-weight: 600;
+    color: #000000;
+    margin: 0 0 10px 0;
+}
+
+.gsoc-step-text {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #555555;
+    margin: 0 0 12px 0;
+}
+
+.gsoc-step-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 4px;
+}
+
+.gsoc-step-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 16px;
+    border-radius: 999px;
+    background-color: #000000;
+    color: #FFFFFF;
+    font-size: 13px;
+    font-weight: 500;
+    text-decoration: none;
+    border: none;
+}
+
+.gsoc-step-button:hover {
+    background-color: #333333;
+    color: #FFFFFF;
+}
+
+.gsoc-step-button-secondary {
+    background-color: #FFFFFF;
+    color: #000000;
+    border: 1px solid #DDDDDD;
+}
+
+.gsoc-step-button-secondary:hover {
+    background-color: #F3F3F3;
+}
+
+.gsoc-step-card-final {
+    margin-top: 8px;
+    padding-top: 18px;
+    padding-bottom: 20px; /* step 5: a bit shorter than steps 1–4 */
+}
+
+/* How to start Section */
+.gsoc-how-start-section {
+    padding: 120px 0;
+    background: #FFFFFF;
+}
+
+.gsoc-how-title {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 1.2;
+    color: #000000;
+    margin-bottom: 24px;
+}
+
+.gsoc-how-text {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #333333;
+    margin: 0;
+    max-width: 480px;
+}
+
+.gsoc-how-video-wrapper {
+    width: 100%;
+}
+
+.gsoc-how-video-ratio {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; /* 16:9 ratio */
+    background: #000000;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.gsoc-how-video-ratio iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+/* Responsive GSOC Page Section */
+@media (max-width: 768px) {
+    .gsoc-page-section {
+        padding: 80px 20px;
+    }
+
+    .gsoc-page-title {
+        font-size: 42px;
+        text-align: center;
+    }
+
+    .gsoc-page-subtitle {
+        font-size: 16px;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    .gsoc-what-title {
+        font-size: 36px;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .gsoc-content-header {
+        padding: 15px 20px;
+    }
+
+    .gsoc-content-title {
+        font-size: 20px;
+    }
+
+    .gsoc-content-body {
+        padding: 20px;
+    }
+
+    .gsoc-get-started-title {
+        font-size: 36px;
+    }
+
+    .gsoc-step-card {
+        padding: 22px 18px 24px;
+    }
+
+    .gsoc-step-icon {
+        width: 72px;
+        height: 72px;
+    }
+
+    .gsoc-step-card-final {
+        padding-top: 16px;
+        padding-bottom: 18px;
+    }
+}
+
+@media (max-width: 576px) {
+    .gsoc-get-started-title {
+        font-size: 32px;
+    }
+
+    .gsoc-step-card-header {
+        margin-bottom: 14px;
+    }
+
+    .gsoc-step-title {
+        font-size: 16px;
+    }
+
+    .gsoc-step-text {
+        font-size: 13px;
+    }
+}
+

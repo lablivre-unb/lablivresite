@@ -1,0 +1,119 @@
+{% extends "main.html" %}
+
+{% block extrahead %}
+<link rel="stylesheet" href="{{ base_url }}/assets/gsoc/projeto-gsoc.css">
+{% endblock %}
+
+{% block content %}
+<!-- Projetos GSoC Page -->
+<section class="projetos-page-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h1 class="projetos-page-title">GSoC 2026 Projects</h1>
+                <p class="projetos-page-subtitle">
+                    Explore the project proposals for Google Summer of Code. Each project offers a unique opportunity
+                    to contribute to open source and develop advanced technical skills.
+                </p>
+            </div>
+        </div>
+
+        {% set ns = namespace(idx=0) %}
+        {% for proj_page in nav.pages %}
+        {% if 'gsoc-projects/' in proj_page.url %}
+        {% set ns.idx = ns.idx + 1 %}
+        {% set project = proj_page.meta or {} %}
+        <div class="row">
+            <div class="col-12">
+                <article class="projeto-card">
+                    <div class="projeto-card-header">
+                        <div class="projeto-badge">
+                            {{ project.badge or ("Proposal " ~ ns.idx) }}
+                        </div>
+                        <div class="projeto-meta">
+                            {% if project.size %}
+                            <span class="projeto-size">{{ project.size }}</span>
+                            {% endif %}
+                            {% if project.difficulty %}
+                            <span class="projeto-difficulty 
+                                {% if project.difficulty|lower == 'medium' %}projeto-difficulty-medium{% endif %}
+                                {% if project.difficulty|lower == 'difficult' %}projeto-difficulty-difficult{% endif %}
+                            ">{{ project.difficulty }}</span>
+                            {% endif %}
+                        </div>
+                    </div>
+                    <div class="projeto-card-body">
+                        <h2 class="projeto-title">{{ project.title }}</h2>
+
+                        {% if project.subtitle %}
+                        <p class="projeto-subtitle">{{ project.subtitle }}</p>
+                        {% endif %}
+
+                        <div class="projeto-description">
+                            {{ proj_page.content | safe }}
+                        </div>
+
+                        {% if project.outcomes %}
+                        <div class="projeto-section">
+                            <h3 class="projeto-section-title">Expected Outcomes</h3>
+                            <ul class="projeto-outcomes">
+                                {% for outcome in project.outcomes %}
+                                <li>{{ outcome }}</li>
+                                {% endfor %}
+                            </ul>
+                        </div>
+                        {% endif %}
+
+                        {% if project.required_skills %}
+                        <div class="projeto-section">
+                            <h3 class="projeto-section-title">Required Skills</h3>
+                            <div class="projeto-skills">
+                                {% for skill in project.required_skills %}
+                                <div class="skill-category">{{ skill }}</div>
+                                {% endfor %}
+                            </div>
+                        </div>
+                        {% endif %}
+
+                        {% if project.nice_to_have %}
+                        <div class="projeto-section">
+                            <h3 class="projeto-section-title">Nice to Have Skills</h3>
+                            <ul class="projeto-nice-to-have">
+                                {% for item in project.nice_to_have %}
+                                <li>{{ item }}</li>
+                                {% endfor %}
+                            </ul>
+                        </div>
+                        {% endif %}
+
+                        {% if project.mentors %}
+                        <div class="projeto-section">
+                            <h3 class="projeto-section-title">Mentors</h3>
+                            <div class="projeto-mentors">
+                                {% for mentor in project.mentors %}
+                                <span class="mentor-tag">{{ mentor }}</span>
+                                {% endfor %}
+                            </div>
+                        </div>
+                        {% endif %}
+
+                        {% if project.external_link %}
+                        <div class="mt-3">
+                            <a href="{{ project.external_link }}" class="gsoc-step-button" target="_blank"
+                               rel="noopener noreferrer">
+                                {{ project.external_label or 'Visitar projeto' }}
+                            </a>
+                        </div>
+                        {% endif %}
+                    </div>
+                </article>
+            </div>
+        </div>
+        {% endif %}
+        {% endfor %}
+    </div>
+</section>
+
+{{ page.content }}
+{% endblock %}
+
