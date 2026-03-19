@@ -281,6 +281,10 @@ body {
   background: radial-gradient(circle at 0 0, #ffffff, #000000);
 }
 
+.icon-pill-youtube {
+  background: radial-gradient(circle at 0 0, #ffffff, #FF0000);
+}
+
 .link-texts {
   display: flex;
   flex-direction: column;
