@@ -250,3 +250,12 @@ body {
     font-size: 13px;
   }
 }
+
+/* --- HACK PARA SAFARI / IOS --- */
+/* O formato WebM alpha fica com fundo preto no Safari. */
+/* O blend-mode tira o preto, sendo aplicado só nele. */
+@supports (background: -webkit-named-image(i)) {
+  .zero-video {
+    mix-blend-mode: screen;
+  }
+}
