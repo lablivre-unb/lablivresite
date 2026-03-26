@@ -9,8 +9,20 @@ use_directory_urls: true
 
 plugins:
   - search
-  - publications
-  
+  - publications:
+      collections:
+        - name: publications
+          path: publications/
+          format_date: true
+        - name: projects
+          path: projects/
+          exclude:
+            - gsoc-projects/
+        - name: capacitacao
+          path: capacitacao/
+        - name: treinamentos
+          path: treinamentos/
+
 extra_css:
   - assets/navbar.css
   - assets/footer.css
