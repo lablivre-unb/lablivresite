@@ -151,7 +151,7 @@
         <div class="row g-4" id="publications-container">
             {% for pub in publications %}
             <div class="col-md-4 col-sm-6 col-12 {% if loop.index0 >= 3 %}publicacao-card-hidden{% endif %}">
-                <a href="{{ pub.link }}" target="_blank" class="news-card-link">
+                <a href="{{ base_url }}/{{ pub.url }}" class="news-card-link">
                     <div class="news-card">
                         <div class="news-card-header">
                             <div class="news-card-icon {% if pub.type == 'ebook' %}news-card-icon-book{% endif %}">

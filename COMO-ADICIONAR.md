@@ -9,6 +9,8 @@ Este guia explica como adicionar novos itens (projetos, publicações, treinamen
 - [Linhas de Pesquisa (Treinamentos)](#linhas-de-pesquisa-treinamentos)
 - [Capacitação](#capacitação)
 - [Referência do Template](#referência-do-template)
+- [Instalação e Configuração do Plugin](#instalação-e-configuração-do-plugin)
+- [Como Testar e Executar Localmente](#como-testar-e-executar-localmente)
 
 ---
 
@@ -87,25 +89,29 @@ order: 1
 image: "assets/img/publications/nome-imagem.png"  # Opcional
 type: ebook                                       # Opcional: "ebook" para animação especial
 venue: "Nome do evento/revista"                  # Opcional
+template: publicacao.html                         # Recomendado: renderiza o texto em uma página
 authors:                                          # Opcional
   - "Autor 1"
   - "Autor 2"
 ---
+
+Aqui começa a escrita de **todo o seu artigo** utilizando a flexibilidade do *Markdown*! As informações do cabeçalho não precisam ser repetidas pois entram no topo da tela sozinhas.
 ```
 
 ### Campos disponíveis:
 
 | Campo | Obrigatório | Descrição | Onde aparece no template |
 |-------|-------------|-----------|--------------------------|
-| `title` | Sim | Título da publicação | Linha 183: `{{ pub.title }}` |
-| `date` | Sim | Data (formato: YYYY-MM-DD) | Linha 182: `{{ pub.date_formatted }}` (formatado pelo plugin) |
-| `link` | Sim | URL da publicação | Linha 154: `{{ pub.link }}` |
-| `description` | Sim | Descrição da publicação | Linha 186: `{{ pub.description }}` |
+| `title` | Sim | Título da publicação | Card (`home.html`) e título do artigo (`publicacao.html`) |
+| `date` | Sim | Data (formato: YYYY-MM-DD) | Card (formatado) e subtítulo do artigo (`publicacao.html`) |
+| `link` | Sim | URL da publicação original | Botão "Ler Artigo Original" no rodapé da página |
+| `template`| Recomendado | Usar `publicacao.html` | Informa que ao clicar no item ele abre o artigo formatado |
+| `description` | Sim | Descrição da publicação | Resumo no card da Home |
 | `order` | Não | Ordem de exibição | Usado pelo plugin para ordenar |
-| `image` | Não | Imagem da publicação | Linhas 160, 173: `{{ pub.image }}` |
-| `type` | Não | Se for `"ebook"`, mostra animação especial | Linha 157: `{% if pub.type == 'ebook' %}` |
-| `venue` | Não | Nome do evento/revista (aparece em negrito) | Linha 185: `{{ pub.venue }}` |
-| `authors` | Não | Lista de autores | Não aparece no template, mas pode ser usado futuramente |
+| `image` | Não | Imagem da publicação | Ícone do card e cabeçalho do artigo |
+| `type` | Não | `"ebook"`, mostra animação especial | Animação do Card na Home |
+| `venue` | Não | Nome do evento/revista (em negrito) | Card da Home |
+| `authors` | Não | Lista de autores | Subtítulo do artigo (`publicacao.html`) |
 
 ### Exemplo completo:
 
@@ -119,8 +125,14 @@ authors:
 link: "https://download.fsfe.org/campaigns/pmpc/PMPC-Modernising-with-Free-Software.pt_br.pdf"
 image: "assets/img/publications/dinheiropublico-publication.png"
 order: 2
+template: publicacao.html
 description: "Tradução para o português brasileiro da publicação da FSFE."
 ---
+
+## Modernização Exige Software Livre
+
+A transição para um governo digital aberto...
+Aqui você pode usar a sintaxe **Markdown** para desenvolver ou sumarizar os pontos da publicação!
 ```
 
 ### Referência no template:
@@ -264,7 +276,7 @@ links:
    - `{% for item in treinamentos %}` - Treinamentos
    - `{% for item in capacitacao %}` - Capacitação
 
-3. **Não precisa especificar template:** Os arquivos `.md` não precisam ter `template:` no frontmatter. O plugin detecta automaticamente pela URL (pasta onde está o arquivo).
+3. **Uso de Templates:** Para visualizar arquivos Markdown como páginas completas e bem formatadas em postagens (como no caso das **Publicações**), adicione `template: publicacao.html` ao frontmatter. Se omitido, o plugin pode detectar as urls com uso interno das macros, mas sem estilo de blog nativo.
 
 ### Como verificar quais campos usar:
 
@@ -280,6 +292,46 @@ links:
 - ✅ **Imagens:** Coloque as imagens em `theme/assets/img/` ou `docs/assets/img/`
 - ✅ **Links:** Use `link` para um único link ou `links` para múltiplos links (apenas em capacitação)
 - ✅ **Data:** Para publicações, a data é formatada automaticamente pelo plugin (ex: "Janeiro de 2025")
+
+---
+
+## Instalação e Configuração do Plugin
+
+O plugin responsável por catalogar as pastas (`publications`, `projects`, `capacitacao`, `treinamentos`) foi desenvolvido especificamente para o LabLivre (ambiente local). Ele injeta todo o conteúdo nas tags do tema automaticamente.
+
+### 1. Estrutura de Arquivos Obrigatória
+Certifique-se de que a pasta do plugin não seja apagada da raiz do projeto MkDocs:
+```text
+plugins/
+└── publications/
+    ├── __init__.py
+    └── plugin.py
+```
+
+### 2. Habilitação no `mkdocs.yml`
+Para o MkDocs reconhecer a existência do script e transformá-lo nos cards HTML, o arquivo principal de configuração declara a ativação do plugin:
+
+```yaml
+plugins:
+  - search
+  - publications: # <-- Nosso plugin local
+      collections:
+        - name: publications
+          path: publications/
+          format_date: true
+        - name: projects
+          path: projects/
+          exclude:
+            - gsoc-projects/
+        - name: capacitacao
+          path: capacitacao/
+        - name: treinamentos
+          path: treinamentos/
+```
+
+- **collections**: Para criar novas vitrines dinâmicas para o site, basta adicionar um `name` (variável recebida no HTML via Jinja2) e o `path` correspondente (pasta oficial localizada dentro de `docs/` onde ficam os metadados do `.md`).
+- **format_date**: Traduz datas numéricas do Frontmatter para texto formatado em português (Ex: "Julho de 2025").
+- **exclude**: Lista de strings de diretórios que o plugin *não deve* registrar para não invadir outros domínios sem a formatação prevista.
 
 ---
 
@@ -299,6 +351,29 @@ description: "Descrição do meu projeto"
 ---
 ```
 3. Pronto! O projeto aparecerá automaticamente na home.
+
+---
+
+## Como Testar e Executar Localmente
+
+Para visualizar suas alterações (como a adição de novas publicações e projetos) na prática antes de aplicá-las em produção, você deve testar o sistema na sua máquina.
+
+### 1. Instalação das Dependências
+Na raiz do projeto (mesma pasta onde está o `mkdocs.yml`), execute o comando para instalar as ferramentas essenciais via gerenciador de pacotes do Python:
+
+```bash
+pip install -r requirements.txt
+```
+
+### 2. Rodando o Servidor de Desenvolvimento
+Com as dependências instaladas, inicialize localmente a aplicação com:
+
+```bash
+mkdocs serve
+```
+
+Pronto! Abra o seu navegador no link que aparecer no terminal (geralmente [http://127.0.0.1:8000/](http://127.0.0.1:8000/)).
+Graças ao *Live Reload* nativo do framework, qualquer edição que você realizar e salvar nos arquivos Markdown será automaticamente recarregada no navegador, facilitando a visualização rápida e progressiva!
 
 ---
 
