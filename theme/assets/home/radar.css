@@ -1,0 +1,365 @@
+/* ============================================================
+   Tech Radar Section — LabLivre
+   Inspired by Thoughtworks Technology Radar
+   ============================================================ */
+
+/* --- Section Wrapper --- */
+.radar-section {
+    padding: 100px 0;
+    background: #1a0d2e;
+    position: relative;
+    overflow: hidden;
+}
+
+.radar-section::before {
+    content: '';
+    position: absolute;
+    top: -200px;
+    left: -200px;
+    width: 600px;
+    height: 600px;
+    background: radial-gradient(circle, rgba(92, 52, 139, 0.3) 0%, transparent 70%);
+    pointer-events: none;
+}
+
+.radar-section::after {
+    content: '';
+    position: absolute;
+    bottom: -200px;
+    right: -200px;
+    width: 600px;
+    height: 600px;
+    background: radial-gradient(circle, rgba(23, 206, 230, 0.15) 0%, transparent 70%);
+    pointer-events: none;
+}
+
+/* --- Header --- */
+.radar-header {
+    text-align: center;
+    margin-bottom: 60px;
+    position: relative;
+    z-index: 2;
+}
+
+.radar-eyebrow {
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: var(--primary-02);
+    margin-bottom: 16px;
+}
+
+.radar-title {
+    font-size: 48px;
+    font-weight: 700;
+    color: #ffffff;
+    margin: 0 0 16px 0;
+    line-height: 1.15;
+}
+
+.radar-title span {
+    background: linear-gradient(90deg, var(--primary-01), var(--primary-02));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.radar-subtitle {
+    font-size: 16px;
+    color: rgba(255,255,255,0.55);
+    max-width: 560px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+/* --- Layout: radar + legend side by side --- */
+.radar-layout {
+    display: flex;
+    align-items: flex-start;
+    gap: 48px;
+    position: relative;
+    z-index: 2;
+}
+
+/* --- SVG Radar Canvas --- */
+.radar-canvas-wrapper {
+    flex: 0 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#radar-svg {
+    display: block;
+    max-width: 100%;
+}
+
+/* --- Quadrant Labels on SVG --- */
+.radar-quadrant-label {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    pointer-events: none;
+    user-select: none;
+}
+
+/* --- Blip circles --- */
+.radar-blip {
+    cursor: pointer;
+    transition: transform 0.2s ease;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+
+.radar-blip:hover {
+    transform: scale(1.4);
+}
+
+/* --- Tooltip --- */
+.radar-tooltip {
+    position: fixed;
+    background: #ffffff;
+    color: #111;
+    border-radius: 10px;
+    padding: 14px 18px;
+    font-size: 13px;
+    line-height: 1.5;
+    max-width: 260px;
+    box-shadow: 0 12px 40px rgba(0,0,0,0.35);
+    pointer-events: none;
+    opacity: 0;
+    transform: translateY(6px);
+    transition: opacity 0.2s ease, transform 0.2s ease;
+    z-index: 9999;
+}
+
+.radar-tooltip.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.radar-tooltip-name {
+    font-weight: 700;
+    font-size: 14px;
+    margin-bottom: 2px;
+    color: #111;
+}
+
+.radar-tooltip-ring {
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 6px;
+}
+
+.radar-tooltip-ring.adopt  { color: #17CEE6; }
+.radar-tooltip-ring.trial  { color: #F9A10E; }
+.radar-tooltip-ring.assess { color: #CF2B6B; }
+.radar-tooltip-ring.hold   { color: #9e9e9e; }
+
+.radar-tooltip-desc {
+    color: #555;
+    font-size: 12px;
+}
+
+.radar-tooltip-arrow {
+    position: absolute;
+    bottom: -8px;
+    left: 20px;
+    width: 0;
+    height: 0;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-top: 8px solid #ffffff;
+}
+
+/* --- Right Panel: Quadrant legend tabs --- */
+.radar-legend {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    min-width: 0;
+}
+
+.radar-legend-tabs {
+    display: flex;
+    gap: 0;
+    margin-bottom: 16px;
+    border-bottom: 2px solid rgba(255,255,255,0.08);
+}
+
+.radar-legend-tab {
+    flex: 1;
+    padding: 10px 8px;
+    background: transparent;
+    border: none;
+    border-bottom: 3px solid transparent;
+    margin-bottom: -2px;
+    cursor: pointer;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.4);
+    transition: color 0.2s ease, border-color 0.2s ease;
+    white-space: nowrap;
+}
+
+.radar-legend-tab:hover {
+    color: rgba(255,255,255,0.75);
+}
+
+.radar-legend-tab.active {
+    color: #ffffff;
+    border-bottom-color: currentColor;
+}
+
+.radar-legend-tab[data-quadrant="pesquisa"].active    { border-bottom-color: #17CEE6; color: #17CEE6; }
+.radar-legend-tab[data-quadrant="tecnicas"].active    { border-bottom-color: #F9A10E; color: #F9A10E; }
+.radar-legend-tab[data-quadrant="tecnologias"].active { border-bottom-color: #CF2B6B; color: #CF2B6B; }
+.radar-legend-tab[data-quadrant="devops"].active      { border-bottom-color: #5C348B; color: #a78bfa; }
+
+/* Hover em tab já ativo → mantém cor do quadrante, não vira branco */
+.radar-legend-tab[data-quadrant="pesquisa"].active:hover    { color: #4de8f7; }
+.radar-legend-tab[data-quadrant="tecnicas"].active:hover    { color: #ffc033; }
+.radar-legend-tab[data-quadrant="tecnologias"].active:hover { color: #e85585; }
+.radar-legend-tab[data-quadrant="devops"].active:hover      { color: #c4b5fd; }
+
+/* --- Quadrant Panels --- */
+.radar-quadrant-panel {
+    display: none;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.radar-quadrant-panel.active {
+    display: flex;
+}
+
+/* --- Ring group inside panel --- */
+.radar-ring-group {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.radar-ring-label {
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 4px;
+}
+
+.radar-ring-label.adopt  { color: #17CEE6; }
+.radar-ring-label.trial  { color: #F9A10E; }
+.radar-ring-label.assess { color: #CF2B6B; }
+.radar-ring-label.hold   { color: rgba(255,255,255,0.35); }
+
+/* --- Blip list items --- */
+.radar-blip-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 8px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.15s ease;
+}
+
+.radar-blip-item:hover {
+    background: rgba(255,255,255,0.06);
+}
+
+.radar-blip-item.highlighted-list {
+    background: rgba(255,255,255,0.1);
+}
+
+.radar-blip-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+.radar-blip-name {
+    font-size: 13px;
+    color: rgba(255,255,255,0.8);
+    line-height: 1.3;
+    transition: color 0.15s ease;
+}
+
+.radar-blip-item:hover .radar-blip-name {
+    color: #ffffff;
+}
+
+/* --- Ring Legend at bottom --- */
+.radar-ring-legend {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 40px;
+    padding-top: 32px;
+    border-top: 1px solid rgba(255,255,255,0.08);
+    justify-content: center;
+    position: relative;
+    z-index: 2;
+}
+
+.radar-ring-legend-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.radar-ring-legend-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+.radar-ring-legend-text {
+    font-size: 12px;
+    font-weight: 600;
+    color: rgba(255,255,255,0.55);
+    letter-spacing: 0.5px;
+}
+
+/* --- Responsive --- */
+@media (max-width: 992px) {
+    .radar-layout {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .radar-legend {
+        width: 100%;
+    }
+
+    .radar-title {
+        font-size: 36px;
+    }
+}
+
+@media (max-width: 600px) {
+    .radar-section {
+        padding: 60px 0;
+    }
+
+    .radar-title {
+        font-size: 28px;
+    }
+
+    .radar-legend-tab {
+        font-size: 9px;
+        padding: 8px 4px;
+    }
+
+    #radar-svg {
+        width: 320px;
+        height: 320px;
+    }
+}

@@ -28,11 +28,13 @@ extra_css:
   - assets/footer.css
   - assets/home/home.css
   - assets/home/hero-carousel.css
+  - assets/home/radar.css
   
 extra_javascript:
   - assets/navbar.js
   - assets/home/home.js
   - assets/home/hero-carousel.js
+  - assets/home/radar.js
 
 watch:
   - theme
