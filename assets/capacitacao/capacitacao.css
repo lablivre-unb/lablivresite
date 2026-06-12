@@ -1,0 +1,215 @@
+/* ─── Hero ────────────────────────────────────────────────────────────────── */
+.capacitacao-page-hero {
+    background: linear-gradient(135deg, #422556 0%, #5C348B 100%);
+    padding: 90px 0 0;
+    color: #ffffff;
+}
+
+.capacitacao-page-title {
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 1.1;
+    margin-bottom: 24px;
+    color: #ffffff;
+}
+
+.capacitacao-page-subtitle {
+    font-size: 18px;
+    line-height: 1.7;
+    color: rgba(255, 255, 255, 0.88);
+    max-width: 620px;
+    margin: 0;
+}
+
+/* ─── Wave hero → branco ─────────────────────────────────────────────────── */
+.capacitacao-page-wave {
+    background: linear-gradient(135deg, #422556 0%, #5C348B 100%);
+    line-height: 0;
+    margin: 0;
+}
+
+.capacitacao-page-wave svg {
+    display: block;
+    width: 100%;
+    height: 60px;
+}
+
+/* ─── Seção de Programas ─────────────────────────────────────────────────── */
+.capacitacao-programs-section {
+    padding: 80px 0 100px;
+    background: #ffffff;
+}
+
+/* ─── Card de programa ────────────────────────────────────────────────────── */
+.capacitacao-program-card {
+    background: #F7F7F7;
+    border-radius: 16px;
+    padding: 40px;
+    position: relative;
+    transition: box-shadow 0.3s ease;
+}
+
+.capacitacao-program-card:hover {
+    box-shadow: 0 8px 32px rgba(66, 37, 86, 0.1);
+}
+
+.capacitacao-program-featured {
+    background: #ffffff;
+    border: 2px solid #F9A10E;
+}
+
+/* ─── Badge ────────────────────────────────────────────────────────────────── */
+.capacitacao-badge {
+    display: inline-block;
+    background: #F9A10E;
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.6px;
+    text-transform: uppercase;
+    padding: 5px 14px;
+    border-radius: 20px;
+    margin-bottom: 24px;
+}
+
+/* ─── Logo ────────────────────────────────────────────────────────────────── */
+.capacitacao-program-logo-wrapper {
+    height: 220px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.capacitacao-program-logo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.capacitacao-program-logo.capacitacao-logo-contain {
+    object-fit: contain;
+    padding: 24px;
+}
+
+/* ─── Corpo do card ────────────────────────────────────────────────────────── */
+.capacitacao-program-body {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+.capacitacao-program-title {
+    font-size: 28px;
+    font-weight: 700;
+    color: #422556;
+    margin: 0 0 14px;
+    line-height: 1.2;
+}
+
+.capacitacao-program-description {
+    font-size: 16px;
+    line-height: 1.7;
+    color: #333333;
+    margin: 0 0 20px;
+}
+
+/* ─── Lista de destaques ─────────────────────────────────────────────────── */
+.capacitacao-highlights-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.capacitacao-highlights-list li {
+    font-size: 15px;
+    font-weight: 500;
+    color: #222222;
+    padding: 8px 16px;
+    background: #F7F7F7;
+    border-radius: 8px;
+    border-left: 3px solid #F9A10E;
+}
+
+.capacitacao-program-featured .capacitacao-highlights-list li {
+    background: #FFF8EC;
+}
+
+/* ─── Financiamento ─────────────────────────────────────────────────────── */
+.capacitacao-program-financing {
+    font-size: 14px;
+    color: #555555;
+    margin: 0 0 20px;
+    line-height: 1.5;
+}
+
+.capacitacao-program-financing strong {
+    color: #222222;
+}
+
+/* ─── Links ─────────────────────────────────────────────────────────────── */
+.capacitacao-program-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 4px;
+}
+
+.capacitacao-program-link {
+    display: inline-block;
+    font-size: 15px;
+    font-weight: 600;
+    color: #422556;
+    text-decoration: none;
+    border-bottom: 2px solid #F9A10E;
+    padding-bottom: 2px;
+    transition: opacity 0.2s ease;
+}
+
+.capacitacao-program-link:hover {
+    opacity: 0.75;
+    color: #422556;
+}
+
+/* ─── Responsivo ─────────────────────────────────────────────────────────── */
+@media (max-width: 991px) {
+    .capacitacao-program-logo-wrapper {
+        height: 180px;
+    }
+}
+
+@media (max-width: 768px) {
+    .capacitacao-page-hero {
+        padding: 60px 0 0;
+    }
+
+    .capacitacao-page-title {
+        font-size: 36px;
+    }
+
+    .capacitacao-page-subtitle {
+        font-size: 16px;
+    }
+
+    .capacitacao-programs-section {
+        padding: 60px 0 80px;
+    }
+
+    .capacitacao-program-card {
+        padding: 24px;
+    }
+
+    .capacitacao-program-title {
+        font-size: 22px;
+    }
+
+    .capacitacao-program-logo-wrapper {
+        height: 160px;
+    }
+}
