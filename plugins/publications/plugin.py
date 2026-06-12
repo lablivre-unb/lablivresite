@@ -41,8 +41,8 @@ class PublicationsPlugin(BasePlugin):
                 excludes = col_conf.get('exclude', [])
                 format_date = col_conf.get('format_date', False)
 
-                # Check if the path matches and is not excluded
-                if path in item.url:
+                # Check if the path matches, is not excluded, and is not the collection index page
+                if path in item.url and item.url != path:
                     if any(exclude in item.url for exclude in excludes):
                         continue
                     
