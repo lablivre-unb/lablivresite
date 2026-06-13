@@ -1,0 +1,410 @@
+/* ─── Hero ────────────────────────────────────────────────────────────────── */
+.ria-hero {
+    width: 100%;
+    max-height: 520px;
+    overflow: hidden;
+    display: block;
+    line-height: 0;
+}
+
+.ria-hero-img {
+    width: 100%;
+    height: 520px;
+    object-fit: cover;
+    object-position: center top;
+    display: block;
+}
+
+/* ─── Intro ───────────────────────────────────────────────────────────────── */
+.ria-intro {
+    background: #ffffff;
+    padding: 72px 0 56px;
+}
+
+.ria-title {
+    font-size: 42px;
+    font-weight: 700;
+    color: #422556;
+    margin-bottom: 12px;
+    line-height: 1.15;
+}
+
+.ria-lead {
+    font-size: 22px;
+    font-weight: 600;
+    color: #F9A10E;
+    margin-bottom: 24px;
+}
+
+.ria-text {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #333333;
+    margin-bottom: 16px;
+}
+
+.ria-cta-wrapper {
+    margin-top: 40px;
+}
+
+.ria-btn-inscricao {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: #F9A10E;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 800;
+    text-decoration: none;
+    padding: 20px 52px;
+    border-radius: 50px;
+    letter-spacing: 0.3px;
+    transition: background 0.25s ease, transform 0.2s ease, box-shadow 0.25s ease;
+    box-shadow: 0 6px 28px rgba(249, 161, 14, 0.5);
+    animation: ria-pulse 2.4s ease-in-out infinite;
+}
+
+.ria-btn-inscricao:hover {
+    background: #e0900a;
+    color: #ffffff;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 36px rgba(249, 161, 14, 0.6);
+    animation: none;
+}
+
+@keyframes ria-pulse {
+    0%, 100% { box-shadow: 0 6px 28px rgba(249, 161, 14, 0.5); }
+    50%       { box-shadow: 0 6px 40px rgba(249, 161, 14, 0.85); }
+}
+
+/* ─── Destaques ───────────────────────────────────────────────────────────── */
+.ria-highlights-section {
+    background: linear-gradient(135deg, #422556 0%, #5C348B 100%);
+    padding: 64px 0;
+}
+
+.ria-highlight-card {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    padding: 32px 20px;
+    text-align: center;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    backdrop-filter: blur(4px);
+    transition: background 0.25s ease;
+}
+
+.ria-highlight-card:hover {
+    background: rgba(255, 255, 255, 0.18);
+}
+
+.ria-highlight-icon {
+    font-size: 36px;
+    display: block;
+}
+
+.ria-highlight-label {
+    font-size: 15px;
+    color: #ffffff;
+    line-height: 1.5;
+    margin: 0;
+}
+
+.ria-highlight-label strong {
+    color: #F9A10E;
+}
+
+/* ─── Cards seção ─────────────────────────────────────────────────────────── */
+.ria-cards-section {
+    background: #F7F7F7;
+    padding: 72px 0;
+}
+
+.ria-card {
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 40px;
+    height: 100%;
+    box-shadow: 0 2px 16px rgba(66, 37, 86, 0.07);
+}
+
+.ria-card-title {
+    font-size: 20px;
+    font-weight: 700;
+    color: #422556;
+    margin-bottom: 24px;
+    line-height: 1.3;
+}
+
+.ria-checklist {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.ria-checklist li {
+    font-size: 15px;
+    line-height: 1.6;
+    color: #333333;
+    padding: 10px 14px;
+    background: #F7F7F7;
+    border-radius: 8px;
+    border-left: 3px solid #F9A10E;
+}
+
+.ria-card-subtitle {
+    font-size: 15px;
+    font-weight: 700;
+    color: #422556;
+    margin: 0 0 12px;
+}
+
+.ria-req-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.ria-req-list li {
+    font-size: 14px;
+    color: #444444;
+    padding: 8px 12px 8px 20px;
+    position: relative;
+    line-height: 1.5;
+}
+
+.ria-req-list li::before {
+    content: '•';
+    position: absolute;
+    left: 8px;
+    color: #F9A10E;
+    font-weight: 700;
+}
+
+/* ─── Steps ───────────────────────────────────────────────────────────────── */
+.ria-steps {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-bottom: 24px;
+}
+
+.ria-step {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+}
+
+.ria-step-num {
+    flex-shrink: 0;
+    width: 36px;
+    height: 36px;
+    background: linear-gradient(135deg, #422556 0%, #5C348B 100%);
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 700;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ria-step p {
+    margin: 0;
+    font-size: 15px;
+    color: #333333;
+    line-height: 1.6;
+    padding-top: 6px;
+}
+
+.ria-timeline-note {
+    font-size: 14px;
+    color: #555555;
+    line-height: 1.6;
+    margin: 0 0 12px;
+    padding: 12px 16px;
+    background: #F7F7F7;
+    border-radius: 8px;
+}
+
+.ria-email-note {
+    font-size: 14px;
+    color: #555555;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* ─── Turmas ──────────────────────────────────────────────────────────────── */
+.ria-turmas-section {
+    background: #ffffff;
+    padding: 72px 0;
+}
+
+.ria-section-title {
+    font-size: 32px;
+    font-weight: 700;
+    color: #422556;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.ria-turma-card {
+    background: linear-gradient(135deg, #422556 0%, #5C348B 100%);
+    border-radius: 16px;
+    padding: 40px 32px;
+    text-align: center;
+    box-shadow: 0 4px 20px rgba(66, 37, 86, 0.2);
+    transition: transform 0.25s ease;
+}
+
+.ria-turma-card:hover {
+    transform: translateY(-4px);
+}
+
+.ria-turma-badge {
+    display: inline-block;
+    background: #F9A10E;
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    padding: 6px 20px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+.ria-turma-days {
+    font-size: 17px;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.92);
+    margin: 0;
+    line-height: 1.5;
+}
+
+/* ─── FAQ ─────────────────────────────────────────────────────────────────── */
+.ria-faq-section {
+    background: #F7F7F7;
+    padding: 72px 0 80px;
+}
+
+.ria-faq-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    margin-bottom: 40px;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 2px 16px rgba(66, 37, 86, 0.06);
+}
+
+.ria-faq-item {
+    background: #ffffff;
+    padding: 24px 28px;
+    border-bottom: 1px solid #F0F0F0;
+}
+
+.ria-faq-item:last-child {
+    border-bottom: none;
+}
+
+.ria-faq-q {
+    font-size: 15px;
+    font-weight: 700;
+    color: #422556;
+    margin: 0 0 8px;
+    line-height: 1.4;
+}
+
+.ria-faq-a {
+    font-size: 15px;
+    color: #444444;
+    margin: 0;
+    line-height: 1.7;
+}
+
+.ria-contact-note {
+    font-size: 15px;
+    color: #555555;
+    text-align: center;
+    line-height: 1.7;
+}
+
+.ria-email-link {
+    color: #422556;
+    font-weight: 600;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+.ria-email-link:hover {
+    color: #F9A10E;
+}
+
+/* ─── Responsivo ──────────────────────────────────────────────────────────── */
+@media (max-width: 768px) {
+    .ria-hero-img {
+        height: 280px;
+    }
+
+    .ria-intro {
+        padding: 48px 0 40px;
+    }
+
+    .ria-title {
+        font-size: 28px;
+    }
+
+    .ria-lead {
+        font-size: 18px;
+    }
+
+    .ria-btn-inscricao {
+        font-size: 15px;
+        padding: 14px 28px;
+    }
+
+    .ria-highlights-section {
+        padding: 48px 0;
+    }
+
+    .ria-highlight-card {
+        padding: 24px 16px;
+    }
+
+    .ria-highlight-icon {
+        font-size: 28px;
+    }
+
+    .ria-highlight-label {
+        font-size: 13px;
+    }
+
+    .ria-cards-section,
+    .ria-turmas-section,
+    .ria-faq-section {
+        padding: 48px 0;
+    }
+
+    .ria-card {
+        padding: 28px 24px;
+    }
+
+    .ria-section-title {
+        font-size: 26px;
+    }
+
+    .ria-faq-item {
+        padding: 20px 20px;
+    }
+}

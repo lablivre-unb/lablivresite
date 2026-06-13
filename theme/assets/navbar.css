@@ -94,6 +94,21 @@
     bottom: 0;
 }
 
+.nav-link-highlight {
+    background: #F9A10E;
+    color: #422556 !important;
+    font-weight: 700;
+    border-radius: 4px;
+}
+
+.nav-link-highlight::after {
+    background: rgba(0, 0, 0, 0.15);
+}
+
+.nav-link-highlight:hover {
+    color: #ffffff !important;
+}
+
 /* Hamburger Button */
 .hamburger {
     display: none;
