@@ -354,4 +354,49 @@
     }
 }
 
+/* ─── Slide Residência em IA ─────────────────────────────────────────────── */
+.hero-slide-bg-residencia-ia {
+    background-image: url('../img/header_residencia_tic.jpeg');
+    background-color: #2a1040;
+    background-size: cover;
+    background-position: center top;
+    filter: blur(0.8px) brightness(0.35) contrast(1.2) saturate(1.1);
+    transform: scale(1.05);
+}
 
+.hero-slide.hero-slide-residencia-ia .hero-overlay {
+    background: linear-gradient(
+        135deg,
+        rgba(66, 37, 86, 0.72) 0%,
+        rgba(92, 52, 139, 0.65) 40%,
+        rgba(249, 161, 14, 0.15) 100%
+    );
+}
+
+/* Badge de inscrições abertas */
+.hero-badge-text {
+    display: inline-block;
+    background: #F9A10E;
+    color: #1a0a2e !important;
+    font-size: 14px !important;
+    font-weight: 800 !important;
+    letter-spacing: 0.4px;
+    padding: 6px 16px;
+    border-radius: 20px;
+    text-shadow: none !important;
+    align-self: flex-start;
+}
+
+/* Variante laranja do botão hero */
+.hero-btn-orange {
+    background-color: #F9A10E;
+    border-color: #F9A10E;
+    color: #1a0a2e;
+    font-weight: 700;
+}
+
+.hero-btn-orange:hover {
+    background-color: #e0900a;
+    border-color: #e0900a;
+    color: #1a0a2e;
+}
