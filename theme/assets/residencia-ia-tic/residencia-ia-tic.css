@@ -77,6 +77,29 @@
     50%       { box-shadow: 0 6px 40px rgba(249, 161, 14, 0.85); }
 }
 
+.ria-aviso-encerrado {
+    display: inline-block;
+    background: #F2F2F2;
+    border: 1px solid #E2E2E2;
+    border-radius: 16px;
+    padding: 24px 32px;
+    max-width: 560px;
+}
+
+.ria-aviso-titulo {
+    font-size: 20px;
+    font-weight: 800;
+    color: #555555;
+    margin: 0 0 6px;
+}
+
+.ria-aviso-texto {
+    font-size: 15px;
+    color: #666666;
+    line-height: 1.6;
+    margin: 0;
+}
+
 /* ─── Destaques ───────────────────────────────────────────────────────────── */
 .ria-highlights-section {
     background: linear-gradient(135deg, #422556 0%, #5C348B 100%);
@@ -331,6 +354,10 @@
     color: #444444;
     margin: 0;
     line-height: 1.7;
+}
+
+.ria-faq-a + .ria-faq-a {
+    margin-top: 12px;
 }
 
 .ria-contact-note {
