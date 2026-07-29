@@ -1,0 +1,11 @@
+services:
+  site:
+    build: .
+    container_name: lablivresite
+    ports:
+      - "8080:80"
+    # Bind mounts para desenvolvimento: editar os arquivos locais reflete
+    # no navegador sem precisar reconstruir a imagem (basta recarregar).
+    volumes:
+      - ./index.html:/usr/share/nginx/html/index.html:ro
+      - ./frontend:/usr/share/nginx/html/frontend:ro
