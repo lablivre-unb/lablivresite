@@ -11,8 +11,11 @@
 }
 
 /* Logos */
-.footer-logo-lab {
-    margin-bottom: 20px;
+.footer-logos {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 40px;
 }
 
 .footer-logo-lab img {
@@ -21,8 +24,21 @@
     filter: brightness(0) invert(1);
 }
 
-.footer-logo-unb {
-    margin-bottom: 20px;
+/* Assinatura auxiliar UnB - FCTE (arquivo já em branco; o filtro mantém
+   o padrão das demais marcas caso o arquivo seja trocado por um colorido) */
+.footer-logo-fcte {
+    min-width: 0;
+    max-width: 100%;
+}
+
+/* height/width auto + limites: reduz proporcionalmente em telas estreitas,
+   já que esta assinatura é bem mais larga que as outras marcas */
+.footer-logo-fcte img {
+    height: auto;
+    width: auto;
+    max-height: 40px;
+    max-width: 100%;
+    filter: brightness(0) invert(1);
 }
 
 .footer-logo-unb img {
@@ -136,11 +152,16 @@
         text-align: center;
     }
     
+    .footer-logos {
+        justify-content: center;
+        gap: 28px;
+    }
+
     .footer-logo-lab,
+    .footer-logo-fcte,
     .footer-logo-unb {
         display: flex;
         justify-content: center;
-        margin-bottom: 20px;
     }
     
     .footer-contact,

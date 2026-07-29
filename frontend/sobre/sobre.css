@@ -397,9 +397,41 @@
     padding: 0 40px;
 }
 
+/* Foto da coordenação, ao lado dos dados de contato */
+.contact-foto-wrapper {
+    padding: 0 0 0 40px;
+}
+
+.contact-foto {
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.15);
+}
+
+/* A foto é quase quadrada, então o object-fit sozinho não aproxima o rosto:
+   o scale/translate centraliza o rosto dentro do círculo. */
+.contact-foto img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    transform: scale(1.5) translate(2%, 16%);
+}
+
 @media (max-width: 992px) {
     .contact-wrapper {
         padding: 0 20px;
+    }
+
+    .contact-foto-wrapper {
+        padding: 0 0 0 20px;
+    }
+
+    .contact-foto {
+        width: 140px;
+        height: 140px;
     }
     
     .team-content-wrapper {
