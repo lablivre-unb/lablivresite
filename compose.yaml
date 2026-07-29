@@ -1,0 +1,11 @@
+services:
+  site:
+    build: .
+    container_name: lablivresite
+    ports:
+      - "8000:8000"
+    # Monta o projeto inteiro (e não arquivos avulsos: bind mount de arquivo
+    # único quebra quando o editor recria o arquivo). Somente leitura: o
+    # mkdocs serve monta o site em memória, não escreve no repositório.
+    volumes:
+      - ./:/app:ro
