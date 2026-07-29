@@ -8,8 +8,11 @@
 /* Footer usa .container do Bootstrap para alinhar com o conteúdo */
 
 /* Logos */
-.footer-logo-lab {
-    margin-bottom: 20px;
+.footer-logos {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 40px;
 }
 
 .footer-logo-lab img {
@@ -17,8 +20,20 @@
     width: auto;
 }
 
-.footer-logo-unb {
-    margin-bottom: 20px;
+/* Assinatura da FCTE: o arquivo já está em branco, sem a marca da UnB,
+   que aparece uma única vez na última posição. height/width auto + limites
+   reduzem proporcionalmente em telas estreitas, pois é bem mais larga. */
+.footer-logo-fcte {
+    min-width: 0;
+    max-width: 100%;
+}
+
+.footer-logo-fcte img {
+    height: auto;
+    width: auto;
+    max-height: 40px;
+    max-width: 100%;
+    filter: brightness(0) invert(1);
 }
 
 .footer-logo-unb img {
@@ -132,11 +147,16 @@
         text-align: center;
     }
     
+    .footer-logos {
+        justify-content: center;
+        gap: 28px;
+    }
+
     .footer-logo-lab,
+    .footer-logo-fcte,
     .footer-logo-unb {
         display: flex;
         justify-content: center;
-        margin-bottom: 20px;
     }
     
     .footer-contact,
