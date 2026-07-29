@@ -1,0 +1,119 @@
+.publication-container {
+    padding: 4rem 15px;
+    background-color: #f8f9fa;
+    min-height: 80vh;
+}
+.publication-card {
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    padding: 3rem;
+}
+.publication-header {
+    margin-bottom: 2.5rem;
+    text-align: center;
+}
+.publication-title {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    color: #333;
+    font-size: 2.2rem;
+    margin-bottom: 1.5rem;
+}
+.publication-meta {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+    color: #6c757d;
+    font-size: 0.95rem;
+    margin-bottom: 1.5rem;
+    align-items: center;
+}
+.publication-meta-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+.publication-meta-item i {
+    color: var(--bs-primary);
+    font-size: 1.1rem;
+}
+.publication-image {
+    width: 100%;
+    max-height: 450px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.publication-content {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #444;
+}
+.publication-content h1, 
+.publication-content h2, 
+.publication-content h3 {
+    color: #2c3e50;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+}
+.publication-content p {
+    margin-bottom: 1.5rem;
+}
+.publication-content img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin: 1.5rem 0;
+}
+.publication-content a {
+    color: var(--bs-primary);
+    text-decoration: none;
+    font-weight: 500;
+}
+.publication-content a:hover {
+    text-decoration: underline;
+}
+.publication-content blockquote {
+    border-left: 4px solid var(--bs-primary);
+    padding: 1rem 1.5rem;
+    margin: 1.5rem 0;
+    background-color: #f8f9fa;
+    border-radius: 0 8px 8px 0;
+    font-style: italic;
+    color: #6c757d;
+}
+.publication-content ul, .publication-content ol {
+    margin-bottom: 1.5rem;
+    padding-left: 1.5rem;
+}
+.publication-content li {
+    margin-bottom: 0.5rem;
+}
+.original-link-btn {
+    margin-top: 2rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.6rem 1.5rem;
+    font-weight: 500;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+}
+
+@media (max-width: 768px) {
+    .publication-card {
+        padding: 2rem 1.5rem;
+    }
+    .publication-title {
+        font-size: 1.8rem;
+    }
+    .publication-meta {
+        flex-direction: column;
+        gap: 0.8rem;
+        align-items: flex-start;
+    }
+}

@@ -1,0 +1,217 @@
+{% extends "main.html" %}
+
+{% block extrahead %}
+<link rel="stylesheet" href="{{ base_url }}/assets/residencia-ia-tic/residencia-ia-tic.css">
+{% endblock %}
+
+{% block content %}
+<main class="ria-page">
+
+    <!-- Hero: imagem de cabeçalho -->
+    <section class="ria-hero">
+        <img src="{{ base_url }}/assets/img/header_residencia_tic.jpeg" alt="Residência em IA Brasília" class="ria-hero-img">
+    </section>
+
+    <!-- Texto principal -->
+    <section class="ria-intro">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 col-12">
+                    <h1 class="ria-title">Residência em IA Brasília</h1>
+                    <p class="ria-lead">Faça parte da nova geração de profissionais de IA!</p>
+                    <p class="ria-text">
+                        A Residência em IA é o programa de formação presencial e prática que vai aprofundar seus conhecimentos em
+                        Inteligência Artificial, Machine Learning e Análise de Dados para elevar a sua carreira em tech!
+                    </p>
+                    <p class="ria-text">
+                        O projeto Residência em IA é realizado pelo Instituto ELDORADO em parceria com a Universidade de Brasília (UnB),
+                        parte integrante do PBIA (Programa Brasileiro de Inteligência Artificial) do Ministério da Ciência, Tecnologia e
+                        Inovação, e coordenado pela Softex.
+                    </p>
+                    <p class="ria-text">
+                        Aqui, você aprende fazendo e ainda conta com apoio de mentores especialistas na aplicação dos conhecimentos em
+                        projetos reais.
+                    </p>
+
+                    <!-- Aviso: inscrições encerradas -->
+                    <div class="ria-cta-wrapper">
+                        <div class="ria-aviso-encerrado">
+                            <p class="ria-aviso-titulo">Inscrições encerradas</p>
+                            <p class="ria-aviso-texto">
+                                O período de inscrições desta turma foi finalizado. Acompanhe nossos canais para
+                                ficar por dentro das próximas oportunidades.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Destaques -->
+    <section class="ria-highlights-section">
+        <div class="container">
+            <div class="row g-3 justify-content-center">
+                <div class="col-lg-3 col-md-6 col-6">
+                    <div class="ria-highlight-card">
+                        <span class="ria-highlight-icon">💰</span>
+                        <p class="ria-highlight-label">100% <strong>GRATUITA</strong> e com <strong>BOLSA AUXÍLIO</strong></p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-6">
+                    <div class="ria-highlight-card">
+                        <span class="ria-highlight-icon">🗓️</span>
+                        <p class="ria-highlight-label"><strong>8 meses</strong> de aprendizado prático</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-6">
+                    <div class="ria-highlight-card">
+                        <span class="ria-highlight-icon">📍</span>
+                        <p class="ria-highlight-label"><strong>Presencial</strong> em Brasília (DF)</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-6">
+                    <div class="ria-highlight-card">
+                        <span class="ria-highlight-icon">🎯</span>
+                        <p class="ria-highlight-label"><strong>150 vagas</strong> disponíveis</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cards: Requisitos e Como participar -->
+    <section class="ria-cards-section">
+        <div class="container">
+            <div class="row g-4">
+
+                <!-- Para participar -->
+                <div class="col-lg-6 col-12">
+                    <div class="ria-card">
+                        <h2 class="ria-card-title">Para participar você precisa:</h2>
+                        <ul class="ria-checklist">
+                            <li>✅ Ter concluído ou estar matriculado em curso superior</li>
+                            <li>✅ Ter disponibilidade para aulas presenciais 3x por semana em Brasília (DF) no campus GAMA</li>
+                        </ul>
+                        <p class="ria-card-subtitle">✅ Requisitos:</p>
+                        <ul class="ria-req-list">
+                            <li>Noções básicas de Python</li>
+                            <li>Inteligência Artificial (clássica e generativa)</li>
+                            <li>Noções básicas de manipulação de dados</li>
+                            <li>Fundamentos de matemática (cálculo e álgebra linear)</li>
+                            <li>Fundamentos de estatística (probabilidade e interpretação de dados)</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Como participar -->
+                <div class="col-lg-6 col-12">
+                    <div class="ria-card">
+                        <h2 class="ria-card-title">Como faço para participar?</h2>
+                        <div class="ria-steps">
+                            <div class="ria-step">
+                                <span class="ria-step-num">1</span>
+                                <p>Realizar a inscrição via formulário online até <strong>29/06</strong></p>
+                            </div>
+                            <div class="ria-step">
+                                <span class="ria-step-num">2</span>
+                                <p>Fazer a prova de seleção online</p>
+                            </div>
+                            <div class="ria-step">
+                                <span class="ria-step-num">3</span>
+                                <p>Participar da entrevista</p>
+                            </div>
+                        </div>
+                        <p class="ria-timeline-note">
+                            Divulgação dos resultados em julho e início das aulas presenciais em agosto de 2026.
+                        </p>
+                        <p class="ria-email-note">
+                            ✉️ Você será avisado(a) sobre cada etapa por e-mail, então fique de olho na sua caixa de entrada!
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Turmas -->
+    <section class="ria-turmas-section">
+        <div class="container">
+            <h2 class="ria-section-title">Turmas disponíveis</h2>
+            <div class="row g-4 justify-content-center">
+                <div class="col-lg-4 col-md-6 col-12">
+                    <div class="ria-turma-card">
+                        <span class="ria-turma-badge">TURMA 1</span>
+                        <p class="ria-turma-days">Segundas, quartas e sexta-feiras</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-12">
+                    <div class="ria-turma-card">
+                        <span class="ria-turma-badge">TURMA 2</span>
+                        <p class="ria-turma-days">Terças, quintas e sexta-feiras</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="ria-faq-section">
+        <div class="container">
+            <h2 class="ria-section-title">Dúvidas frequentes</h2>
+            <div class="row justify-content-center">
+                <div class="col-lg-8 col-12">
+                    <div class="ria-faq-list">
+
+                        <div class="ria-faq-item">
+                            <p class="ria-faq-q">É preciso pagar para participar?</p>
+                            <p class="ria-faq-a">Não! A Residência em IA é totalmente gratuita, do começo ao fim, e os selecionados receberão bolsa auxílio para apoiar os estudos.</p>
+                        </div>
+
+                        <div class="ria-faq-item">
+                            <p class="ria-faq-q">A Residência é online ou presencial?</p>
+                            <p class="ria-faq-a">As aulas são presenciais em Brasília (DF), no campus GAMA.</p>
+                        </div>
+
+                        <div class="ria-faq-item">
+                            <p class="ria-faq-q">É obrigatório ser estudante da Universidade de Brasília (UnB) ou pode ser outra instituição de ensino superior?</p>
+                            <p class="ria-faq-a">Não precisa ser estudante da Universidade de Brasília.</p>
+                        </div>
+
+                        <div class="ria-faq-item">
+                            <p class="ria-faq-q">Todos os estudantes terão bolsa auxílio?</p>
+                            <p class="ria-faq-a">Sim! Todos os selecionados receberão bolsa auxílio.</p>
+                        </div>
+
+                        <div class="ria-faq-item">
+                            <p class="ria-faq-q">Qual é o total de vagas?</p>
+                            <p class="ria-faq-a">São 150 vagas ao todo.</p>
+                        </div>
+
+                        <div class="ria-faq-item">
+                            <p class="ria-faq-q">Quais são os critérios de seleção?</p>
+                            <p class="ria-faq-a">As etapas são eliminatórias. A Etapa 1 consiste na avaliação do perfil do candidato, com base nas informações fornecidas no formulário de inscrição. Nessa fase, são considerados critérios de aderência ao programa, como formação acadêmica, conhecimentos prévios em tecnologia e em linguagens relacionadas ao conteúdo do curso, experiência na área e disponibilidade para participação nas atividades presenciais.</p>
+                            <p class="ria-faq-a">A Etapa 2 consiste em uma prova online para avaliação de conhecimentos técnicos, abrangendo fundamentos de Inteligência Artificial, fundamentos de matemática e estatística, noções básicas de Python e manipulação de dados.</p>
+                            <p class="ria-faq-a">A Etapa 3 corresponde à fase final do processo seletivo. Nesta etapa, a comissão de seleção poderá realizar procedimentos complementares de avaliação, quando necessário, para subsidiar a classificação dos candidatos.</p>
+                            <p class="ria-faq-a">A seleção final será realizada com base na pontuação acumulada ao longo das diferentes etapas do processo seletivo.</p>
+                        </div>
+
+                        <div class="ria-faq-item">
+                            <p class="ria-faq-q">Tem certificado?</p>
+                            <p class="ria-faq-a">Sim! Os concluintes receberão certificação ao final do programa.</p>
+                        </div>
+
+                    </div>
+
+                    <p class="ria-contact-note">
+                        ✍🏼 Em caso de dúvidas, entre em contato com a gente pelo e-mail
+                        <a href="mailto:residencia-ia@eldorado.org.br" class="ria-email-link">residencia-ia@eldorado.org.br</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</main>
+{% endblock %}

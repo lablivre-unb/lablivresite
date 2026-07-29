@@ -1,0 +1,12 @@
+# Python
+.venv/
+__pycache__/
+*.pyc
+*.egg-info/
+
+# MkDocs
+site/
+
+# OS / Editor
+.DS_Store
+.vscode/

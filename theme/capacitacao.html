@@ -1,0 +1,92 @@
+{% extends "main.html" %}
+
+{% block extrahead %}
+<link rel="stylesheet" href="{{ base_url }}/assets/capacitacao/capacitacao.css">
+{% endblock %}
+
+{% block content %}
+<main class="capacitacao-page">
+
+    <!-- Hero -->
+    <section class="capacitacao-page-hero">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-12">
+                    <h1 class="capacitacao-page-title">Capacitação</h1>
+                    <p class="capacitacao-page-subtitle">
+                        Formamos talentos para transformar o mundo com tecnologia livre e colaborativa.
+                        Nossas iniciativas combinam aprendizado prático, mentoria especializada e projetos de impacto real.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Wave hero → conteúdo -->
+    <div class="capacitacao-page-wave">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 80" preserveAspectRatio="none">
+            <path fill="#ffffff"
+                d="M0,40 C240,80 480,0 720,40 C960,80 1200,0 1440,40 L1440,80 L0,80 Z" />
+        </svg>
+    </div>
+
+    <!-- Programas -->
+    <section class="capacitacao-programs-section">
+        <div class="container">
+            <div class="row g-4">
+                {% for item in capacitacao %}
+                <div class="col-12">
+                    <div class="capacitacao-program-card {% if item.badge %}capacitacao-program-featured{% endif %}">
+                        {% if item.badge %}
+                        <span class="capacitacao-badge">{{ item.badge }}</span>
+                        {% endif %}
+
+                        <div class="row align-items-center g-4">
+                            <div class="col-lg-4 col-md-5 col-12">
+                                <div class="capacitacao-program-logo-wrapper">
+                                    <img src="{{ base_url }}/{{ item.image }}" alt="{{ item.title }}"
+                                        class="capacitacao-program-logo {{ item.image_class if item.image_class else '' }}">
+                                </div>
+                            </div>
+                            <div class="col-lg-8 col-md-7 col-12">
+                                <div class="capacitacao-program-body">
+                                    <h2 class="capacitacao-program-title">{{ item.title }}</h2>
+                                    <p class="capacitacao-program-description">{{ item.description }}</p>
+
+                                    {% if item.highlights %}
+                                    <ul class="capacitacao-highlights-list">
+                                        {% for highlight in item.highlights %}
+                                        <li>{{ highlight }}</li>
+                                        {% endfor %}
+                                    </ul>
+                                    {% endif %}
+
+                                    {% if item.financing %}
+                                    <p class="capacitacao-program-financing">
+                                        <strong>Financiamento:</strong> {{ item.financing }}
+                                    </p>
+                                    {% endif %}
+
+                                    {% if item.links %}
+                                    <div class="capacitacao-program-links">
+                                        {% for link in item.links %}
+                                        <a href="{{ link.url }}" target="_blank"
+                                            class="capacitacao-program-link">{{ link.text }}</a>
+                                        {% endfor %}
+                                    </div>
+                                    {% elif item.link %}
+                                    <a href="{{ item.link }}" target="_blank"
+                                        class="capacitacao-program-link">Saiba mais →</a>
+                                    {% endif %}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </section>
+
+</main>
+{% endblock %}

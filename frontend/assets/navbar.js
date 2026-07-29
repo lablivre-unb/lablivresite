@@ -1,7 +1,7 @@
 // Navbar JavaScript
 document.addEventListener('DOMContentLoaded', () => {
     const hamburger = document.querySelector('.hamburger');
-    const navLinks = document.querySelector('.nav-links');
+    const navLinks = document.querySelector('.navbar-nav');
 
     if (hamburger && navLinks) {
         hamburger.addEventListener('click', () => {
@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
 
         // Fechar menu ao clicar em um link
-        document.querySelectorAll('.nav-links a').forEach(link => {
+        document.querySelectorAll('.navbar-nav a').forEach(link => {
             link.addEventListener('click', () => {
                 hamburger.classList.remove('active');
                 navLinks.classList.remove('active');

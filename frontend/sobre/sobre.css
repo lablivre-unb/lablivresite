@@ -2,6 +2,7 @@
 .sobre-main {
     min-height: calc(100vh - 200px);
     padding-top: 80px;
+    background-color: #F7F7F7;
 }
 
 /* Wave Dividers */
@@ -17,20 +18,17 @@
     position: relative;
 }
 
-.wave-0 {
-    background-color: #F7F7F7;
-}
-
 .wave-1 {
-    background-color: #FFFFFF;
+    background-color: #F7F7F7;
 }
 
 .wave-2 {
-    background-color: #F7F7F7;
+    background-color: #FFFFFF;
 }
 
-.wave-3 {
-    background-color: #FFFFFF;
+
+.wave-4 {
+    background-color: #F7F7F7;
 }
 
 .wave-divider svg {
@@ -70,129 +68,21 @@
 }
 
 .principios-row {
-    background-color: #FFFFFF;
-}
-
-/* História do Lab Livre */
-.historia-section {
     background-color: #F7F7F7;
-    padding: 40px 0 60px 0;
-    scroll-margin-top: 90px;
-}
-
-.historia-content {
-    gap: 24px;
-    padding-top: 24px;
-}
-
-.historia-galeria-wrapper {
-    padding: 56px 40px 0 40px;
-}
-
-.historia-galeria-hint {
-    font-size: 16px;
-    font-weight: 600;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-    color: #472c65;
-    margin: 0 0 32px 0;
-}
-
-/* Linha do tempo vertical: um trilho à esquerda, um marcador por ano. */
-.historia-timeline {
-    position: relative;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    max-width: 820px;
-}
-
-.historia-timeline::before {
-    content: "";
-    position: absolute;
-    left: 8px;
-    top: 6px;
-    bottom: 6px;
-    width: 2px;
-    background: linear-gradient(180deg, #472c65 0%, #d8cfe4 100%);
-}
-
-.historia-item {
-    position: relative;
-    padding: 0 0 48px 48px;
-}
-
-.historia-item:last-child {
-    padding-bottom: 0;
-}
-
-.historia-ponto {
-    position: absolute;
-    left: 0;
-    top: 6px;
-    width: 18px;
-    height: 18px;
-    border-radius: 50%;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f5576c 100%);
-    box-shadow: 0 0 0 4px #F7F7F7;
-}
-
-.historia-ano {
-    font-size: 26px;
-    font-weight: 700;
-    line-height: 1.2;
-    color: #472c65;
-    margin: 0 0 16px 0;
-}
-
-/* Quando um ano tem mais de uma foto, o flex-grow proporcional ao --ar
-   deixa todas com a mesma altura na linha. */
-.historia-figuras {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    gap: 20px;
-}
-
-.historia-figura {
-    margin: 0;
-    flex: var(--ar, 1.5) 1 0;
-    min-width: 260px;
-}
-
-.historia-figura img {
-    width: 100%;
-    height: auto;
-    aspect-ratio: var(--ar, 1.5);
-    display: block;
-    border-radius: 8px;
-    background: #ffffff;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-}
-
-.historia-figura figcaption {
-    margin-top: 12px;
-    font-size: 15px;
-    color: #444444;
-    font-style: italic;
 }
 
 .missao-row {
-    background-color: #F7F7F7;
+    background-color: #FFFFFF;
 }
 
 .missao-section {
-    background-color: #F7F7F7;
+    background-color: #FFFFFF;
     padding: 80px 0;
 }
 
 .team-section {
     padding: 100px 0;
     background: #F7F7F7;
-}
-
-.team-content-wrapper {
-    padding: 0 40px;
 }
 
 .team-title {
@@ -244,6 +134,7 @@
     border-radius: 8px;
     flex-shrink: 0;
     overflow: hidden;
+    position: relative;
 }
 
 .team-card img {
@@ -254,10 +145,88 @@
     object-position: center;
     transform: translateZ(0); /* Força aceleração por GPU */
     image-rendering: -webkit-optimize-contrast; /* Otimiza renderização */
+    border-radius: 8px;
 }
 
 .team-card img.team-img-top {
     object-position: center top;
+}
+
+/* Legenda flutuante do membro */
+.team-card-caption {
+    position: absolute;
+    bottom: 12px;
+    left: 12px;
+    right: 12px;
+    background: #ffffff;
+    padding: 12px 16px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    z-index: 10;
+}
+
+.team-card img {
+    border-radius: 8px 8px 0 0;
+}
+
+.team-card-caption-info {
+    flex: 1;
+    min-width: 0;
+}
+
+.team-card-caption-name {
+    font-size: 16px;
+    font-weight: 700;
+    color: #000000;
+    margin: 0 0 4px 0;
+    line-height: 1.2;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.team-card-caption-role {
+    font-size: 13px;
+    font-weight: 400;
+    color: #666666;
+    margin: 0;
+    line-height: 1.3;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.team-card-caption-linkedin {
+    flex-shrink: 0;
+    width: 28px;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    border: 1px solid #000000;
+    border-radius: 50%;
+    text-decoration: none;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.team-card-caption-linkedin:hover {
+    transform: scale(1.1);
+    opacity: 0.7;
+}
+
+.team-card-caption-linkedin svg {
+    width: 16px;
+    height: 16px;
+    fill: #000000;
+}
+
+.team-card-caption-linkedin:not([href]) {
+    display: none;
 }
 
 
@@ -265,57 +234,8 @@
     display: flex;
     align-items: flex-start;
     gap: 20px;
-    padding: 40px 40px 0 40px;
 }
 
-.sobre-icon-placeholder {
-    width: 60px;
-    height: 60px;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 25%, #f093fb 50%, #f5576c 75%, #f9a10e 100%);
-    background-size: 200% 200%;
-    border-radius: 4px;
-    flex-shrink: 0;
-    margin-top: 0;
-    animation: iconFadeInRotate 0.6s ease-out, iconRotate 3s linear 0.6s infinite, gradientShift 4s ease infinite;
-    transition: box-shadow 0.3s ease;
-    box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
-}
-
-.sobre-icon-placeholder:hover {
-    box-shadow: 0 6px 20px rgba(102, 126, 234, 0.6);
-}
-
-@keyframes gradientShift {
-    0% {
-        background-position: 0% 50%;
-    }
-    50% {
-        background-position: 100% 50%;
-    }
-    100% {
-        background-position: 0% 50%;
-    }
-}
-
-@keyframes iconFadeInRotate {
-    0% {
-        opacity: 0;
-        transform: translateY(-10px) scale(0.9) rotate(0deg);
-    }
-    100% {
-        opacity: 1;
-        transform: translateY(0) scale(1) rotate(0deg);
-    }
-}
-
-@keyframes iconRotate {
-    0% {
-        transform: rotate(0deg);
-    }
-    100% {
-        transform: rotate(360deg);
-    }
-}
 
 .sobre-section-title {
     font-size: 52px;
@@ -330,16 +250,15 @@
 }
 
 .sobre-content-wrapper {
-    padding: 0 40px 0px 40px;
     display: flex;
     flex-direction: column;
 }
 
 .sobre-text {
     font-size: 20px;
-    line-height: 1.8;
+    line-height: 1.5;
     color: #333333;
-    margin: 0;
+    margin-top: 24px;
     text-align: left;
 }
 
@@ -352,100 +271,25 @@
     font-weight: 600;
 }
 
-.sobre-contact {
-    padding: 80px 20px 100px 20px;
-    background: #ffffff;
-    opacity: 0;
-    transform: translateY(50px);
-    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
-}
-
-.sobre-contact.animate-in {
-    opacity: 1;
-    transform: translateY(0);
-}
-
-.contact-title {
-    font-size: 52px;
-    font-weight: 700;
-    margin-bottom: 40px;
-    color: #000000;
-}
-
-.contact-list {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-}
-
-.contact-item {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    font-size: 16px;
-    color: #333333;
-}
-
-.contact-icon {
-    display: inline-flex;
-    width: 20px;
-    height: 20px;
-    color: #000000;
-}
-
-.contact-wrapper {
-    padding: 0 40px;
-}
-
-/* Foto da coordenação, ao lado dos dados de contato */
-.contact-foto-wrapper {
-    padding: 0 0 0 40px;
-}
-
-.contact-foto {
-    width: 170px;
-    height: 170px;
-    border-radius: 50%;
-    overflow: hidden;
-    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.15);
-}
-
-/* A foto é quase quadrada, então o object-fit sozinho não aproxima o rosto:
-   o scale/translate centraliza o rosto dentro do círculo. */
-.contact-foto img {
-    width: 100%;
-    height: 100%;
-    display: block;
-    object-fit: cover;
-    transform: scale(1.5) translate(2%, 16%);
-}
 
 @media (max-width: 992px) {
-    .contact-wrapper {
-        padding: 0 20px;
-    }
-
-    .contact-foto-wrapper {
-        padding: 0 0 0 20px;
-    }
-
-    .contact-foto {
-        width: 140px;
-        height: 140px;
-    }
-    
-    .team-content-wrapper {
-        padding: 0 20px;
+    .team-card {
+        width: 250px;
+        height: 270px;
     }
 }
 
 .sobre-image-wrapper {
     width: 100%;
     height: 100%;
-    padding: 40px;
+    padding: 0 0 0 40px;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.missao-section .sobre-image-wrapper {
+    padding: 0 40px 0 0;
 }
 
 .sobre-image {
@@ -464,7 +308,7 @@
     }
     
     .sobre-title-wrapper {
-        padding: 30px 20px 0 20px;
+        padding: 30px 0;
         gap: 15px;
     }
     
@@ -473,32 +317,11 @@
     }
     
     .sobre-content-wrapper {
-        padding: 15px 20px 30px 20px;
-    }
-
-    .historia-galeria-wrapper {
-        padding: 32px 20px 0 20px;
-    }
-
-    .historia-item {
-        padding-left: 40px;
-    }
-
-    .sobre-image-wrapper {
-        padding: 20px;
-    }
-
-    .contact-title {
-        font-size: 32px;
-        margin-bottom: 30px;
+        padding: 15px 0 30px 0;
     }
     
-    .contact-item {
-        font-size: 15px;
-    }
-
-    .contact-wrapper {
-        padding: 0 20px;
+    .sobre-image-wrapper {
+        padding: 20px 0;
     }
 }
 
@@ -512,15 +335,10 @@
     }
     
     .sobre-title-wrapper {
-        padding: 20px 20px 0 20px;
+        padding: 20px 0;
         flex-direction: row;
         align-items: center;
         gap: 15px;
-    }
-    
-    .sobre-icon-placeholder {
-        width: 50px;
-        height: 50px;
     }
     
     .sobre-section-title {
@@ -528,34 +346,33 @@
     }
     
     .sobre-content-wrapper {
-        padding: 15px 20px 20px 20px;
+        padding: 15px 0;
     }
     
     .sobre-text {
         font-size: 0.9375rem;
         text-align: left;
     }
-
-    .historia-content {
-        gap: 16px;
-        padding-top: 16px;
-    }
-
-    .historia-galeria-hint {
-        font-size: 14px;
-    }
-
-    .historia-ano {
-        font-size: 22px;
-        margin-bottom: 12px;
-    }
-
-    .historia-figura figcaption {
-        font-size: 14px;
-    }
-
+    
     .sobre-image-wrapper {
-        padding: 20px;
+        padding: 20px 0;
+    }
+    
+    .team-section {
+        padding: 60px 0;
+    }
+    
+    .team-title {
+        font-size: 36px;
+    }
+    
+    .team-card {
+        width: 200px;
+        height: 220px;
+    }
+    
+    .team-track {
+        gap: 12px;
     }
 }
 
@@ -566,11 +383,6 @@
     
     .sobre-title-wrapper {
         padding: 15px 15px 0 15px;
-    }
-    
-    .sobre-icon-placeholder {
-        width: 40px;
-        height: 40px;
     }
     
     .sobre-section-title {
@@ -585,40 +397,195 @@
         font-size: 0.875rem;
         margin-bottom: 15px;
     }
-
-    .historia-section {
-        padding: 20px 0 40px 0;
-    }
-
-    .historia-galeria-wrapper {
-        padding: 24px 15px 0 15px;
-    }
-
-    .historia-timeline::before {
-        left: 6px;
-    }
-
-    .historia-ponto {
-        width: 14px;
-        height: 14px;
-        top: 4px;
-    }
-
-    .historia-item {
-        padding-left: 30px;
-        padding-bottom: 36px;
-    }
-
-    .historia-figura {
-        min-width: 100%;
-    }
-
-    .historia-figuras {
-        gap: 16px;
-    }
-
+    
     .sobre-image-wrapper {
         padding: 15px;
     }
+    
+    .team-section {
+        padding: 40px 0;
+    }
+    
+    .team-title {
+        font-size: 28px;
+        margin-bottom: 12px;
+    }
+    
+    .team-subtitle {
+        font-size: 14px;
+        margin-bottom: 24px;
+    }
+    
+    .team-card {
+        width: 160px;
+        height: 180px;
+    }
+    
+    .team-track {
+        gap: 10px;
+    }
+    
+}
 
+/* Parceiros Section */
+.parceiros-section {
+    padding: 100px 0;
+    background: #FFFFFF;
+}
+
+.parceiros-title-wrapper {
+    margin-bottom: 60px;
+}
+
+.parceiros-title {
+    font-size: 52px;
+    font-weight: 700;
+    color: #000000;
+    margin: 0;
+    position: relative;
+    display: inline-block;
+}
+
+.parceiros-title::after {
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    width: 200px;
+    height: 5px;
+    background: #f9a10e;
+    border-radius: 2px;
+}
+
+.parceiros-category-row {
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.parceiros-category-row:first-of-type {
+    margin-top: 0;
+}
+
+.parceiros-category-title {
+    font-size: 24px;
+    font-weight: 600;
+    color: #333333;
+    margin: 0;
+}
+
+.parceiros-logos-row {
+    margin-bottom: 20px;
+}
+
+.parceiro-logo-col {
+    margin-bottom: 30px;
+}
+
+.parceiro-logo-wrapper {
+    width: 100%;
+    height: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    background: #FFFFFF;
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.parceiro-logo-wrapper:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.parceiro-logo {
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    filter: grayscale(0%);
+    transition: filter 0.3s ease;
+}
+
+.parceiro-logo-wrapper:hover .parceiro-logo {
+    filter: grayscale(0%);
+}
+
+@media (max-width: 992px) {
+    .parceiros-section {
+        padding: 80px 0;
+    }
+    
+    .parceiro-logo-wrapper {
+        height: 140px;
+        padding: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .parceiros-section {
+        padding: 60px 20px;
+    }
+    
+    .parceiros-title {
+        font-size: 36px;
+    }
+    
+    .parceiros-title-wrapper {
+        padding: 0;
+        margin-bottom: 40px;
+    }
+    
+    .parceiros-category-title {
+        font-size: 20px;
+    }
+    
+    .parceiros-category-row {
+        padding: 0;
+        margin-top: 40px;
+        margin-bottom: 20px;
+    }
+    
+    .parceiros-logos-row {
+        padding: 0;
+        margin-bottom: 15px;
+    }
+    
+    .parceiro-logo-col {
+        margin-bottom: 20px;
+    }
+    
+    .parceiro-logo-wrapper {
+        height: 120px;
+        padding: 15px;
+    }
+}
+
+@media (max-width: 576px) {
+    .parceiros-section {
+        padding: 40px 20px;
+    }
+    
+    .parceiros-title {
+        font-size: 28px;
+    }
+    
+    .parceiros-title-wrapper {
+        margin-bottom: 30px;
+    }
+    
+    .parceiros-category-title {
+        font-size: 18px;
+    }
+    
+    .parceiros-category-row {
+        margin-top: 30px;
+        margin-bottom: 15px;
+    }
+    
+    .parceiro-logo-wrapper {
+        height: 100px;
+        padding: 12px;
+    }
 }
