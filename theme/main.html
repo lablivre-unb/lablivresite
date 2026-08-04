@@ -32,25 +32,30 @@
     <header class="navbar">
         <div class="container">
             <div class="row align-items-center">
-                <div class="col-auto">
+                <div class="col-auto navbar-col-logo">
                     <div class="navbar-logo">
                         <a href="{{ base_url }}/">
                             <img src="{{ base_url }}/assets/img/lab-livre-white.png" alt="LabLivre Logo">
                         </a>
                     </div>
                 </div>
-                <div class="col">
-                    <button class="hamburger" aria-label="Menu">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </button>
+                <div class="col navbar-col-menu">
                     <nav class="navbar-nav">
                         <a href="{{ base_url }}/" class="nav-link">Home</a>
                         <a href="{{ base_url }}/ResidenciaIA/" class="nav-link nav-link-highlight">Residência em IA</a>
                         <a href="{{ base_url }}/sobre/" class="nav-link">Sobre</a>
                     </nav>
                 </div>
+                <div class="col-auto navbar-col-unb">
+                    <a href="https://www.unb.br/" target="_blank" class="navbar-unb">
+                        <img src="{{ base_url }}/assets/img/unb-logo-navbar.png" alt="Universidade de Brasília">
+                    </a>
+                </div>
+                <button class="hamburger" aria-label="Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
             </div>
         </div>
     </header>

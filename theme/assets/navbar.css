@@ -37,7 +37,7 @@
     width: auto;
 }
 
-/* Nav Links - Coluna que ocupa o resto e alinha à direita */
+/* Nav Links - Coluna que ocupa o resto e alinha à direita, próximo à logo UnB */
 .navbar .col {
     flex: 1 1 0% !important;
     min-width: 0;
@@ -57,6 +57,23 @@
     list-style: none;
     width: 100%;
     justify-content: flex-end;
+}
+
+/* Logo UnB no canto direito */
+.navbar-col-unb {
+    display: flex;
+    align-items: center;
+    margin-left: 28px;
+}
+
+.navbar-unb {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-unb img {
+    height: 66px;
+    width: auto;
 }
 
 .nav-link {
@@ -171,17 +188,31 @@
     
     .navbar .row {
         justify-content: space-between;
+        flex-wrap: nowrap;
     }
-    
+
     .navbar .col {
         flex: 0 0 auto !important;
         width: auto;
     }
-    
+
+    /* Coluna do menu (drawer) absorve o espaço e empurra UnB + menu p/ direita */
+    .navbar-col-menu {
+        flex: 1 1 auto !important;
+    }
+
+    .navbar-col-unb {
+        margin-left: auto;
+    }
+
+    .navbar-unb img {
+        height: 52px;
+    }
+
     .hamburger {
         display: flex;
         flex: 0 0 auto;
-        margin: 0;
+        margin: 0 0 0 16px;
         padding: 0;
     }
     
