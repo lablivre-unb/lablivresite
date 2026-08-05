@@ -59,11 +59,11 @@
     justify-content: flex-end;
 }
 
-/* Logo UnB no canto direito */
+/* Logo UnB à esquerda, ao lado da logo do Lab Livre */
 .navbar-col-unb {
     display: flex;
     align-items: center;
-    margin-left: 28px;
+    margin-left: 24px;
 }
 
 .navbar-unb {
@@ -199,10 +199,6 @@
     /* Coluna do menu (drawer) absorve o espaço e empurra UnB + menu p/ direita */
     .navbar-col-menu {
         flex: 1 1 auto !important;
-    }
-
-    .navbar-col-unb {
-        margin-left: auto;
     }
 
     .navbar-unb img {
