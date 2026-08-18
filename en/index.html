@@ -1,0 +1,846 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - LabLivre</title>
+
+    <!-- Language alternates -->
+    <link rel="alternate" hreflang="pt-BR" href="/">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="../assets/img/favicon.png">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Site CSS -->
+    <link rel="stylesheet" href="../assets/navbar.css">
+    <link rel="stylesheet" href="../assets/footer.css">
+    <link rel="stylesheet" href="../assets/home/home.css">
+    <link rel="stylesheet" href="../assets/home/hero-carousel.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!-- Extra CSS from mkdocs.yml -->
+    
+    <link href="../assets/navbar.css" rel="stylesheet">
+    
+    <link href="../assets/footer.css" rel="stylesheet">
+    
+    <link href="../assets/home/home.css" rel="stylesheet">
+    
+    <link href="../assets/home/hero-carousel.css" rel="stylesheet">
+    
+    
+    
+</head>
+
+<body>
+    <header class="navbar">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-auto navbar-col-logo">
+                    <div class="navbar-logo">
+                        <a href="../">
+                            <img src="../assets/img/lab-livre-white.png" alt="LabLivre Logo">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-auto navbar-col-unb">
+                    <a href="https://www.unb.br/" target="_blank" class="navbar-unb">
+                        <img src="../assets/img/unb-logo-navbar.png" alt="Universidade de Brasília">
+                    </a>
+                </div>
+                <div class="col navbar-col-menu">
+                    <nav class="navbar-nav">
+                        
+                        <a href="../en/" class="nav-link">Home</a>
+                        <a href="../en/ai-residency/" class="nav-link nav-link-highlight">AI Residency</a>
+                        <a href="../en/about/" class="nav-link">About</a>
+                        
+                        <a href="/" class="nav-link nav-link-lang" lang="pt-BR"
+                            title="Versão em português">
+                            PT
+                        </a>
+                    </nav>
+                </div>
+                <button class="hamburger" aria-label="Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    
+
+
+
+
+
+<!-- Render the content from index.md (Hero, Projects, etc) -->
+<section class="hero-section">
+    <div class="swiper hero-carousel">
+        <div class="swiper-wrapper">
+            <!-- Slide 1 -->
+            <div class="swiper-slide hero-slide hero-slide-first">
+                <div class="hero-slide-bg"></div>
+                <div class="hero-overlay"></div>
+                <div class="hero-container">
+                    <div class="hero-content">
+                        <h1 class="hero-title">
+                            LabLivre
+                        </h1>
+                        <p class="hero-text">
+                            The future of technology is open, inclusive, and collaborative. At Lab Livre, we believe in the power of shared knowledge to transform lives. Connect, collaborate, and be part of the change!
+                        </p>
+                        <a href="about/">
+                            <button class="hero-btn">
+                                Learn more
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" class="hero-btn-arrow">
+                                    <path d="M5 10H15M15 10L11 6M15 10L11 14" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </button>
+                        </a>
+                    </div>
+                    <div class="hero-logo">
+                        <img src="/assets/img/lab-livre-white.png" alt="Lab Livre Logo">
+                    </div>
+                </div>
+            </div>
+            <!-- Slide 2 -->
+            <div class="swiper-slide hero-slide hero-slide-brasil">
+                <div class="hero-slide-bg hero-slide-bg-brasil"></div>
+                <div class="hero-overlay"></div>
+                <div class="hero-container">
+                    <div class="hero-content">
+                        <h1 class="hero-title">
+                            Brasil Participativo
+                        </h1>
+                        <p class="hero-text">
+                            Brasil Participativo is recognized as the largest digital social participation experience of Brazil's Executive Branch, gathering more than 1.5 million registered citizens. Built with free software by the National Secretariat for Social Participation, in partnership with LabLivre.
+                        </p>
+                        <button class="hero-btn" onclick="window.open('https://brasilparticipativo.presidencia.gov.br/', '_blank')">
+                            Learn more
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" class="hero-btn-arrow">
+                                <path d="M5 10H15M15 10L11 6M15 10L11 14" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="hero-logo">
+                        <img src="/assets/img/logobp-white.png" alt="Brasil Participativo Logo">
+                    </div>
+                </div>
+            </div>
+            <!-- Slide 3 -->
+            <div class="swiper-slide hero-slide hero-slide-mepa">
+                <div class="hero-slide-bg hero-slide-bg-mepa"></div>
+                <div class="hero-overlay"></div>
+                <div class="hero-container">
+                    <div class="hero-content">
+                        <h1 class="hero-title">
+                            Mepa 
+                        </h1>
+                        <p class="hero-text">
+                            An energy efficiency platform that uses artificial intelligence research for data analysis to optimize energy contracts and reduce costs in public institutions, promoting financial and environmental sustainability.
+                        </p>
+                        <button class="hero-btn" onclick="window.open('https://mepaenergia.org/', '_blank')">
+                            Learn more
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" class="hero-btn-arrow">
+                                <path d="M5 10H15M15 10L11 6M15 10L11 14" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="hero-logo">
+                        <img src="/assets/img/logomepa-white.png" alt="Mepa Logo">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- Navigation arrows -->
+        <div class="swiper-button-next hero-nav-next"></div>
+        <div class="swiper-button-prev hero-nav-prev"></div>
+        <!-- Pagination dots -->
+        <div class="swiper-pagination hero-pagination"></div>
+    </div>
+</section>
+
+<div id="colabore"></div>
+<section class="collaborate-section">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6 col-md-12">
+                <div class="collaborate-content">
+                    <h2 class="collaborate-title">
+                        Applied <span class="title-word-1">science.</span><br>
+                        Shared <span class="title-word-2">code.</span><br>
+                        Multiplied <span class="title-word-3">impact.</span>
+                    </h2>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-12">
+                <div class="collaborate-items">
+                    <div class="collaborate-item">
+                        <div class="item-content">
+                            <h3 class="item-title">Applied Science</h3>
+                            <p class="item-text">
+                                We publish, share, and apply: we take science from the lab to where it is needed most
+                            </p>
+                        </div>
+                    </div>
+                    <div class="collaborate-item">
+                        <div class="item-content">
+                            <h3 class="item-title">Free Software</h3>
+                            <p class="item-text">
+                                Public money, public code: every line of code is an open door to collaboration
+                            </p>
+                        </div>
+                    </div>
+                    <div class="collaborate-item">
+                        <div class="item-content">
+                            <h3 class="item-title">Community</h3>
+                            <p class="item-text">
+                                Students who learn to do open, collaborative science carry the impact far beyond the university
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Dynamic Projects Section -->
+<section class="projects-section" id="projetos">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h2 class="projects-title">Research Projects</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <div class="projects-carousel-wrapper">
+                    <div class="swiper projects-carousel">
+                        <div class="swiper-wrapper">
+                            
+                            <div class="swiper-slide">
+                                <div class="project-card-front">
+                                    <div class="project-image-placeholder">
+                                        
+                                        <img src="../assets/img/bp-logo.png" alt="Brasil Participativo"
+                                            class="project-logo">
+                                        
+                                    </div>
+                                    <div class="project-content">
+                                        <h3 class="project-title">Brasil Participativo</h3>
+                                        <p class="project-description">Brasil Participativo is recognized as the largest digital social participation experience of Brazil's Executive Branch, gathering more than 1.5 million registered citizens. Built with free software by the National Secretariat for Social Participation, in partnership with LabLivre.</p>
+
+                                        
+
+                                        
+
+                                        <a href="https://brasilparticipativo.presidencia.gov.br/" target="_blank" class="project-link">Learn more →</a>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="swiper-slide">
+                                <div class="project-card-front">
+                                    <div class="project-image-placeholder">
+                                        
+                                        <img src="../assets/img/mepa-logo.png" alt="MEPA"
+                                            class="project-logo">
+                                        
+                                    </div>
+                                    <div class="project-content">
+                                        <h3 class="project-title">MEPA</h3>
+                                        <p class="project-description">An energy efficiency platform that uses artificial intelligence and data analysis to optimize energy contracts and reduce costs in public institutions, promoting financial and environmental sustainability.</p>
+
+                                        
+                                        <p class="project-financing"><strong>Funding:</strong> MEC</p>
+                                        
+
+                                        
+
+                                        <a href="https://mepaenergia.org/" target="_blank" class="project-link">Learn more →</a>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="swiper-slide">
+                                <div class="project-card-front">
+                                    <div class="project-image-placeholder">
+                                        
+                                        <img src="../assets/img/govhub-logo.png" alt="Gov Hub"
+                                            class="project-logo">
+                                        
+                                    </div>
+                                    <div class="project-content">
+                                        <h3 class="project-title">Gov Hub</h3>
+                                        <p class="project-description">A data platform for integrating the structuring systems of the Federal Government, turning them into strategic information for data-driven public management.</p>
+
+                                        
+                                        <p class="project-financing"><strong>Funding:</strong> IPEA, Ministry of Racial Equality (MIR)</p>
+                                        
+
+                                        
+
+                                        <a href="https://gov-hub.io/" target="_blank" class="project-link">Learn more →</a>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="swiper-slide">
+                                <div class="project-card-front">
+                                    <div class="project-image-placeholder">
+                                        
+                                        <img src="../assets/img/dermalert-logo.png" alt="Dermalert"
+                                            class="project-logo">
+                                        
+                                    </div>
+                                    <div class="project-content">
+                                        <h3 class="project-title">Dermalert</h3>
+                                        <p class="project-description">An intelligent system for detecting dermatological lesions, aimed at screening patients with suspected skin cancer, facilitating early identification and appropriate referral.</p>
+
+                                        
+                                        <p class="project-financing"><strong>Funding:</strong> FAP-DF</p>
+                                        
+
+                                        
+
+                                        <a href="https://www.dermalert.ai/" target="_blank" class="project-link">Learn more →</a>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="swiper-slide">
+                                <div class="project-card-front">
+                                    <div class="project-image-placeholder">
+                                        
+                                        <span class="project-text-logo">ThinkAds</span>
+                                        
+                                    </div>
+                                    <div class="project-content">
+                                        <h3 class="project-title">Is it fake?</h3>
+                                        <p class="project-description">An advanced artificial intelligence system that identifies disinformation in news articles with precision and transparency, strengthening Brazil's trustworthy information ecosystem.</p>
+
+                                        
+                                        <p class="project-financing"><strong>Funding:</strong> Dex/UnB Grant</p>
+                                        
+
+                                        
+                                        <p class="project-financing"><strong>Partner:</strong> Sleeping Giants</p>
+                                        
+
+                                        <a href="https://think-ads.vercel.app/" target="_blank" class="project-link">Learn more →</a>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="wave-divider wave-1" id="capacitacao">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" preserveAspectRatio="none">
+        <path fill="#FFFFFF" fill-opacity="1"
+            d="M0,128L40,144C80,160,160,192,240,197.3C320,203,400,181,480,197.3C560,213,640,267,720,256C800,245,880,171,960,144C1040,117,1120,139,1200,170.7C1280,203,1360,245,1400,266.7L1440,288L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z">
+        </path>
+    </svg>
+</div>
+
+<section class="capacitacao-section">
+    <div class="container">
+        <!-- Capacitacao Content -->
+        <div class="row">
+            <div class="col-12">
+                <h2 class="capacitacao-title">Training</h2>
+            </div>
+        </div>
+        <div class="row g-4">
+            
+            <div class="col-md-6 col-12">
+                <div class="capacitacao-card">
+                    <div class="capacitacao-logo-wrapper">
+                        <img src="../assets/img/baner_residencia-ia.png" alt="ICT Residency in AI"
+                            class="capacitacao-logo capacitacao-logo-contain">
+                    </div>
+                    <div class="capacitacao-card-body">
+                        <h3 class="capacitacao-card-title">ICT Residency in AI</h3>
+                        <p class="capacitacao-card-description">
+                            Learn to build solutions with Artificial Intelligence, Machine Learning, and Data Analysis applied to real-world challenges.
+                        </p>
+
+                        
+                        <p class="capacitacao-financing"><strong>Funding:</strong> Instituto ELDORADO / UnB / MCTI / Softex</p>
+                        
+
+                        
+                        <a href="/en/ai-residency/" target="_blank" class="capacitacao-link">Learn more →</a>
+                        
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-6 col-12">
+                <div class="capacitacao-card">
+                    <div class="capacitacao-logo-wrapper">
+                        <img src="../assets/img/brisa-logo.png" alt="Brisa ICT Residency"
+                            class="capacitacao-logo ">
+                    </div>
+                    <div class="capacitacao-card-body">
+                        <h3 class="capacitacao-card-title">Brisa ICT Residency</h3>
+                        <p class="capacitacao-card-description">
+                            A training program in Information and Communication Technology (ICT), with hands-on immersion in software development and direct collaboration with industry.
+                        </p>
+
+                        
+                        <p class="capacitacao-financing"><strong>Funding:</strong> Brisa/Softex/MCTI</p>
+                        
+
+                        
+                        <a href="https://brisa.lappis.rocks/" target="_blank" class="capacitacao-link">Learn more →</a>
+                        
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-6 col-12">
+                <div class="capacitacao-card">
+                    <div class="capacitacao-logo-wrapper">
+                        <img src="../assets/img/boss-logo.png" alt="Big Open Source Siblings (BOSS)"
+                            class="capacitacao-logo capacitacao-logo-contain">
+                    </div>
+                    <div class="capacitacao-card-body">
+                        <h3 class="capacitacao-card-title">Big Open Source Siblings (BOSS)</h3>
+                        <p class="capacitacao-card-description">
+                            The BOSS initiative promotes the inclusion of people from underrepresented groups in technology, offering mentoring and support to participate in free software projects.
+                        </p>
+
+                        
+
+                        
+                        <div class="capacitacao-links">
+                            
+                            <a href="https://noticias.unb.br/112-extensao-e-comunidade/4949-programa-de-tecnologia-voltado-para-a-inclusao-de-grupos-sub-representados-ganha-premio-internacional" target="_blank" class="capacitacao-link">Award →</a>
+                            
+                            <a href="https://github.com/BOSS-BigOpenSourceSibling/BigSibling/blob/main/gnome_challenge/phase3/BOSS%20-%20final%20final.pdf" target="_blank" class="capacitacao-link">Learn more →</a>
+                            
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</section>
+
+<section class="training-section" id="treinamentos">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h2 class="training-title">Research Lines</h2>
+            </div>
+        </div>
+        <div class="row training-row-custom g-4">
+            
+            <div class="col-md-6 col-12">
+                <div class="training-card">
+                    <h3 class="training-card-title">DevOps</h3>
+                    <p class="training-card-description">
+                        Study and application of practices and team structures that integrate development and operations to improve continuous delivery, software quality, and reliability.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="col-md-6 col-12">
+                <div class="training-card">
+                    <h3 class="training-card-title">MLOps</h3>
+                    <p class="training-card-description">
+                        Research on processes, tools, and automation for developing, deploying, monitoring, and governing machine learning models in production.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="col-md-6 col-12">
+                <div class="training-card">
+                    <h3 class="training-card-title">Data Engineering</h3>
+                    <p class="training-card-description">
+                        Investigation of data architectures, pipelines, and governance for large-scale collection, integration, quality, and analysis.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="col-md-6 col-12">
+                <div class="training-card">
+                    <h3 class="training-card-title">Experience-Based Learning</h3>
+                    <p class="training-card-description">
+                        Teaching and training approaches based on practice, experimentation, and solving real problems in academic and professional contexts.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="col-md-6 col-12">
+                <div class="training-card">
+                    <h3 class="training-card-title">Co-development Methodology</h3>
+                    <p class="training-card-description">
+                        Collaborative software development methods involving researchers, students, users, and institutional partners.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="col-md-6 col-12">
+                <div class="training-card">
+                    <h3 class="training-card-title">Free Software Ecosystems</h3>
+                    <p class="training-card-description">
+                        Study of the technical, organizational, and social dynamics of free software communities and platforms, focusing on sustainability and impact.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="col-md-6 col-12">
+                <div class="training-card">
+                    <h3 class="training-card-title">Digital Participation</h3>
+                    <p class="training-card-description">
+                        Research on technologies and methods to broaden, improve, and analyze citizen participation in digital decision-making processes.
+                    </p>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</section>
+
+<div class="wave-divider wave-2" id="publicacoes">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" preserveAspectRatio="none">
+        <path fill="#FFFFFF" fill-opacity="1"
+            d="M0,128L40,144C80,160,160,192,240,197.3C320,203,400,181,480,197.3C560,213,640,267,720,256C800,245,880,171,960,144C1040,117,1120,139,1200,170.7C1280,203,1360,245,1400,266.7L1440,288L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z">
+        </path>
+    </svg>
+</div>
+
+<!-- Dynamic Publications Section -->
+
+<section class="news-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h2 class="news-title">Publications</h2>
+            </div>
+        </div>
+        <div class="row g-4" id="publications-container">
+            
+            <div class="col-md-4 col-sm-6 col-12 ">
+                <a href="../en/publications/2025-data-guide/" class="news-card-link">
+                    <div class="news-card">
+                        <div class="news-card-header">
+                            <div class="news-card-icon news-card-icon-book">
+                                
+                                <!-- Double image structure for Ebooks to enable animation -->
+                                
+                                <img src="../assets/img/publications/book.png" alt="Publicação"
+                                    class="book-image book-image-1">
+                                <img src="../assets/img/publications/book.png" alt="Publicação"
+                                    class="book-image book-image-2">
+                                
+                                
+                            </div>
+                        </div>
+                        <div class="news-card-body">
+                            <p class="news-card-date">September 2025</p>
+                            <h3 class="news-card-title">A practical guide to integrating and qualifying public data</h3>
+                            <p class="news-card-description">
+                                
+                                An e-book with our methodology and practical guide for turning scattered data into intelligent decisions. Published in Portuguese.
+                            </p>
+                            <div class="news-card-arrow">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            
+            <div class="col-md-4 col-sm-6 col-12 ">
+                <a href="../en/publications/2019-public-money-public-code/" class="news-card-link">
+                    <div class="news-card">
+                        <div class="news-card-header">
+                            <div class="news-card-icon ">
+                                
+                                <!-- Regular single image for other publications -->
+                                
+                                <img src="../assets/img/publications/dinheiropublico-publication.png" alt="Publicação">
+                                
+                                
+                            </div>
+                        </div>
+                        <div class="news-card-body">
+                            <p class="news-card-date">January 2019</p>
+                            <h3 class="news-card-title">Public Money, Public Code</h3>
+                            <p class="news-card-description">
+                                
+                                Brazilian Portuguese translation of the publication "Public Money Public Code – Modernising Public Infrastructure with Free Software" by the Free Software Foundation Europe.
+                            </p>
+                            <div class="news-card-arrow">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            
+            <div class="col-md-4 col-sm-6 col-12 ">
+                <a href="../en/publications/2019-devops-survey/" class="news-card-link">
+                    <div class="news-card">
+                        <div class="news-card-header">
+                            <div class="news-card-icon ">
+                                
+                                <!-- Regular single image for other publications -->
+                                
+                                <img src="../assets/img/publications/devops-publication.png" alt="Publicação">
+                                
+                                
+                            </div>
+                        </div>
+                        <div class="news-card-body">
+                            <p class="news-card-date">November 2019</p>
+                            <h3 class="news-card-title">A survey of DevOps concepts and challenges</h3>
+                            <p class="news-card-description">
+                                
+                                This survey investigates and discusses the challenges of DevOps from the perspective of engineers, managers, and researchers. A paper with more than 700 citations.
+                            </p>
+                            <div class="news-card-arrow">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            
+            <div class="col-md-4 col-sm-6 col-12 publicacao-card-hidden">
+                <a href="../en/publications/2025-integration-platform/" class="news-card-link">
+                    <div class="news-card">
+                        <div class="news-card-header">
+                            <div class="news-card-icon ">
+                                
+                                <!-- Regular single image for other publications -->
+                                
+                                <img src="../assets/img/publications/plataformadeintegracao-publication.png" alt="Publicação">
+                                
+                                
+                            </div>
+                        </div>
+                        <div class="news-card-body">
+                            <p class="news-card-date">July 2025</p>
+                            <h3 class="news-card-title">An Integration Platform for the Structuring Systems of Federal Financial Execution</h3>
+                            <p class="news-card-description">
+                                
+                                This paper presents an experience report on implementing an open source platform to integrate data from different Structuring Systems of federal budget execution (SIOP, SIAFI, SIAPE, TransfereGov, and ContratoGov). Published in Portuguese.
+                            </p>
+                            <div class="news-card-arrow">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            
+            <div class="col-md-4 col-sm-6 col-12 publicacao-card-hidden">
+                <a href="../en/publications/2024-multisector-collaboration/" class="news-card-link">
+                    <div class="news-card">
+                        <div class="news-card-header">
+                            <div class="news-card-icon ">
+                                
+                                <!-- Regular single image for other publications -->
+                                
+                                <img src="../assets/img/publications/colaboracaomultissetorial-publication.png" alt="Publicação">
+                                
+                                
+                            </div>
+                        </div>
+                        <div class="news-card-body">
+                            <p class="news-card-date">August 2024</p>
+                            <h3 class="news-card-title">Multisector collaboration for the development and maintenance of participation technologies</h3>
+                            <p class="news-card-description">
+                                
+                                This paper reflects on multisector arrangements for developing and maintaining digital tools, based on the creation process of the Brasil Participativo digital platform. Published in Portuguese.
+                            </p>
+                            <div class="news-card-arrow">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            
+            <div class="col-md-4 col-sm-6 col-12 publicacao-card-hidden">
+                <a href="../en/publications/2023-harmonizing-devops/" class="news-card-link">
+                    <div class="news-card">
+                        <div class="news-card-header">
+                            <div class="news-card-icon ">
+                                
+                                <!-- Regular single image for other publications -->
+                                
+                                <img src="../assets/img/publications/harmonazingdevops-publication.png" alt="Publicação">
+                                
+                                
+                            </div>
+                        </div>
+                        <div class="news-card-body">
+                            <p class="news-card-date">November 2023</p>
+                            <h3 class="news-card-title">Harmonizing DevOps taxonomies—A grounded theory study</h3>
+                            <p class="news-card-description">
+                                
+                                This paper presents empirical research on the structure of DevOps teams in software-producing organizations. The goal is to deepen the understanding of how these teams are organized and what characterizes them.
+                            </p>
+                            <div class="news-card-arrow">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            
+        </div>
+        <div class="row">
+            <div class="col-12 text-center">
+                <button class="news-view-more-btn" id="publicacao-view-more-btn">View more</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row g-4 mb-4">
+                <div class="col-12">
+                    <div class="footer-logos">
+                        <div class="footer-logo-lab">
+                            <img src="../assets/img/lab-livre-white.png" alt="Lab Livre">
+                        </div>
+                        <div class="footer-logo-fcte">
+                            <img src="../assets/img/fcte-logo.png"
+                                alt="FCTE - Faculdade de Ciências e Tecnologias em Engenharia">
+                        </div>
+                        <div class="footer-logo-unb">
+                            <img src="../assets/img/unb-logo.png" alt="Universidade de Brasília">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row g-4 mb-4">
+                <div class="col-lg-6 col-md-6 col-12">
+                    <div class="footer-contact">
+                        
+                        <h5>Lab Livre Coordinator: Carla Rocha</h5>
+                        <p class="contact-email">Contact: caguiar@unb.br</p>
+                        
+                    </div>
+                </div>
+
+                <div class="col-lg-6 col-md-6 col-12">
+                    <div class="footer-social">
+                        <h5>Follow us on social media</h5>
+                        <ul class="social-links">
+                            <li>
+                                <a href="https://www.instagram.com/lab.livre/" class="social-link" target="_blank">
+                                    <img src="../assets/img/instagram.png" alt="Instagram"
+                                        class="social-icon">
+                                    <span>lab.livre</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.linkedin.com/company/lab-livre/posts/?feedView=all"
+                                    class="social-link" target="_blank">
+                                    <img src="../assets/img/linkedin.png" alt="LinkedIn"
+                                        class="social-icon">
+                                    <span>Lab-Livre</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/lablivre-unb" class="social-link" target="_blank">
+                                    <img src="../assets/img/github.png" alt="GitHub" class="social-icon">
+                                    <span>lablivre-unb</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12">
+                    <div class="footer-license">
+                        <div class="cc-icons">
+                            <img src="../assets/img/cc-by.png" alt="CC BY" class="cc-badge">
+                        </div>
+                        <p class="license-text">
+                            Except where otherwise <a href="#" class="license-link">noted</a>, content on this site is
+                            licensed under a <a href="https://creativecommons.org/licenses/by/4.0/" class="license-link"
+                                target="_blank">Creative Commons Attribution 4.0 International license</a>.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    
+    <script src="../assets/navbar.js"></script>
+    
+    <script src="../assets/home/home.js"></script>
+    
+    <script src="../assets/home/hero-carousel.js"></script>
+    
+    <script src="../search/main.js"></script>
+    
+</body>
+
+</html>

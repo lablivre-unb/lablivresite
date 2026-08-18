@@ -2,134 +2,230 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://lablivre.unb.br/</loc>
-         <lastmod>2026-08-05</lastmod>
+         <lastmod>2026-08-18</lastmod>
     </url>
     <url>
          <loc>https://lablivre.unb.br/ResidenciaIA/</loc>
-         <lastmod>2026-08-05</lastmod>
+         <lastmod>2026-08-18</lastmod>
     </url>
     <url>
          <loc>https://lablivre.unb.br/capacitacao/boss/</loc>
-         <lastmod>2026-08-05</lastmod>
+         <lastmod>2026-08-18</lastmod>
     </url>
     <url>
          <loc>https://lablivre.unb.br/capacitacao/residencia-brisa/</loc>
-         <lastmod>2026-08-05</lastmod>
+         <lastmod>2026-08-18</lastmod>
     </url>
     <url>
          <loc>https://lablivre.unb.br/capacitacao/residencia-ia/</loc>
-         <lastmod>2026-08-05</lastmod>
+         <lastmod>2026-08-18</lastmod>
+    </url>
+    <url>
+         <loc>https://lablivre.unb.br/en/</loc>
+         <lastmod>2026-08-18</lastmod>
+    </url>
+    <url>
+         <loc>https://lablivre.unb.br/en/about/</loc>
+         <lastmod>2026-08-18</lastmod>
+    </url>
+    <url>
+         <loc>https://lablivre.unb.br/en/ai-residency/</loc>
+         <lastmod>2026-08-18</lastmod>
+    </url>
+    <url>
+         <loc>https://lablivre.unb.br/en/projects/brasil-participativo/</loc>
+         <lastmod>2026-08-18</lastmod>
+    </url>
+    <url>
+         <loc>https://lablivre.unb.br/en/projects/dermalert/</loc>
+         <lastmod>2026-08-18</lastmod>
+    </url>
+    <url>
+         <loc>https://lablivre.unb.br/en/projects/govhub/</loc>
+         <lastmod>2026-08-18</lastmod>
+    </url>
+    <url>
+         <loc>https://lablivre.unb.br/en/projects/mepa/</loc>
+         <lastmod>2026-08-18</lastmod>
+    </url>
+    <url>
+         <loc>https://lablivre.unb.br/en/projects/thinkads/</loc>
+         <lastmod>2026-08-18</lastmod>
+    </url>
+    <url>
+         <loc>https://lablivre.unb.br/en/publications/2019-devops-survey/</loc>
+         <lastmod>2026-08-18</lastmod>
+    </url>
+    <url>
+         <loc>https://lablivre.unb.br/en/publications/2019-public-money-public-code/</loc>
+         <lastmod>2026-08-18</lastmod>
+    </url>
+    <url>
+         <loc>https://lablivre.unb.br/en/publications/2023-harmonizing-devops/</loc>
+         <lastmod>2026-08-18</lastmod>
+    </url>
+    <url>
+         <loc>https://lablivre.unb.br/en/publications/2024-multisector-collaboration/</loc>
+         <lastmod>2026-08-18</lastmod>
+    </url>
+    <url>
+         <loc>https://lablivre.unb.br/en/publications/2025-data-guide/</loc>
+         <lastmod>2026-08-18</lastmod>
+    </url>
+    <url>
+         <loc>https://lablivre.unb.br/en/publications/2025-integration-platform/</loc>
+         <lastmod>2026-08-18</lastmod>
+    </url>
+    <url>
+         <loc>https://lablivre.unb.br/en/research-lines/co-development/</loc>
+         <lastmod>2026-08-18</lastmod>
+    </url>
+    <url>
+         <loc>https://lablivre.unb.br/en/research-lines/data-engineering/</loc>
+         <lastmod>2026-08-18</lastmod>
+    </url>
+    <url>
+         <loc>https://lablivre.unb.br/en/research-lines/devops/</loc>
+         <lastmod>2026-08-18</lastmod>
+    </url>
+    <url>
+         <loc>https://lablivre.unb.br/en/research-lines/digital-participation/</loc>
+         <lastmod>2026-08-18</lastmod>
+    </url>
+    <url>
+         <loc>https://lablivre.unb.br/en/research-lines/experiential-learning/</loc>
+         <lastmod>2026-08-18</lastmod>
+    </url>
+    <url>
+         <loc>https://lablivre.unb.br/en/research-lines/floss-ecosystems/</loc>
+         <lastmod>2026-08-18</lastmod>
+    </url>
+    <url>
+         <loc>https://lablivre.unb.br/en/research-lines/mlops/</loc>
+         <lastmod>2026-08-18</lastmod>
+    </url>
+    <url>
+         <loc>https://lablivre.unb.br/en/training/ai-residency/</loc>
+         <lastmod>2026-08-18</lastmod>
+    </url>
+    <url>
+         <loc>https://lablivre.unb.br/en/training/boss/</loc>
+         <lastmod>2026-08-18</lastmod>
+    </url>
+    <url>
+         <loc>https://lablivre.unb.br/en/training/brisa-residency/</loc>
+         <lastmod>2026-08-18</lastmod>
     </url>
     <url>
          <loc>https://lablivre.unb.br/gsoc-projects/proposal-1/</loc>
-         <lastmod>2026-08-05</lastmod>
+         <lastmod>2026-08-18</lastmod>
     </url>
     <url>
          <loc>https://lablivre.unb.br/gsoc-projects/proposal-2/</loc>
-         <lastmod>2026-08-05</lastmod>
+         <lastmod>2026-08-18</lastmod>
     </url>
     <url>
          <loc>https://lablivre.unb.br/gsoc-projects/proposal-3/</loc>
-         <lastmod>2026-08-05</lastmod>
+         <lastmod>2026-08-18</lastmod>
     </url>
     <url>
          <loc>https://lablivre.unb.br/gsoc-projects/proposal-4/</loc>
-         <lastmod>2026-08-05</lastmod>
+         <lastmod>2026-08-18</lastmod>
     </url>
     <url>
          <loc>https://lablivre.unb.br/home/</loc>
-         <lastmod>2026-08-05</lastmod>
+         <lastmod>2026-08-18</lastmod>
     </url>
     <url>
          <loc>https://lablivre.unb.br/parceiros/setor-publico-cidades/</loc>
-         <lastmod>2026-08-05</lastmod>
+         <lastmod>2026-08-18</lastmod>
     </url>
     <url>
          <loc>https://lablivre.unb.br/parceiros/setor-publico-mir/</loc>
-         <lastmod>2026-08-05</lastmod>
+         <lastmod>2026-08-18</lastmod>
     </url>
     <url>
          <loc>https://lablivre.unb.br/parceiros/universidades-ufpa/</loc>
-         <lastmod>2026-08-05</lastmod>
+         <lastmod>2026-08-18</lastmod>
     </url>
     <url>
          <loc>https://lablivre.unb.br/parceiros/universidades-unb/</loc>
-         <lastmod>2026-08-05</lastmod>
+         <lastmod>2026-08-18</lastmod>
     </url>
     <url>
          <loc>https://lablivre.unb.br/projects/brasil-participativo/</loc>
-         <lastmod>2026-08-05</lastmod>
+         <lastmod>2026-08-18</lastmod>
     </url>
     <url>
          <loc>https://lablivre.unb.br/projects/dermalert/</loc>
-         <lastmod>2026-08-05</lastmod>
+         <lastmod>2026-08-18</lastmod>
     </url>
     <url>
          <loc>https://lablivre.unb.br/projects/govhub/</loc>
-         <lastmod>2026-08-05</lastmod>
+         <lastmod>2026-08-18</lastmod>
     </url>
     <url>
          <loc>https://lablivre.unb.br/projects/mepa/</loc>
-         <lastmod>2026-08-05</lastmod>
+         <lastmod>2026-08-18</lastmod>
     </url>
     <url>
          <loc>https://lablivre.unb.br/projects/thinkads/</loc>
-         <lastmod>2026-08-05</lastmod>
+         <lastmod>2026-08-18</lastmod>
     </url>
     <url>
          <loc>https://lablivre.unb.br/publications/2019-devops-survey/</loc>
-         <lastmod>2026-08-05</lastmod>
+         <lastmod>2026-08-18</lastmod>
     </url>
     <url>
          <loc>https://lablivre.unb.br/publications/2019-dinheiro-publico/</loc>
-         <lastmod>2026-08-05</lastmod>
+         <lastmod>2026-08-18</lastmod>
     </url>
     <url>
          <loc>https://lablivre.unb.br/publications/2023-harmonizing-devops/</loc>
-         <lastmod>2026-08-05</lastmod>
+         <lastmod>2026-08-18</lastmod>
     </url>
     <url>
          <loc>https://lablivre.unb.br/publications/2024-colaboracao-multissetorial/</loc>
-         <lastmod>2026-08-05</lastmod>
+         <lastmod>2026-08-18</lastmod>
     </url>
     <url>
          <loc>https://lablivre.unb.br/publications/2025-guia-dados/</loc>
-         <lastmod>2026-08-05</lastmod>
+         <lastmod>2026-08-18</lastmod>
     </url>
     <url>
          <loc>https://lablivre.unb.br/publications/2025-plataforma-integracao/</loc>
-         <lastmod>2026-08-05</lastmod>
+         <lastmod>2026-08-18</lastmod>
     </url>
     <url>
          <loc>https://lablivre.unb.br/sobre/</loc>
-         <lastmod>2026-08-05</lastmod>
+         <lastmod>2026-08-18</lastmod>
     </url>
     <url>
          <loc>https://lablivre.unb.br/treinamentos/aprendizado-experiencia/</loc>
-         <lastmod>2026-08-05</lastmod>
+         <lastmod>2026-08-18</lastmod>
     </url>
     <url>
          <loc>https://lablivre.unb.br/treinamentos/co-desenvolvimento/</loc>
-         <lastmod>2026-08-05</lastmod>
+         <lastmod>2026-08-18</lastmod>
     </url>
     <url>
          <loc>https://lablivre.unb.br/treinamentos/devops/</loc>
-         <lastmod>2026-08-05</lastmod>
+         <lastmod>2026-08-18</lastmod>
     </url>
     <url>
          <loc>https://lablivre.unb.br/treinamentos/ecossistemas/</loc>
-         <lastmod>2026-08-05</lastmod>
+         <lastmod>2026-08-18</lastmod>
     </url>
     <url>
          <loc>https://lablivre.unb.br/treinamentos/engenharia-dados/</loc>
-         <lastmod>2026-08-05</lastmod>
+         <lastmod>2026-08-18</lastmod>
     </url>
     <url>
          <loc>https://lablivre.unb.br/treinamentos/mlops/</loc>
-         <lastmod>2026-08-05</lastmod>
+         <lastmod>2026-08-18</lastmod>
     </url>
     <url>
          <loc>https://lablivre.unb.br/treinamentos/participacao-digital/</loc>
-         <lastmod>2026-08-05</lastmod>
+         <lastmod>2026-08-18</lastmod>
     </url>
 </urlset>
