@@ -1,11 +1,16 @@
+{% set lang = page.meta.lang if page and page.meta and page.meta.lang else 'pt' %}
+{% set translation_url = page.meta.translation if page and page.meta and page.meta.translation else ('/' if lang == 'en' else '/en/') %}
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="{{ 'en' if lang == 'en' else 'pt-BR' }}">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{% if page.title %}{{ page.title }} - {% endif %}LabLivre</title>
-    
+
+    <!-- Language alternates -->
+    <link rel="alternate" hreflang="{{ 'pt-BR' if lang == 'en' else 'en' }}" href="{{ translation_url }}">
+
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="{{ base_url }}/assets/img/favicon.png">
 
@@ -46,9 +51,19 @@
                 </div>
                 <div class="col navbar-col-menu">
                     <nav class="navbar-nav">
+                        {% if lang == 'en' %}
+                        <a href="{{ base_url }}/en/" class="nav-link">Home</a>
+                        <a href="{{ base_url }}/en/ai-residency/" class="nav-link nav-link-highlight">AI Residency</a>
+                        <a href="{{ base_url }}/en/about/" class="nav-link">About</a>
+                        {% else %}
                         <a href="{{ base_url }}/" class="nav-link">Home</a>
                         <a href="{{ base_url }}/ResidenciaIA/" class="nav-link nav-link-highlight">Residência em IA</a>
                         <a href="{{ base_url }}/sobre/" class="nav-link">Sobre</a>
+                        {% endif %}
+                        <a href="{{ translation_url }}" class="nav-link nav-link-lang" lang="{{ 'pt-BR' if lang == 'en' else 'en' }}"
+                            title="{{ 'Versão em português' if lang == 'en' else 'English version' }}">
+                            {{ 'PT' if lang == 'en' else 'EN' }}
+                        </a>
                     </nav>
                 </div>
                 <button class="hamburger" aria-label="Menu">
@@ -87,14 +102,19 @@
             <div class="row g-4 mb-4">
                 <div class="col-lg-6 col-md-6 col-12">
                     <div class="footer-contact">
+                        {% if lang == 'en' %}
+                        <h5>Lab Livre Coordinator: Carla Rocha</h5>
+                        <p class="contact-email">Contact: caguiar@unb.br</p>
+                        {% else %}
                         <h5>Coordenadora Lab Livre: Carla Rocha</h5>
                         <p class="contact-email">Contato: caguiar@unb.br</p>
+                        {% endif %}
                     </div>
                 </div>
 
                 <div class="col-lg-6 col-md-6 col-12">
                     <div class="footer-social">
-                        <h5>Acompanhe nossas redes</h5>
+                        <h5>{{ 'Follow us on social media' if lang == 'en' else 'Acompanhe nossas redes' }}</h5>
                         <ul class="social-links">
                             <li>
                                 <a href="https://www.instagram.com/lab.livre/" class="social-link" target="_blank">

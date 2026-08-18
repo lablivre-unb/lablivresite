@@ -27,10 +27,17 @@ class PublicationsPlugin(BasePlugin):
             name = col_conf['name']
             context[name] = []
 
-        pt_months = {
-            1: 'Janeiro', 2: 'Fevereiro', 3: 'Março', 4: 'Abril',
-            5: 'Maio', 6: 'Junho', 7: 'Julho', 8: 'Agosto',
-            9: 'Setembro', 10: 'Outubro', 11: 'Novembro', 12: 'Dezembro'
+        months = {
+            'pt': {
+                1: 'Janeiro', 2: 'Fevereiro', 3: 'Março', 4: 'Abril',
+                5: 'Maio', 6: 'Junho', 7: 'Julho', 8: 'Agosto',
+                9: 'Setembro', 10: 'Outubro', 11: 'Novembro', 12: 'Dezembro'
+            },
+            'en': {
+                1: 'January', 2: 'February', 3: 'March', 4: 'April',
+                5: 'May', 6: 'June', 7: 'July', 8: 'August',
+                9: 'September', 10: 'October', 11: 'November', 12: 'December'
+            }
         }
 
         # Scan all pages
@@ -40,6 +47,7 @@ class PublicationsPlugin(BasePlugin):
                 path = col_conf['path']
                 excludes = col_conf.get('exclude', [])
                 format_date = col_conf.get('format_date', False)
+                lang = col_conf.get('lang', 'pt')
 
                 # Check if the path matches, is not excluded, and is not the collection index page
                 if path in item.url and item.url != path:
@@ -59,8 +67,11 @@ class PublicationsPlugin(BasePlugin):
                             if isinstance(date_obj, str):
                                 date_obj = datetime.strptime(date_obj, '%Y-%m-%d').date()
                             
-                            month_name = pt_months.get(date_obj.month, '')
-                            data['date_formatted'] = f"{month_name} de {date_obj.year}"
+                            month_name = months.get(lang, months['pt']).get(date_obj.month, '')
+                            if lang == 'en':
+                                data['date_formatted'] = f"{month_name} {date_obj.year}"
+                            else:
+                                data['date_formatted'] = f"{month_name} de {date_obj.year}"
                         except Exception:
                             data['date_formatted'] = str(data['date'])
                     

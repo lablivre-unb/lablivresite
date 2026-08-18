@@ -9,6 +9,7 @@ image: "assets/img/publications/dinheiropublico-publication.png"
 order: 2
 template: publicacao.html
 description: 'Tradução para o português brasileiro a publicação "Dinheiro Público Código Público – Modernizando a Infraestrutura Pública com Software Livre" da Free Software Foundation Europe.'
+translation: /en/publications/2019-public-money-public-code/
 ---
 
 ## Sobre a Tradução

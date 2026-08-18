@@ -8,6 +8,7 @@ image: "assets/img/publications/plataformadeintegracao-publication.png"
 order: 4
 template: publicacao.html
 description: "Este artigo apresenta o relato de experiência na implementação de uma plataforma open source para integrar dados de diferentes Sistemas Estruturantes da execução orçamentária federal (SIOP, SIAFI, SIAPE, TransfereGov e ContratoGov)"
+translation: /en/publications/2025-integration-platform/
 ---
 
 ## Relato da Célula de Integração de Dados

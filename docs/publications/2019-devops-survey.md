@@ -12,6 +12,7 @@ image: "assets/img/publications/devops-publication.png"
 order: 3
 template: publicacao.html
 description: "Este survey investiga e discute os desafios de DevOps sob a perspectiva de engenheiros, gestores e pesquisadores. Artigo com mais de 700 citações."
+translation: /en/publications/2019-devops-survey/
 ---
 
 ## Investigando os Desafios do DevOps

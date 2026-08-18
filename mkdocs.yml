@@ -14,14 +14,31 @@ plugins:
         - name: publications
           path: publications/
           format_date: true
+          exclude:
+            - en/
         - name: projects
           path: projects/
           exclude:
             - gsoc-projects/
+            - en/
         - name: capacitacao
           path: capacitacao/
         - name: treinamentos
           path: treinamentos/
+        # English collections (see docs/en/)
+        - name: publications_en
+          path: en/publications/
+          format_date: true
+          lang: en
+        - name: projects_en
+          path: en/projects/
+          lang: en
+        - name: capacitacao_en
+          path: en/training/
+          lang: en
+        - name: treinamentos_en
+          path: en/research-lines/
+          lang: en
 
 extra_css:
   - assets/navbar.css

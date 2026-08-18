@@ -9,6 +9,7 @@ order: 1
 type: ebook
 template: publicacao.html
 description: "E-book com a metodologia e nosso guia prático para transformar dados dispersos em decisões inteligentes."
+translation: /en/publications/2025-data-guide/
 ---
 
 ## Sobre o E-Book

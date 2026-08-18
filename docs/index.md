@@ -1,6 +1,7 @@
 ---
 title: Home
 template: home.html
+translation: /en/
 ---
 
 <section class="hero-section">

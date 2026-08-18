@@ -1,6 +1,11 @@
 {% extends "main.html" %}
 
 {% block content %}
+{% set lang = page.meta.lang if page and page.meta and page.meta.lang else 'pt' %}
+{% set _projects = projects_en if lang == 'en' else projects %}
+{% set _capacitacao = capacitacao_en if lang == 'en' else capacitacao %}
+{% set _treinamentos = treinamentos_en if lang == 'en' else treinamentos %}
+{% set _publications = publications_en if lang == 'en' else publications %}
 <!-- Render the content from index.md (Hero, Projects, etc) -->
 {{ page.content }}
 
@@ -10,7 +15,7 @@
     <div class="container">
         <div class="row">
             <div class="col-12">
-                <h2 class="projects-title">Projetos de Pesquisa</h2>
+                <h2 class="projects-title">{{ 'Research Projects' if lang == 'en' else 'Projetos de Pesquisa' }}</h2>
             </div>
         </div>
         <div class="row">
@@ -18,7 +23,7 @@
                 <div class="projects-carousel-wrapper">
                     <div class="swiper projects-carousel">
                         <div class="swiper-wrapper">
-                            {% for proj in projects %}
+                            {% for proj in _projects %}
                             <div class="swiper-slide">
                                 <div class="project-card-front">
                                     <div class="project-image-placeholder">
@@ -34,15 +39,15 @@
                                         <p class="project-description">{{ proj.description }}</p>
 
                                         {% if proj.financing %}
-                                        <p class="project-financing"><strong>Financiamento:</strong> {{ proj.financing
+                                        <p class="project-financing"><strong>{{ 'Funding' if lang == 'en' else 'Financiamento' }}:</strong> {{ proj.financing
                                             }}</p>
                                         {% endif %}
 
                                         {% if proj.partner %}
-                                        <p class="project-financing"><strong>Parceiro:</strong> {{ proj.partner }}</p>
+                                        <p class="project-financing"><strong>{{ 'Partner' if lang == 'en' else 'Parceiro' }}:</strong> {{ proj.partner }}</p>
                                         {% endif %}
 
-                                        <a href="{{ proj.link }}" target="_blank" class="project-link">Saiba mais →</a>
+                                        <a href="{{ proj.link }}" target="_blank" class="project-link">{{ 'Learn more →' if lang == 'en' else 'Saiba mais →' }}</a>
                                     </div>
                                 </div>
                             </div>
@@ -71,11 +76,11 @@
         <!-- Capacitacao Content -->
         <div class="row">
             <div class="col-12">
-                <h2 class="capacitacao-title">Capacitação</h2>
+                <h2 class="capacitacao-title">{{ 'Training' if lang == 'en' else 'Capacitação' }}</h2>
             </div>
         </div>
         <div class="row g-4">
-            {% for item in capacitacao %}
+            {% for item in _capacitacao %}
             <div class="col-md-6 col-12">
                 <div class="capacitacao-card">
                     <div class="capacitacao-logo-wrapper">
@@ -89,7 +94,7 @@
                         </p>
 
                         {% if item.financing %}
-                        <p class="capacitacao-financing"><strong>Financiamento:</strong> {{ item.financing }}</p>
+                        <p class="capacitacao-financing"><strong>{{ 'Funding' if lang == 'en' else 'Financiamento' }}:</strong> {{ item.financing }}</p>
                         {% endif %}
 
                         {% if item.links %}
@@ -99,7 +104,7 @@
                             {% endfor %}
                         </div>
                         {% elif item.link %}
-                        <a href="{{ item.link }}" target="_blank" class="capacitacao-link">Saiba mais →</a>
+                        <a href="{{ item.link }}" target="_blank" class="capacitacao-link">{{ 'Learn more →' if lang == 'en' else 'Saiba mais →' }}</a>
                         {% endif %}
                     </div>
                 </div>
@@ -113,11 +118,11 @@
     <div class="container">
         <div class="row">
             <div class="col-12">
-                <h2 class="training-title">Linhas de Pesquisa</h2>
+                <h2 class="training-title">{{ 'Research Lines' if lang == 'en' else 'Linhas de Pesquisa' }}</h2>
             </div>
         </div>
         <div class="row training-row-custom g-4">
-            {% for item in treinamentos %}
+            {% for item in _treinamentos %}
             <div class="col-md-6 col-12">
                 <div class="training-card">
                     <h3 class="training-card-title">{{ item.title }}</h3>
@@ -140,16 +145,16 @@
 </div>
 
 <!-- Dynamic Publications Section -->
-{% if publications %}
+{% if _publications %}
 <section class="news-section">
     <div class="container">
         <div class="row">
             <div class="col-12">
-                <h2 class="news-title">Publicações</h2>
+                <h2 class="news-title">{{ 'Publications' if lang == 'en' else 'Publicações' }}</h2>
             </div>
         </div>
         <div class="row g-4" id="publications-container">
-            {% for pub in publications %}
+            {% for pub in _publications %}
             <div class="col-md-4 col-sm-6 col-12 {% if loop.index0 >= 3 %}publicacao-card-hidden{% endif %}">
                 <a href="{{ base_url }}/{{ pub.url }}" class="news-card-link">
                     <div class="news-card">
@@ -183,7 +188,7 @@
                             <h3 class="news-card-title">{{ pub.title }}</h3>
                             <p class="news-card-description">
                                 {% if pub.venue %}<strong>{{ pub.venue }}</strong><br>{% endif %}
-                                {{ pub.description if pub.description else 'Clique para acessar.' }}
+                                {{ pub.description if pub.description else ('Click to access.' if lang == 'en' else 'Clique para acessar.') }}
                             </p>
                             <div class="news-card-arrow">
                                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
@@ -200,7 +205,7 @@
         </div>
         <div class="row">
             <div class="col-12 text-center">
-                <button class="news-view-more-btn" id="publicacao-view-more-btn">Ver mais</button>
+                <button class="news-view-more-btn" id="publicacao-view-more-btn">{{ 'View more' if lang == 'en' else 'Ver mais' }}</button>
             </div>
         </div>
     </div>

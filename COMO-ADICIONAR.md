@@ -11,6 +11,7 @@ Este guia explica como adicionar novos itens (projetos, publicações, treinamen
 - [Referência do Template](#referência-do-template)
 - [Instalação e Configuração do Plugin](#instalação-e-configuração-do-plugin)
 - [Como Testar e Executar Localmente](#como-testar-e-executar-localmente)
+- [Versão em Inglês (English Version)](#versão-em-inglês-english-version)
 
 ---
 
@@ -380,3 +381,28 @@ Graças ao *Live Reload* nativo do framework, qualquer edição que você realiz
 **Última atualização:** Este guia reflete a estrutura atual do projeto. Para verificar campos atualizados, consulte sempre o template `theme/home.html`.
 
 
+
+---
+
+## Versão em Inglês (English Version)
+
+O site é bilíngue: a versão em português vive em `docs/` e a versão em inglês em `docs/en/`, com caminhos traduzidos:
+
+| Português | Inglês |
+|-----------|--------|
+| `/` (`docs/index.md`) | `/en/` (`docs/en/index.md`) |
+| `/sobre/` | `/en/about/` |
+| `/ResidenciaIA/` | `/en/ai-residency/` |
+| `docs/publications/` | `docs/en/publications/` |
+| `docs/projects/` | `docs/en/projects/` |
+| `docs/capacitacao/` | `docs/en/training/` |
+| `docs/treinamentos/` | `docs/en/research-lines/` |
+
+### Regras ao adicionar/editar conteúdo
+
+1. **Todo item novo deve ser criado nos dois idiomas** — o arquivo em `docs/<coleção>/` e o equivalente traduzido em `docs/en/<coleção-en>/` (mesma estrutura de frontmatter).
+2. Páginas em inglês declaram `lang: en` no frontmatter. É isso que faz o template renderizar navbar, rodapé e rótulos em inglês.
+3. Páginas navegáveis (home, sobre, publicações) declaram `translation:` com a URL da contraparte no outro idioma — é para onde o botão PT/EN da navbar aponta. Ex.: em `docs/sobre/index.md`, `translation: /en/about/`; em `docs/en/about/index.md`, `translation: /sobre/`.
+4. As coleções em inglês (`publications_en`, `projects_en`, `capacitacao_en`, `treinamentos_en`) estão configuradas no `mkdocs.yml` com `lang: en`, o que também formata as datas em inglês ("September 2025").
+5. Templates com conteúdo fixo têm uma versão por idioma: `theme/sobre.html` ↔ `theme/sobre-en.html` e `theme/residencia-ia-tic.html` ↔ `theme/residencia-ia-tic-en.html`. **Ao editar um, edite o outro.** O letreiro de fotos da equipe é compartilhado em `theme/partials/team-marquee.html` (edite uma vez só).
+6. Templates compartilhados (`main.html`, `home.html`, `publicacao.html`) usam condicionais Jinja (`{{ 'Funding' if lang == 'en' else 'Financiamento' }}`) — novas strings fixas devem seguir esse padrão.

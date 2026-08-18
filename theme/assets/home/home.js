@@ -30,6 +30,9 @@ document.addEventListener('DOMContentLoaded', () => {
     // Controle de visibilidade dos cards de publicação
     const viewMoreBtn = document.getElementById('publicacao-view-more-btn');
     const hiddenCards = document.querySelectorAll('.publicacao-card-hidden');
+    const isEnglish = document.documentElement.lang === 'en';
+    const viewMoreLabel = isEnglish ? 'View more' : 'Ver mais';
+    const viewLessLabel = isEnglish ? 'View less' : 'Ver menos';
 
     if (viewMoreBtn && hiddenCards.length > 0) {
         let isExpanded = false;
@@ -40,14 +43,14 @@ document.addEventListener('DOMContentLoaded', () => {
                 hiddenCards.forEach(card => {
                     card.classList.add('show');
                 });
-                viewMoreBtn.textContent = 'Ver menos';
+                viewMoreBtn.textContent = viewLessLabel;
                 isExpanded = true;
             } else {
                 // Esconder os cards extras
                 hiddenCards.forEach(card => {
                     card.classList.remove('show');
                 });
-                viewMoreBtn.textContent = 'Ver mais';
+                viewMoreBtn.textContent = viewMoreLabel;
                 isExpanded = false;
 
                 // Scroll suave para o topo da seção de publicações

@@ -9,6 +9,7 @@ image: "assets/img/publications/harmonazingdevops-publication.png"
 order: 6
 template: publicacao.html
 description: "Este artigo apresenta uma pesquisa empírica sobre a estrutura de equipes DevOps em organizações produtoras de software. O objetivo é aprofundar a compreensão sobre a organização e as características dessas equipes."
+translation: /en/publications/2023-harmonizing-devops/
 ---
 
 ## Resumo da Pesquisa

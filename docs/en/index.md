@@ -1,7 +1,8 @@
 ---
 title: Home
 template: home.html
-translation: /en/
+lang: en
+translation: /
 ---
 
 <section class="hero-section">
@@ -17,11 +18,11 @@ translation: /en/
                             LabLivre
                         </h1>
                         <p class="hero-text">
-                            O futuro da tecnologia é aberto, inclusivo e colaborativo. No Lab Livre, acreditamos no poder do conhecimento compartilhado para transformar vidas. Conecte-se, colabore e seja parte da mudança!
+                            The future of technology is open, inclusive, and collaborative. At Lab Livre, we believe in the power of shared knowledge to transform lives. Connect, collaborate, and be part of the change!
                         </p>
-                        <a href="sobre/">
+                        <a href="about/">
                             <button class="hero-btn">
-                                Saiba mais
+                                Learn more
                                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" class="hero-btn-arrow">
                                     <path d="M5 10H15M15 10L11 6M15 10L11 14" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
                                 </svg>
@@ -29,7 +30,7 @@ translation: /en/
                         </a>
                     </div>
                     <div class="hero-logo">
-                        <img src="assets/img/lab-livre-white.png" alt="Lab Livre Logo">
+                        <img src="/assets/img/lab-livre-white.png" alt="Lab Livre Logo">
                     </div>
                 </div>
             </div>
@@ -43,17 +44,17 @@ translation: /en/
                             Brasil Participativo
                         </h1>
                         <p class="hero-text">
-                            O Brasil Participativo é reconhecido como a maior experiência de participação social digital do Poder Executivo, reunindo mais de 1,5 milhão de cidadãos cadastrados.  Desenvolvida em software livre pela Secretaria Nacional de Participação Social, em parceria com o LabLivre.
+                            Brasil Participativo is recognized as the largest digital social participation experience of Brazil's Executive Branch, gathering more than 1.5 million registered citizens. Built with free software by the National Secretariat for Social Participation, in partnership with LabLivre.
                         </p>
                         <button class="hero-btn" onclick="window.open('https://brasilparticipativo.presidencia.gov.br/', '_blank')">
-                            Saiba mais
+                            Learn more
                             <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" class="hero-btn-arrow">
                                 <path d="M5 10H15M15 10L11 6M15 10L11 14" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
                         </button>
                     </div>
                     <div class="hero-logo">
-                        <img src="assets/img/logobp-white.png" alt="Brasil Participativo Logo">
+                        <img src="/assets/img/logobp-white.png" alt="Brasil Participativo Logo">
                     </div>
                 </div>
             </div>
@@ -67,21 +68,21 @@ translation: /en/
                             Mepa 
                         </h1>
                         <p class="hero-text">
-                            Plataforma de eficiência energética que utiliza pesquisas em inteligência artificial para análise de dados com objetivo de otimizar contratos de energia e reduzir custos em instituições públicas, promovendo sustentabilidade financeira e ambiental.
+                            An energy efficiency platform that uses artificial intelligence research for data analysis to optimize energy contracts and reduce costs in public institutions, promoting financial and environmental sustainability.
                         </p>
                         <button class="hero-btn" onclick="window.open('https://mepaenergia.org/', '_blank')">
-                            Saiba mais
+                            Learn more
                             <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" class="hero-btn-arrow">
                                 <path d="M5 10H15M15 10L11 6M15 10L11 14" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
                         </button>
                     </div>
                     <div class="hero-logo">
-                        <img src="assets/img/logomepa-white.png" alt="Mepa Logo">
+                        <img src="/assets/img/logomepa-white.png" alt="Mepa Logo">
                     </div>
                 </div>
             </div>
-            
+
         </div>
         <!-- Navigation arrows -->
         <div class="swiper-button-next hero-nav-next"></div>
@@ -98,9 +99,9 @@ translation: /en/
             <div class="col-lg-6 col-md-12">
                 <div class="collaborate-content">
                     <h2 class="collaborate-title">
-                        Ciência <span class="title-word-1">aplicada.</span><br>
-                        Código <span class="title-word-2">compartilhado.</span><br>
-                        Impacto <span class="title-word-3">multiplicado.</span>
+                        Applied <span class="title-word-1">science.</span><br>
+                        Shared <span class="title-word-2">code.</span><br>
+                        Multiplied <span class="title-word-3">impact.</span>
                     </h2>
                 </div>
             </div>
@@ -108,25 +109,25 @@ translation: /en/
                 <div class="collaborate-items">
                     <div class="collaborate-item">
                         <div class="item-content">
-                            <h3 class="item-title">Ciência Aplicada</h3>
+                            <h3 class="item-title">Applied Science</h3>
                             <p class="item-text">
-                                Publicamos, compartilhamos e aplicamos: Levamos a ciência do laboratório para onde ela é mais necessária
+                                We publish, share, and apply: we take science from the lab to where it is needed most
                             </p>
                         </div>
                     </div>
                     <div class="collaborate-item">
                         <div class="item-content">
-                            <h3 class="item-title">Software Livre</h3>
+                            <h3 class="item-title">Free Software</h3>
                             <p class="item-text">
-                                Dinheiro publico, código público: cada linha de código é uma porta aberta para colaboração
+                                Public money, public code: every line of code is an open door to collaboration
                             </p>
                         </div>
                     </div>
                     <div class="collaborate-item">
                         <div class="item-content">
-                            <h3 class="item-title">Comunidade</h3>
+                            <h3 class="item-title">Community</h3>
                             <p class="item-text">
-                                Alunos que aprendem a fazer ciência aberta e colaborativa, levam o impacto muito além da universidade
+                                Students who learn to do open, collaborative science carry the impact far beyond the university
                             </p>
                         </div>
                     </div>
@@ -135,5 +136,3 @@ translation: /en/
         </div>
     </div>
 </section>
-
-

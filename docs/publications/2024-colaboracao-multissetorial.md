@@ -8,6 +8,7 @@ image: "assets/img/publications/colaboracaomultissetorial-publication.png"
 order: 5
 template: publicacao.html
 description: "O presente artigo reflete sobre arranjos multissetoriais no desenvolvimento e manutenção de ferramentas digitais a partir do processo de criação da plataforma digital Brasil Participativo"
+translation: /en/publications/2024-multisector-collaboration/
 ---
 
 ## A Experiência do Brasil Participativo

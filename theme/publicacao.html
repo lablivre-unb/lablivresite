@@ -6,6 +6,7 @@
 {% endblock %}
 
 {% block content %}
+{% set lang = page.meta.lang if page and page.meta and page.meta.lang else 'pt' %}
 <!-- Main Publication Content -->
 <main class="publication-container">
     <div class="container">
@@ -42,8 +43,13 @@
                 {{ page.content }}
             {% else %}
                 <p class="text-muted fst-italic text-center my-5">
-                    Este artigo não possui conteúdo de texto. 
+                    {% if lang == 'en' %}
+                    This article has no text content yet.
+                    Please add the text in Markdown format below the metadata section of the file.
+                    {% else %}
+                    Este artigo não possui conteúdo de texto.
                     Por favor, adicione o texto em formato Markdown abaixo da seção de metadados no arquivo.
+                    {% endif %}
                 </p>
             {% endif %}
         </div>
@@ -51,7 +57,7 @@
         {% if page.meta.link %}
         <div class="text-center mt-5 pt-4 border-top">
             <a href="{{ page.meta.link }}" target="_blank" rel="noopener noreferrer" class="btn btn-primary original-link-btn">
-                <i class="bi bi-box-arrow-up-right"></i> Ler Artigo Original
+                <i class="bi bi-box-arrow-up-right"></i> {{ 'Read Original Article' if lang == 'en' else 'Ler Artigo Original' }}
             </a>
         </div>
         {% endif %}

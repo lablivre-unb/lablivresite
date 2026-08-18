@@ -1,0 +1,217 @@
+{% extends "main.html" %}
+
+{% block extrahead %}
+<link rel="stylesheet" href="{{ base_url }}/assets/residencia-ia-tic/residencia-ia-tic.css">
+{% endblock %}
+
+{% block content %}
+<main class="ria-page">
+
+    <!-- Hero: imagem de cabeçalho -->
+    <section class="ria-hero">
+        <img src="{{ base_url }}/assets/img/header_residencia_tic.jpeg" alt="AI Residency Brasília" class="ria-hero-img">
+    </section>
+
+    <!-- Texto principal -->
+    <section class="ria-intro">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 col-12">
+                    <h1 class="ria-title">AI Residency Brasília</h1>
+                    <p class="ria-lead">Join the new generation of AI professionals!</p>
+                    <p class="ria-text">
+                        The AI Residency is an in-person, hands-on training program that will deepen your knowledge of
+                        Artificial Intelligence, Machine Learning, and Data Analysis to boost your tech career!
+                    </p>
+                    <p class="ria-text">
+                        The AI Residency project is run by Instituto ELDORADO in partnership with the University of Brasília (UnB),
+                        as part of the PBIA (Brazilian Artificial Intelligence Program) of the Ministry of Science, Technology and
+                        Innovation, and coordinated by Softex.
+                    </p>
+                    <p class="ria-text">
+                        Here, you learn by doing, with the support of expert mentors in applying your knowledge to
+                        real projects.
+                    </p>
+
+                    <!-- Aviso: inscrições encerradas -->
+                    <div class="ria-cta-wrapper">
+                        <div class="ria-aviso-encerrado">
+                            <p class="ria-aviso-titulo">Applications closed</p>
+                            <p class="ria-aviso-texto">
+                                The application period for this cohort has ended. Follow our channels to
+                                stay tuned for upcoming opportunities.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Destaques -->
+    <section class="ria-highlights-section">
+        <div class="container">
+            <div class="row g-3 justify-content-center">
+                <div class="col-lg-3 col-md-6 col-6">
+                    <div class="ria-highlight-card">
+                        <span class="ria-highlight-icon">💰</span>
+                        <p class="ria-highlight-label">100% <strong>FREE</strong> with a <strong>SCHOLARSHIP</strong></p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-6">
+                    <div class="ria-highlight-card">
+                        <span class="ria-highlight-icon">🗓️</span>
+                        <p class="ria-highlight-label"><strong>8 months</strong> of hands-on learning</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-6">
+                    <div class="ria-highlight-card">
+                        <span class="ria-highlight-icon">📍</span>
+                        <p class="ria-highlight-label"><strong>In person</strong> in Brasília (DF)</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-6">
+                    <div class="ria-highlight-card">
+                        <span class="ria-highlight-icon">🎯</span>
+                        <p class="ria-highlight-label"><strong>150 openings</strong> available</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cards: Requisitos e Como participar -->
+    <section class="ria-cards-section">
+        <div class="container">
+            <div class="row g-4">
+
+                <!-- Para participar -->
+                <div class="col-lg-6 col-12">
+                    <div class="ria-card">
+                        <h2 class="ria-card-title">To participate you need to:</h2>
+                        <ul class="ria-checklist">
+                            <li>✅ Have completed or be enrolled in a higher education program</li>
+                            <li>✅ Be available for in-person classes 3x per week in Brasília (DF) at the GAMA campus</li>
+                        </ul>
+                        <p class="ria-card-subtitle">✅ Requirements:</p>
+                        <ul class="ria-req-list">
+                            <li>Basic knowledge of Python</li>
+                            <li>Artificial Intelligence (classical and generative)</li>
+                            <li>Basic knowledge of data manipulation</li>
+                            <li>Fundamentals of mathematics (calculus and linear algebra)</li>
+                            <li>Fundamentals of statistics (probability and data interpretation)</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Como participar -->
+                <div class="col-lg-6 col-12">
+                    <div class="ria-card">
+                        <h2 class="ria-card-title">How do I participate?</h2>
+                        <div class="ria-steps">
+                            <div class="ria-step">
+                                <span class="ria-step-num">1</span>
+                                <p>Apply via online form by <strong>June 29</strong></p>
+                            </div>
+                            <div class="ria-step">
+                                <span class="ria-step-num">2</span>
+                                <p>Take the online selection exam</p>
+                            </div>
+                            <div class="ria-step">
+                                <span class="ria-step-num">3</span>
+                                <p>Attend the interview</p>
+                            </div>
+                        </div>
+                        <p class="ria-timeline-note">
+                            Results announced in July and in-person classes starting in August 2026.
+                        </p>
+                        <p class="ria-email-note">
+                            ✉️ You will be notified about each step by email, so keep an eye on your inbox!
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Turmas -->
+    <section class="ria-turmas-section">
+        <div class="container">
+            <h2 class="ria-section-title">Available cohorts</h2>
+            <div class="row g-4 justify-content-center">
+                <div class="col-lg-4 col-md-6 col-12">
+                    <div class="ria-turma-card">
+                        <span class="ria-turma-badge">COHORT 1</span>
+                        <p class="ria-turma-days">Mondays, Wednesdays and Fridays</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-12">
+                    <div class="ria-turma-card">
+                        <span class="ria-turma-badge">COHORT 2</span>
+                        <p class="ria-turma-days">Tuesdays, Thursdays and Fridays</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="ria-faq-section">
+        <div class="container">
+            <h2 class="ria-section-title">Frequently asked questions</h2>
+            <div class="row justify-content-center">
+                <div class="col-lg-8 col-12">
+                    <div class="ria-faq-list">
+
+                        <div class="ria-faq-item">
+                            <p class="ria-faq-q">Do I have to pay to participate?</p>
+                            <p class="ria-faq-a">No! The AI Residency is completely free from start to finish, and selected participants will receive a scholarship to support their studies.</p>
+                        </div>
+
+                        <div class="ria-faq-item">
+                            <p class="ria-faq-q">Is the Residency online or in person?</p>
+                            <p class="ria-faq-a">Classes are held in person in Brasília (DF), at the GAMA campus.</p>
+                        </div>
+
+                        <div class="ria-faq-item">
+                            <p class="ria-faq-q">Do I need to be a student at the University of Brasília (UnB), or can I be from another higher education institution?</p>
+                            <p class="ria-faq-a">You do not need to be a student at the University of Brasília.</p>
+                        </div>
+
+                        <div class="ria-faq-item">
+                            <p class="ria-faq-q">Will all students receive a scholarship?</p>
+                            <p class="ria-faq-a">Yes! All selected participants will receive a scholarship.</p>
+                        </div>
+
+                        <div class="ria-faq-item">
+                            <p class="ria-faq-q">How many openings are there in total?</p>
+                            <p class="ria-faq-a">There are 150 openings in total.</p>
+                        </div>
+
+                        <div class="ria-faq-item">
+                            <p class="ria-faq-q">What are the selection criteria?</p>
+                            <p class="ria-faq-a">The stages are eliminatory. Stage 1 consists of evaluating the candidate's profile, based on the information provided in the application form. At this stage, program-fit criteria are considered, such as academic background, prior knowledge of technology and of languages related to the course content, experience in the field, and availability to participate in the in-person activities.</p>
+                            <p class="ria-faq-a">Stage 2 consists of an online exam assessing technical knowledge, covering fundamentals of Artificial Intelligence, fundamentals of mathematics and statistics, basic Python, and data manipulation.</p>
+                            <p class="ria-faq-a">Stage 3 is the final phase of the selection process. At this stage, the selection committee may carry out complementary evaluation procedures, when necessary, to support the ranking of candidates.</p>
+                            <p class="ria-faq-a">The final selection will be based on the score accumulated across the different stages of the selection process.</p>
+                        </div>
+
+                        <div class="ria-faq-item">
+                            <p class="ria-faq-q">Is there a certificate?</p>
+                            <p class="ria-faq-a">Yes! Those who complete the program will receive a certificate at the end.</p>
+                        </div>
+
+                    </div>
+
+                    <p class="ria-contact-note">
+                        ✍🏼 If you have any questions, contact us by email at
+                        <a href="mailto:residencia-ia@eldorado.org.br" class="ria-email-link">residencia-ia@eldorado.org.br</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</main>
+{% endblock %}
