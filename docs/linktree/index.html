@@ -3,264 +3,374 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Lab Livre – Links</title>
+  <title>Lab Livre – Links e Canais Oficiais</title>
+  <meta name="description" content="Acesse todos os links, canais oficiais, projetos e repositórios do Lab Livre - UnB. Ciência aplicada, código compartilhado e impacto público." />
+
+  <!-- Favicon SVG oficial (Símbolo Folha/Asa da nova marca em #7023E8, 100% inline) -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='-5 3 178 286' fill='%237023e8'%3E%3Cpath transform='matrix(1,0,0,-1,20.2702,20.916687)' d='M0 0C-8.253-20.856-8.736-43.721-1.252-65.103 6.992-88.659 23.914-107.593 46.396-118.417L126.437-156.96C134.69-136.104 135.173-113.236 127.689-91.854 119.448-68.3 102.526-49.366 80.041-38.54ZM129.858-173.083C128.86-173.083 127.846-172.866 126.888-172.404L40.446-130.78C14.661-118.364-4.747-96.649-14.201-69.635-23.653-42.624-22.022-13.545-9.607 12.238-7.962 15.654-3.86 17.086-.45 15.444L85.992-26.178C111.779-38.596 131.186-60.311 140.638-87.322 150.093-114.336 148.46-143.412 136.044-169.197 134.861-171.653 132.411-173.083 129.858-173.083'/%3E%3Cpath transform='matrix(1,0,0,-1,75.0324,158.59139)' d='M0 0C-16.074-40.732-1.513-87.403 34.731-111.742L66.369-31.957ZM38.092-128.701C36.965-128.701 35.821-128.421 34.763-127.835-14.693-100.324-34.184-38.796-9.609 12.24-7.964 15.654-3.864 17.088-.453 15.446L78.076-22.366C81.319-23.928 82.804-27.73 81.476-31.077L44.481-124.368C43.668-126.419 41.975-127.86 40.009-128.428 39.388-128.609 38.743-128.701 38.092-128.701'/%3E%3C/svg%3E">
+
   <link rel="stylesheet" href="./linktree.css">
 </head>
 
 <body>
   <main class="shell">
+    <!-- Formas Geométricas Decorativas do MIV (Círculo, semicírculo e pílula) -->
+    <div class="shell-decorations" aria-hidden="true">
+      <div class="decor-circle-top"></div>
+      <div class="decor-half-bottom"></div>
+      <div class="decor-pill-bottom"></div>
+    </div>
+
+    <!-- Header com a Nova Logo Oficial em Vetor -->
     <header class="header">
-      <div class="avatar-wrapper">
-        <div class="avatar-inner">
-          <img src="../assets/img/favicon.png" alt="Lab Livre" class="avatar-logo">
-        </div>
+      <div class="logo-badge" title="Lab Livre - Laboratório de Tecnologias Livres">
+        <svg class="lab-logo-vector" viewBox="-4 3 1140 285" fill="#7023e8" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Lab Livre">
+          <!-- Ícone Folha/Asa Oficial -->
+          <path transform="matrix(1,0,0,-1,20.2702,20.916687)" d="M0 0C-8.253-20.856-8.736-43.721-1.252-65.103 6.992-88.659 23.914-107.593 46.396-118.417L126.437-156.96C134.69-136.104 135.173-113.236 127.689-91.854 119.448-68.3 102.526-49.366 80.041-38.54ZM129.858-173.083C128.86-173.083 127.846-172.866 126.888-172.404L40.446-130.78C14.661-118.364-4.747-96.649-14.201-69.635-23.653-42.624-22.022-13.545-9.607 12.238-7.962 15.654-3.86 17.086-.45 15.444L85.992-26.178C111.779-38.596 131.186-60.311 140.638-87.322 150.093-114.336 148.46-143.412 136.044-169.197 134.861-171.653 132.411-173.083 129.858-173.083"/>
+          <path transform="matrix(1,0,0,-1,75.0324,158.59139)" d="M0 0C-16.074-40.732-1.513-87.403 34.731-111.742L66.369-31.957ZM38.092-128.701C36.965-128.701 35.821-128.421 34.763-127.835-14.693-100.324-34.184-38.796-9.609 12.24-7.964 15.654-3.864 17.088-.453 15.446L78.076-22.366C81.319-23.928 82.804-27.73 81.476-31.077L44.481-124.368C43.668-126.419 41.975-127.86 40.009-128.428 39.388-128.609 38.743-128.701 38.092-128.701"/>
+          <!-- Tipografia Oficial "Lab Livre" em Reddit Sans Black -->
+          <path transform="matrix(1,0,0,-1,223.62,253.3664)" d="M0 0V168.354H32.667V29.353H96.284V0Z"/>
+          <path transform="matrix(1,0,0,-1,369.8172,255.1937)" d="M0 0C-8.224 0-15.458 1.657-21.701 4.968-27.946 8.28-32.819 12.753-36.322 18.389-39.824 24.023-41.574 30.381-41.574 37.462-41.574 44.773-39.576 51.226-35.58 56.822-31.581 62.419-25.625 66.797-17.705 69.956-9.787 73.116 0 74.697 11.649 74.697H38.832V53.909H11.876C4.567 53.909-1.144 52.69-5.255 50.255-9.366 47.817-11.422 44.01-11.422 38.833-11.422 35.71-10.643 33.065-9.08 30.895-7.522 28.725-5.332 27.069-2.513 25.926 .302 24.785 3.5 24.214 7.08 24.214 10.353 24.214 14.162 24.937 18.502 26.384 22.843 27.83 26.628 30.171 29.866 33.408 33.102 36.643 34.721 40.889 34.721 46.143V58.707L32.665 64.874V80.636C32.665 83.301 32.283 85.776 31.523 88.06 30.76 90.345 29.525 92.361 27.81 94.114 26.097 95.864 23.851 97.215 21.071 98.169 18.292 99.12 14.923 99.596 10.964 99.596 7.08 99.596 3.007 99.176-1.256 98.339-5.522 97.501-9.576 96.379-13.421 94.97-17.267 93.561-20.559 91.981-23.301 90.23L-33.58 114.672C-30.458 116.5-26.385 118.27-21.359 119.983-16.334 121.697-10.681 123.104-4.399 124.21 1.883 125.312 8.451 125.865 15.304 125.865 26.497 125.865 35.292 124.342 41.687 121.297 48.083 118.25 52.784 114.386 55.793 109.703 58.799 105.022 60.723 100.128 61.56 95.028 62.398 89.925 62.817 85.279 62.817 81.093V42.945C62.817 38.3 63.292 34.816 64.246 32.494 65.196 30.171 67.082 28.554 69.899 27.64L72.641 26.727 61.219 0 57.564 1.37C50.863 3.883 45.989 6.833 42.943 10.222 39.897 13.609 38.147 16.978 37.69 20.33L43.629 16.447H33.58L40.43 19.645C37.843 14.466 32.836 9.897 25.412 5.939 17.988 1.979 9.516 0 0 0"/>
+          <path transform="matrix(1,0,0,-1,521.9501,228.46709)" d="M0 0C5.941 .075 11.153 1.655 15.648 4.74 20.14 7.824 23.662 12.107 26.214 17.589 28.762 23.071 30 29.428 29.925 36.663 30 43.973 28.743 50.33 26.156 55.737 23.566 61.143 19.969 65.331 15.363 68.301 10.756 71.27 5.482 72.716-.456 72.641-6.015 72.716-11.041 71.308-15.533 68.414-20.026 65.52-23.584 61.391-26.212 56.022-28.839 50.655-30.192 44.201-30.267 36.663-30.192 29.428-28.839 23.071-26.212 17.589-23.584 12.107-20.007 7.824-15.475 4.74-10.945 1.655-5.786 .075 0 0M7.082-26.727C-3.198-26.727-12.391-23.891-20.501-18.218-28.61-12.546-35.047-4.855-39.803 4.854-44.562 14.562-46.981 25.317-47.056 37.12-46.981 48.845-44.658 59.429-40.089 68.872-35.522 78.313-29.239 85.775-21.245 91.258-13.247 96.74-4.073 99.481 6.282 99.481 15.723 99.481 24.633 97.063 33.009 92.229 41.385 87.393 48.161 80.255 53.339 70.814 58.516 61.371 61.029 49.797 60.877 36.091 61.029 25.813 59.602 16.75 56.595 8.908 53.586 1.065 49.513-5.502 44.373-10.793 39.235-16.087 33.428-20.064 26.956-22.729 20.482-25.394 13.858-26.727 7.082-26.727M-60.418-24.899V150.992H-28.895V85.662H-26.383L-31.523 68.301V1.942L-25.697-10.394H-30.152V-24.899Z"/>
+          <path transform="matrix(1,0,0,-1,641.8208,253.3664)" d="M0 0V168.354H32.667V29.353H96.284V0Z"/>
+          <path transform="matrix(1,0,0,-1,0,292.085)" d="M753.867 161.044H785.392V38.71901H753.867ZM769.515 176.577C763.956 176.577 759.237 178.536 755.353 182.459 751.469 186.379 749.527 191.119 749.527 196.679 749.527 202.313 751.469 207.053 755.353 210.898 759.237 214.742 763.956 216.667 769.515 216.667 775.149 216.667 779.89 214.742 783.736 210.898 787.58 207.053 789.504 202.313 789.504 196.679 789.504 191.119 787.58 186.379 783.736 182.459 779.89 178.536 775.149 176.577 769.515 176.577"/>
+          <path transform="matrix(1,0,0,-1,846.953,253.3664)" d="M0 0-47.513 122.325H-13.591L5.482 64.417 14.506 33.922H15.419L24.328 64.417 43.631 122.325H77.325L29.81 0Z"/>
+          <path transform="matrix(1,0,0,-1,938.8968,253.3664)" d="M0 0V122.325H30.723V104.736H34.151L26.383 96.397C28.285 100.584 31.123 104.811 34.892 109.076 38.661 113.339 43.325 116.918 48.884 119.812 54.441 122.705 60.914 124.152 68.301 124.152 71.422 124.152 74.199 123.924 76.637 123.467 79.073 123.011 80.826 122.515 81.892 121.982L69.214 91.715C68.528 92.095 67.253 92.475 65.388 92.857 63.521 93.238 61.448 93.428 59.162 93.428 56.193 93.428 53.069 92.838 49.796 91.658 46.523 90.477 43.514 88.707 40.774 86.347 38.032 83.986 35.805 81.016 34.092 77.438 32.379 73.858 31.523 69.672 31.523 64.874V0Z"/>
+          <path transform="matrix(1,0,0,-1,1084.0645,255.1937)" d="M0 0C-12.868 0-24.062 2.684-33.58 8.052-43.098 13.421-50.465 20.845-55.681 30.324-60.896 39.804-63.505 50.635-63.505 62.818-63.505 75.685-60.819 86.821-55.451 96.227-50.084 105.63-42.927 112.919-33.98 118.098-25.033 123.276-15.229 125.865-4.569 125.865 5.557 125.865 14.829 123.524 23.243 118.841 31.656 114.158 38.413 107.571 43.516 99.082 48.617 90.59 51.17 80.559 51.17 68.987 51.17 66.32 51.015 63.77 50.711 61.333 50.407 58.895 49.951 56.041 49.342 52.768H-39.976V73.783H22.157C22.157 79.037 21.015 83.644 18.732 87.604 16.448 91.561 13.306 94.665 9.31 96.912 5.311 99.157 .686 100.281-4.569 100.281-10.964 100.281-16.504 98.74-21.186 95.656-25.87 92.572-29.487 88.288-32.038 82.806-34.59 77.324-35.863 70.965-35.863 63.733-35.863 56.194-34.455 49.569-31.638 43.859-28.821 38.148-24.785 33.674-19.532 30.439-14.277 27.202-8.072 25.584-.915 25.584 3.121 25.584 7.043 26.059 10.852 27.012 14.656 27.963 18.198 29.239 21.472 30.839 24.745 32.437 27.564 34.188 29.925 36.092L40.203 11.193C35.33 7.842 29.41 5.139 22.443 3.084 15.477 1.028 7.995 0 0 0"/>
+        </svg>
       </div>
 
-      <div class="title-block">
-        <h1 class="lab-name">Lab Livre</h1>
-        <p class="lab-tagline">Ciência aplicada · Código compartilhado · Impacto público</p>
-      </div>
+      <p class="lab-tagline">Ciência aplicada · Código compartilhado · Impacto público</p>
     </header>
 
     <p class="bio">
-      Acompanhe o Lab Livre nas redes para ver projetos, artigos e oportunidades abertas.
+      Acompanhe o Lab Livre nas redes para conhecer nossos projetos, publicações científicas e oportunidades abertas.
     </p>
 
+    <!-- Lista de Links Oficiais -->
     <section class="links" aria-label="Canais oficiais do Lab Livre">
       <h2 class="links-title">Canais oficiais</h2>
 
+      <!-- Site Institucional (Destaque Principal com a marca do laboratório) -->
       <a
-        class="link-card"
-        href="https://youtube.com/@lablivreunb"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <span class="link-main">
-          <span class="icon-pill icon-pill-youtube">
-            <img src="../assets/img/youtube.png" alt="YouTube" class="icon-logo">
-          </span>
-          <span class="link-texts">
-            <span class="link-title">YouTube</span>
-            <span class="link-sub">@lablivreunb</span>
-          </span>
-        </span>
-        <span class="link-arrow">↗</span>
-      </a>
-
-      <a
-        class="link-card"
-        href="https://www.instagram.com/lab.livre/"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <span class="link-main">
-          <span class="icon-pill icon-pill-instagram">
-            <img src="../assets/img/instagram.png" alt="Instagram" class="icon-logo">
-          </span>
-          <span class="link-texts">
-            <span class="link-title">Instagram</span>
-            <span class="link-sub">@lab.livre</span>
-          </span>
-        </span>
-        <span class="link-arrow">↗</span>
-      </a>
-
-      <a
-        class="link-card"
-        href="https://br.linkedin.com/company/lab-livre"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <span class="link-main">
-          <span class="icon-pill icon-pill-linkedin">
-            <img src="../assets/img/linkedin.png" alt="LinkedIn" class="icon-logo">
-          </span>
-          <span class="link-texts">
-            <span class="link-title">LinkedIn</span>
-            <span class="link-sub">Perfil institucional</span>
-          </span>
-        </span>
-        <span class="link-arrow">↗</span>
-      </a>
-
-      <a
-        class="link-card"
-        href="https://lablivre.medium.com/"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <span class="link-main">
-          <span class="icon-pill icon-pill-medium">
-            <img src="../assets/img/medium-logo.png" alt="Medium" class="icon-logo">
-          </span>
-          <span class="link-texts">
-            <span class="link-title">Medium</span>
-            <span class="link-sub">Artigos e publicações</span>
-          </span>
-        </span>
-        <span class="link-arrow">↗</span>
-      </a>
-
-      <a
-        class="link-card"
-        href="https://www.facebook.com/lablivreunb/"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <span class="link-main">
-          <span class="icon-pill">
-            <img src="../assets/img/facebook.png" alt="Facebook" class="icon-logo">
-          </span>
-          <span class="link-texts">
-            <span class="link-title">Facebook</span>
-            <span class="link-sub">/lablivreunb</span>
-          </span>
-        </span>
-        <span class="link-arrow">↗</span>
-      </a>
-
-      <a
-        class="link-card"
+        id="link-site"
+        class="link-card link-card--site"
         href="https://lablivre.unb.br"
         target="_blank"
         rel="noopener noreferrer"
       >
         <span class="link-main">
-          <span class="icon-pill icon-pill-home">
-            <img src="../assets/img/favicon.png" alt="Lab Livre" class="icon-logo">
+          <span class="icon-pill icon-pill-lablivre" aria-hidden="true">
+            <svg class="icon-svg icon-svg-leaf" viewBox="-5 3 178 286" fill="currentColor">
+              <path transform="matrix(1,0,0,-1,20.2702,20.916687)" d="M0 0C-8.253-20.856-8.736-43.721-1.252-65.103 6.992-88.659 23.914-107.593 46.396-118.417L126.437-156.96C134.69-136.104 135.173-113.236 127.689-91.854 119.448-68.3 102.526-49.366 80.041-38.54ZM129.858-173.083C128.86-173.083 127.846-172.866 126.888-172.404L40.446-130.78C14.661-118.364-4.747-96.649-14.201-69.635-23.653-42.624-22.022-13.545-9.607 12.238-7.962 15.654-3.86 17.086-.45 15.444L85.992-26.178C111.779-38.596 131.186-60.311 140.638-87.322 150.093-114.336 148.46-143.412 136.044-169.197 134.861-171.653 132.411-173.083 129.858-173.083"/>
+              <path transform="matrix(1,0,0,-1,75.0324,158.59139)" d="M0 0C-16.074-40.732-1.513-87.403 34.731-111.742L66.369-31.957ZM38.092-128.701C36.965-128.701 35.821-128.421 34.763-127.835-14.693-100.324-34.184-38.796-9.609 12.24-7.964 15.654-3.864 17.088-.453 15.446L78.076-22.366C81.319-23.928 82.804-27.73 81.476-31.077L44.481-124.368C43.668-126.419 41.975-127.86 40.009-128.428 39.388-128.609 38.743-128.701 38.092-128.701"/>
+            </svg>
           </span>
           <span class="link-texts">
             <span class="link-title">Site institucional</span>
             <span class="link-sub">lablivre.unb.br</span>
           </span>
         </span>
-        <span class="link-arrow">↗</span>
+        <span class="link-arrow" aria-hidden="true">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+        </span>
       </a>
 
-      <details class="links-group">
-        <summary class="links-group-summary">
-          <span>Projetos do Lab Livre</span>
-          <span class="links-group-arrow">▼</span>
-        </summary>
-
-        <div class="links-group-content">
-          <a
-            class="link-card"
-            href="https://brasilparticipativo.presidencia.gov.br/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <span class="link-main">
-              <span class="icon-pill">
-                <span class="icon-glyph">BP</span>
-              </span>
-              <span class="link-texts">
-                <span class="link-title">Brasil Participativo</span>
-                <span class="link-sub">Plataforma de participação social</span>
-              </span>
-            </span>
-            <span class="link-arrow">↗</span>
-          </a>
-
-          <a
-            class="link-card"
-            href="https://mepaenergia.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <span class="link-main">
-              <span class="icon-pill">
-                <span class="icon-glyph">ME</span>
-              </span>
-              <span class="link-texts">
-                <span class="link-title">MEPA</span>
-                <span class="link-sub">Eficiência energética</span>
-              </span>
-            </span>
-            <span class="link-arrow">↗</span>
-          </a>
-
-          <a
-            class="link-card"
-            href="https://gov-hub.io/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <span class="link-main">
-              <span class="icon-pill">
-                <span class="icon-glyph">GH</span>
-              </span>
-              <span class="link-texts">
-                <span class="link-title">Gov Hub</span>
-                <span class="link-sub">Dados para gestão pública</span>
-              </span>
-            </span>
-            <span class="link-arrow">↗</span>
-          </a>
-
-          <a
-            class="link-card"
-            href="https://www.dermalert.ai/land/dist/index.html"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <span class="link-main">
-              <span class="icon-pill">
-                <span class="icon-glyph">De</span>
-              </span>
-              <span class="link-texts">
-                <span class="link-title">Dermalert</span>
-                <span class="link-sub">Detecção de lesões dermatológicas</span>
-              </span>
-            </span>
-            <span class="link-arrow">↗</span>
-          </a>
-
-          <a
-            class="link-card"
-            href="https://think-ads.vercel.app/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <span class="link-main">
-              <span class="icon-pill">
-                <span class="icon-glyph">TA</span>
-              </span>
-              <span class="link-texts">
-                <span class="link-title">Think Ads – É fake?</span>
-                <span class="link-sub">IA contra desinformação</span>
-              </span>
-            </span>
-            <span class="link-arrow">↗</span>
-          </a>
-        </div>
-      </details>
-
+      <!-- GitHub -->
       <a
+        id="link-github"
         class="link-card"
         href="https://github.com/lablivre-unb"
         target="_blank"
         rel="noopener noreferrer"
       >
         <span class="link-main">
-          <span class="icon-pill icon-pill-github">
-            <img src="../assets/img/github.png" alt="GitHub" class="icon-logo">
+          <span class="icon-pill icon-pill-github" aria-hidden="true">
+            <svg class="icon-svg" viewBox="0 0 24 24" fill="currentColor">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0 0 22 12.017C22 6.484 17.522 2 12 2z"/>
+            </svg>
           </span>
           <span class="link-texts">
             <span class="link-title">GitHub</span>
             <span class="link-sub">Repositórios e código aberto</span>
           </span>
         </span>
-        <span class="link-arrow">↗</span>
+        <span class="link-arrow" aria-hidden="true">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+        </span>
       </a>
-    </section>
 
-    <footer class="footer-badges" aria-label="Tecnologias e temas">
-      <span class="badge">Software livre</span>
-      <span class="badge">Participação digital</span>
-      <span class="badge">Dados públicos</span>
-      <span class="badge">IA &amp; MLOps</span>
-    </footer>
+      <!-- YouTube -->
+      <a
+        id="link-youtube"
+        class="link-card"
+        href="https://youtube.com/@lablivreunb"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <span class="link-main">
+          <span class="icon-pill icon-pill-youtube" aria-hidden="true">
+            <svg class="icon-svg" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+            </svg>
+          </span>
+          <span class="link-texts">
+            <span class="link-title">YouTube</span>
+            <span class="link-sub">@lablivreunb</span>
+          </span>
+        </span>
+        <span class="link-arrow" aria-hidden="true">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+        </span>
+      </a>
+
+      <!-- Instagram -->
+      <a
+        id="link-instagram"
+        class="link-card"
+        href="https://www.instagram.com/lab.livre/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <span class="link-main">
+          <span class="icon-pill icon-pill-instagram" aria-hidden="true">
+            <svg class="icon-svg" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+            </svg>
+          </span>
+          <span class="link-texts">
+            <span class="link-title">Instagram</span>
+            <span class="link-sub">@lab.livre</span>
+          </span>
+        </span>
+        <span class="link-arrow" aria-hidden="true">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+        </span>
+      </a>
+
+      <!-- LinkedIn -->
+      <a
+        id="link-linkedin"
+        class="link-card"
+        href="https://br.linkedin.com/company/lab-livre"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <span class="link-main">
+          <span class="icon-pill icon-pill-linkedin" aria-hidden="true">
+            <svg class="icon-svg" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/>
+            </svg>
+          </span>
+          <span class="link-texts">
+            <span class="link-title">LinkedIn</span>
+            <span class="link-sub">Perfil institucional</span>
+          </span>
+        </span>
+        <span class="link-arrow" aria-hidden="true">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+        </span>
+      </a>
+
+      <!-- Medium -->
+      <a
+        id="link-medium"
+        class="link-card"
+        href="https://lablivre.medium.com/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <span class="link-main">
+          <span class="icon-pill icon-pill-medium" aria-hidden="true">
+            <svg class="icon-svg" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M13.54 12a6.8 6.8 0 0 1-6.77 6.82A6.8 6.8 0 0 1 0 12a6.8 6.8 0 0 1 6.77-6.82A6.8 6.8 0 0 1 13.54 12zM20.96 12c0 3.54-1.51 6.42-3.38 6.42-1.87 0-3.39-2.88-3.39-6.42s1.52-6.42 3.39-6.42 3.38 2.88 3.38 6.42M24 12c0 3.17-.53 5.75-1.19 5.75-.66 0-1.19-2.58-1.19-5.75s.53-5.75 1.19-5.75C23.47 6.25 24 8.83 24 12z"/>
+            </svg>
+          </span>
+          <span class="link-texts">
+            <span class="link-title">Medium</span>
+            <span class="link-sub">Artigos e publicações</span>
+          </span>
+        </span>
+        <span class="link-arrow" aria-hidden="true">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+        </span>
+      </a>
+
+      <!-- Facebook -->
+      <a
+        id="link-facebook"
+        class="link-card"
+        href="https://www.facebook.com/lablivreunb/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <span class="link-main">
+          <span class="icon-pill icon-pill-facebook" aria-hidden="true">
+            <svg class="icon-svg" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+            </svg>
+          </span>
+          <span class="link-texts">
+            <span class="link-title">Facebook</span>
+            <span class="link-sub">/lablivreunb</span>
+          </span>
+        </span>
+        <span class="link-arrow" aria-hidden="true">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+        </span>
+      </a>
+
+      <!-- Accordion: Projetos Desenvolvidos pelo Lab Livre (Aberto por padrão com atributo open) -->
+      <details id="group-projects" class="links-group" open>
+        <summary class="links-group-summary">
+          <span class="summary-left">
+            <span class="summary-icon" aria-hidden="true"></span>
+            <span>Projetos do Lab Livre</span>
+          </span>
+          <span class="links-group-arrow" aria-hidden="true">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </span>
+        </summary>
+
+        <div class="links-group-content">
+          <!-- 1. Residência em IA (Primeira linha dos projetos, ícone com 'IA') -->
+          <a
+            id="link-residencia-ia"
+            class="link-card link-card--highlight"
+            href="https://lablivre.unb.br/ResidenciaIA/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <span class="link-main">
+              <span class="icon-pill icon-pill-ia" aria-hidden="true">
+                <span class="icon-glyph-ia">IA</span>
+              </span>
+              <span class="link-texts">
+                <span class="link-title">Residência em IA</span>
+                <span class="link-sub">Formação avançada em inteligência artificial</span>
+              </span>
+            </span>
+            <span class="link-arrow" aria-hidden="true">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+            </span>
+          </a>
+
+          <!-- 2. Brasil Participativo (Logo oficial) -->
+          <a
+            id="link-bp"
+            class="link-card"
+            href="https://brasilparticipativo.presidencia.gov.br/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <span class="link-main">
+              <span class="icon-pill icon-pill-project" aria-hidden="true">
+                <img src="data:image/png;base64,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" alt="Brasil Participativo" class="icon-project-img" />
+              </span>
+              <span class="link-texts">
+                <span class="link-title">Brasil Participativo</span>
+                <span class="link-sub">Plataforma de participação social</span>
+              </span>
+            </span>
+            <span class="link-arrow" aria-hidden="true">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+            </span>
+          </a>
+
+          <!-- 3. MEPA (Logo oficial completa, corrigida sem cortes) -->
+          <a
+            id="link-mepa"
+            class="link-card"
+            href="https://mepaenergia.org/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <span class="link-main">
+              <span class="icon-pill icon-pill-project" aria-hidden="true">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAApA0lEQVR4nO19B3gc1bX/787Mzq521YtlWbLkKhfcjQ24UIJNMzUOLfQeQiC0EMgfQni8JLQEHvASejWmmZZgwAQMGDDF3ZZ7lWXLVu9bZmfm/r9zZ2Z3drUSLjKQF9/v20/anXbvOeeefs4AB8fBcXAcHAfHwXFw/CCD4cc0GE2HAZwD4KlOABQvg6xKkD0ymGRdwE0O0zBgaCaMiAnT6OL+kvW3y/v/RyKAWYDnZuLPHr8Ef14G0gtLmS9vCPzZY+HNGArF1wdMyYUkZ0GSPeJck+uA0QEz2oyotgt6x2aEW1bwYP1qdNRvRUdtA8IteuJjmQsZ/4kI6AQABmT2CbDs/mOQUzYT/l4nw5cxGJLHmqWgam4hKnYN74xI8VeyPwwwdUALNiPY8C7adr7FGzZ/jtaqeuiR+MV0bjIB/J9FgKB2F+D8eSorGDYBBcOuRaDwbCiqBQwCHDdMmKZmnShJYFyyZiygm+LmgrWYMJkZ+58xBUxWICsAk+meQLBpCZo2/Q+vXfMumiqbYoj8ARDBfjCKzxmQx/qMuxh5g34Hjz9XULgZJUoPC2BLUOJMO+VIBamuzjfBTRMcJhhIfihiZ9HzWnY+y3ctvw+1q9bBiH7viPh+EOBeUO7AAtZ30u3I7X8dJBnQNQK6JgDDJCkJiLQVTIvH0yDEcAmQCDlxpArWRIg1dYv6TethgvodfuQetEu4DokpkFSJbov2mo+xc9HNfNfyFTCiPA4a/m+MADe7yejtZ/2OuhH5Q+4W8DDCOkyYkAiYbqDbwKEhyapAEn2EdmTzfzqsa80AD9lsxgvJkwvJQ0h0aTu0q+ij6+BctxAinud+nC52hqKqAq+t1e+gcsF1vHbN9u9jNxw4BDgTlxSwsinHovTwOVDSshEN6eDMhMRU19lxoMuyClu5QTTYjmDzAgTr5iNUvwzBpkoeaWmAHg7DiBrgBhcESuqorEiQvR7mzciGL6cE/pxhCPQ6Cv7caVAzigX/J7liRuPUn7AzaPfYiKCf69bcyTd9dA9CjVonudWTYDowd7UnnFmcwcpPeBzZ/c5FNEScQYMkJQHe1MVvsmpdF2yqQEvl07xxy3to3VmJUGNkvyhQTZeRUZTPcgdMRU7/SxAoOEnwf0MDDF3rhAjaETSUNAVa+1a+5aMZqF62NmFdP14E0O2sCbLiCWMwcPpnUDyZiIbDgp24WY2DDMUH6GEdjVvv47WrnkTj5kpEQ4mrdNRLMexDvKuVuJaUjDhiMVl9c1nhiDOQX34HvFllQvAaUa0TK6T5yYpFGNVLruYbPngcRoT3NEvqOQQ41CHJYINPvAQlE5+BHu5M9URhzKGwUBj1a6/nOxfNQmt1R8K9HGTuN8W5hLUbcN5MmfUefQSKxj2EQN54GBHAMJJ2qC2PVL+K1qpX+eo3LkSQWFLPIYH1KPAVH2OHzLwHBUNvQaQ9bC3Gtb1JxVS8PvF/7ZobeeUXj6F9dyg2ldgW7wx0S/23SZROTTouriB82Zou31N1WPVL6DPhaFYy8Tl40/tCC2udVGCatyfNh0jbOl7x+hFo2d7cU0jYfwQ4QPNmyGzkOS8hq+/Z0DqI5ViAFkOoLyYUv4K2nW/zTR9fhcZNtbHrxSmdQUaeHnGYA8ZebgS6lj50WzMlQpJcIP5clfU/5tcoHHWfsA+EfHDtBtrJJKD1aC1f8/poNGza3RNIYD0CfDVdZqPPfwuZRadACyYCX/BSj6VZ7Pj6TL7lkzdgaLwrwDMGyAwwbFvWGfRbQTqTSrOYvyDA0rN9LOD3wCcxSGEDkbYwDzYE0bGzzWzf0cKj4UTPD2QpjoxuEdF71EA2cPr78GYMRjScxD4NHZJHAXiQr3ptABo21uwvEvYDATZpEtsZff4sZPf9uUX5JFVdwPd4VUTaN/MNc49G3bodXWkTkg0HArwzhuRL6tR+0sBJpdLRowrZ8X2zpYmZXlbkIy1VOEJdgwO6ztGmobWmja9ZV2/MW7STz/9ki7F8WbXZ6iBEPAepdpR9gOaVluNhQ097BHkDrkIk2FmGSYoErrfyFS8PQHNl0/5oR/uIAIcJS2CjzroX+cNugdaeBHzim34f2nb9k6+ZcyY66iOpqIVZ9m0M8AUBJv30EHn4mSOUKyf0kS7KDLBMsW6dQzOt8+hfi9lbBG3LB0liUBRJgAeKYgkMXeNYW88/fn+98cirq/SPllabQtg7+Ou0I2L2iwxWPuMyFB/6FLQQqauJO0FWFWjBzXz5CyPQURfeVyTsGwLsSbLyE89H6aQXLYHrZjtGGKrfh8Ytf+MVr12LaMhMBXyZKN6ec1m2pFx9mHLCz0fJf+6bK40gyISiQNQQwDYZg8LIQ2Tpil36iMgPIXQX+sthyhLUNA85rhk6wlz/10b97ocWGo98ttVoEnOQLMdFAuhcwGQDjjkR/Y9+T7AjsqSdZ4s1Bnxo2PAIXzH7un2NMew9AuzJsaKxwzH8jNWdBK4D/PpND/OKV6+3+H0i8N1UH1AZu3mKcvTVhynPFmZJZVqEI6RDo8cQRScDmwBsa6fkWLN2ALeVI8ur0wk5hgnd5NA9Mnx+L4NhAO+s1W+/a370ryt3myFnRyTuBpdsKJsylQ2avkCozWInOAtiJqKhnXzxEwOgddD3vUbC3iHAoYz0wjQ29pLtYHImmBlX2Yjnq2kqGrY8xite+aXwuScD3yV7pw+S8x84wfPcqGJ5RiTCEdYRJoolweoGOAGPqJoQ4pGhENUSZty+ONpJugFErdgYIVCwJPe9aOimOKZk+CC1htB4z4Lo6fd9Hv2ciIHu65ZB7jWz/kdPx4BjPxSs1nqoDk9aOtp3/4svfvq4WLxiL8feI4D4/tiLXkR26fkJWgLxRcWroK32A778hRmIBs1kvuhQGbGeu6Z5TvrtkepcCRxtkc6AF1QLmKosWIi4iORASwTBxg5zQ2OIVwZ11mxyGF6ZZ2R5paJ8PxucnYZCVaXnAtEoR4hYmHW5LRXiiPAQe0pj+HiD8cgVb0Vu2trEo4RYvSskDD7+TJRNec0iKOKfUZ2veWMgyHG3j9oQ22u+Xzp5Mgaf8IUldB3WI6SWCSO6iy97ttwSSokTkmxem5vG2NMzPXeePsJzZ3sHgVRQnuIGPPHvgApVVhiaO3jrkp3m7M+2GXOWVJsV6+vMxvog9KDGedSMI5aQlOVlclmOFBjdm/U7qp983KS+7JLSXHk4YaODXD8mNEVCTJgSgmm3ZPmZb0eLsfKC17RjPt1qNqbcCQ57yR9SzPIHT4Oph3nN6vfRUtW611BPuusenkbqWa7Kxl9RBVnOBcgv77AeLtRNXvFaWSpqcIRtcSaT3zxPfWliqXJ2SwcPKzJ87glETWjpHgvwq3ebH85aod/1xmp98cZ6bkfF9m6QRjVtoNzvwrHyr44dIN/g8TC0hcgtDUl27TZ6bsADNWIgeNEcbdgbq/XtqZHQDWwOKAKcLTj89JtQNO4BaC7dWPB9v4rtX1/IN773YifKt9lO3yymzL3IN3dkb+m45g4eVhX43FRPAjTdx6SNNebC+7+MXjF7hbG2Q7P4F3MMKbebwWXduv1wBFURCk4yuiaXSVm3HqnefPJQ6XaSFR1RiwU5x3VDCGlJkYELXtcGvrpK35aaHdETeI/5qtieu5ZLMtjYixtFaI/ZEyejRPZICDUu5IufOlJoPA50XAI3y8vYvEvUlyf2lc9u7kAC8HUTmt9j3e+hhfrpf/o0+o+msLUqAkAyIPdqcbY7Qrgi7HucPVLp9+fjPHP650njW0M8gSURIcgSJMaYfsascMm8TUbdnu+EfRvdxVwTBiub9BsoHiVB0FBghckSNn10tpVl4HJH24unX56Z6bmT2E4y8KMmtEwf1J2tfNmMFyMFv/lAe4eAT4um64QUTkh8cDIeUtBN7JjYA9b0SDuyg2iyPR+i7MlPhA97a5V+R6YfqsGhOY8gWaQLbYsrL5ylLhreS/LR9clG9/eHAIf6M/oEkDv4NughK3gSczP4VNSvu5fXr69Ozu2hSdPk7zjaM/2MkZ47iecnAz8rjalfVZqzjnwyPPHDjUa9o1om+oFswMLhP+60FNeIHaM58E6IIhlEyKRn7Grjxk9fjvz3PZ9GT83wMdUkJNi3VCQoYR16r4BU9vxM9aWAahvaBwgJbI8QMOTUq1jJ+McSHW0UQpRNvvSZPLRVt7t5vyN0p5bJ2R9f7muKRDkF3WNGlQP8jzcZj/xsduTXzWHOu1P/xKC4cEafTGQVD2OBXuPgyxoNyVcIBgYj2gqtfS2C9Ut5W/VytFTVxoM6nYPrbjfE7472HPXH49VP20Jckx3WSnM0EM5KZ74HF0TPufE97dUDxYq6QYDNTsjNPOHKSihpRSLITZB2DK6aVXfwijn/ncB6bLipMrDwKt+7o4ukGe0R6ERZjrDLSIPybZXx8gnPaecR8N0uiYRn06DnF42dil7DbkagYAbEBnSoHTa1W/aJxfANINyyHA2bHuTVS95A2y4r0JNkkziCnZB+17Ge6b+fpn5Iu5SsZecc2hleBcr0ZyL5n20zmjrP80AiwNH7iyeMxtBTlidoPkT9kiLxZS/kobkyITjhUMrNUzxH3H+yurClPb4oEnKqAqm2w6yY+oQ2vrLZ1DtRljuyVnLYEeh7+DPwZQ+1AurEoSmYaydmUaKWWx6RpUH+GklRRCiRckVrKq7hWz95SqQmduMSeW6meu1Fh3oebg3GBTMRS7oPyjdVxutHPRU5y5En/HuRAQ61FAz5hchQi/+uQVIVtOyYjebtzbF0EUf9M4GiDCbfMFl+KRzhOlmg4jIIh5rJGMMVb0WnEfCVroBP2XJjLnoS5ScuhMc/VPibDI0cypJggUQI5JOhFBPnQ9/pGP1P8yWCoXn1Gft3Nu7SFSgYXmq5b+I0JzKJCNcMuPbd6KMrdxofkAFIhELHFRlKewTaEf2UM88ZqQwS5+6x2rI/CHDCUGm5KjKLz4ehk5vLslZt6uQ1qx6Ib3/7ZpYHAFdOUI7pkyP3j+gwJYf1mNDT05j692+i58/baNR14vnMjphklWazMRdXILv0cuFlJWA6gI2ljxhhwQbJACRVmP7Sb05Gg+WWs5IASG6pgeFs5JmVrHTSJPEMdxKEvYS2COfXvhv9uc6FTRKfFiDpUW5eP0l5yKtYBNaT8rgLfNqPyOk3CB5/urXtxbmmyNvR2urRsHF1bAU2zoias3yMXThGvl+LcNOhfqIonwxlW4Ox8r/mR1/p5HlkNmvI6pvJRp+7Dqp/MKIhW+A74LABTREpcgOTDKJgj+JThDZGv5EvysoxilvOdA+u69A1DeUnfMnKJk+1dkJ86Y4jbsE2o+m5Jfov0n2M1FHLhyRBCWowxxXLM04ql0ts18mBRoANl5x+Jyb8IBKaPJRP+ZyV7h0Xlo5mccoQecCAfHkMqXKOc42Ys9fLpAe/1C9rDHHuWKrWsFmYL1thh/zsK8hqoZUmkhTWJLZHgA41fY2d316F9XPHY+UrJVg5uw/WvjUc2z4/Q7BFSZYEYiwkON4ihbQwRINhDDxuAQpH9O/Ejuyd8OfP9Ocb2nitR4IiXN/WFIU9ePE4+WoxnR4UAolperHZWBltSC88VWgVdiDEEnIS0LR1TrJm4YiMs0bKV3BO0tv6TtRPlu6mWnPZc0uNJSLTPIV5z4ac/BekZQ/vHFPmlqujfffHvHLhL1G/dmNCark1dgGg5Km3kV12DSs94kbkD73DSrYVTMOy0DhXSJaw8pO+5K3VZQg1Rp01CC+tBJBsemmlfuN1kz2zSCuSZPiIjYY1jqn9lF8OyNX/sKXRjHaOH/T0DkjL8cKbc7jQPgQ2hMqgUkYZb61ak3ATezIlmUw+vFS+WCNzzWY/IhCiMryySr+9NcI5CbE48TOxg1jRmBHIL7+uE/BJ4Ks+le/49mK+5Onp2L18gxVjcFnECRYwQFoZX/nK7/m6f4wAN9uFpU4EIZ4nKTANE2qgiA2adkenNdu2/HNL9bdCYa4pMlSifFJwoyb0nADLPm6QPMxZc0+MrhHgzy8QaRgxwUZUrUgIt1Wgo67dBlAcjgAmlcl9C9JZYUSH5hhdtIiOEA+/XmF84sS8XQCGMLD6HvaQUDFFmqA7puxTseWT47H+3edjwR3nuliirtsCdlwSDKheuppXvNofptEIxuInEBFRHKNg2B2UIu8Wyo6Ov3yXGfxmhznLr0IiArKeaUXiju0vndKTbKgbBOT1F8ChrGLxROjie6hhfpwFJM5iUql0uF3iZbrYj7R6t/Hu6lor9Nc5CC4zKN5+MAwrS1kIW70d3gwf37X0Wr710w9j/p1kHd7xN7mp0UEKJeM2bqnn6/85UdQDOIB0zqHAUp9Dr41/T0xfmbfReJZyfik5XgBKgkpZF6P7SDPTVcZoHT3hnugSASwtZ0giudr8P9S4xDrBnUZp/R3ZW/oJQdgJnhP1MIXh80r+sqNpJD6EkbHEUbPmNvjSVUge+ijwZqWjcfOz2PDB/6bKlnPUXcdT6jjbEgZZ7TTHmorN2L3yRrGbnGobwUojQF7/mygFJe5ejuNiwTZjJUXUKFLnTFUzgD6ZbOSgPCbYJDugO4AK4gTFJZke4eaN7q+OHpThBRuYi8lRIbMt/i8QYXIsrjaXpXwGtwX4lvmvY+O84xGsn4u2mnew5eMT+IqXLhM7zeXeFhN2Cb+hBZJ3XB8pkOllLLWLwL7/ts//hmio3bZlzLgz0Z+OnAFDrIVY4HT22No63lbdZq7zyoINmcIeoMCNlykDclm+M5cDowXRZBR/qSWVROTLQgQhJNJWk3wqwbFPhuTJ9kn9hHFlT0xhUEMRmOvrzZpu+aapQ7CabZ9/GPPzxEZn4E8uk7P+fJzngdFF0jkSg6++na949Bv9V3/9Mvq1I2csvNmUHayPoHnbI8gfels8jm09hGUVT+XVSypiyLIFMfmoKpuwsCwbQ0MGdAlQBWuVgAE5UglgVPEDtgOIUCRPfmw2YqaECA5o7S1uwDiHC9KZ36/AT2V1JICJmRNbaIuiflcbjySCMsVgdHvDzvaI+/STgT++WArMvdC7ZWp/+XKFIZ12W59MNv6BU9Wv/vAT9XjHtRC/r/2lccscO5oVL1+if9Pyj7KW40K0LQd2tvIN1oOtjSHuRMSWyfruGXjZvroiKGIqp9u80TrHJi1uRCKpnpHlhY+yJilxTfxgiqQoNAd5ZYeWsqAucSQEemyffopx+zHK77L8LLepg7fbIsAMG9A62rl2w2Tl7cF5EgVZXEiw79NRt03YNFZylb0ek+qRB0GmNIrOoy7IrVRKZ9iGZW4aK0w5udh5bhe4u7ZhjxFANmxSLZXDgigkmWJ4FVEQl1A/QUAIG2iOGg6z73baXQ7HciZeP6FYOjsS4aZHht9WgiRideQnzUhjvoklkqDOTqmj0WBIhDBiPiVhmAGKJ1tU3lu/JVzToXF7t7tvBHhlBLqeraNeK1axuZ1DuXcyYN9GSjRzToVcPfQAFi8RSP0s4XHdy5Ek5RPvl/J3Mty7mKF1q5LDDmXF4++BrOahtfoVvmneXzpV6tsj9WJE7wXHAEtSQ8myTDE0g0dd2px1BQd8MstWJRss+6g1cFvnbg1zvnI3f9urMrJMwwnBdDJRIhxLdpo7Ugl8pvr9IO6TYFgycvo3ClXY+i3hmoDKMjpNhtRRHaHOv9vAL54whg07dRH8ecfCExiDojH3sGGnP+44E/YQAVR9aAbjjNJhZwxMVr2J51p/2iOI6AZPUEGJ9LPTUJZmx1W7HcztA+4shB119+5P9LtCGrQcH/x22iKxIyU9nfn+/o1+5to6M5Lop7HvEygckGBYOuJND26KIyBx5PlZUdJaBSyawryuK7bDig/9q6gE1bUwVXkg3KYhq+RSpBem7zkCiEgMrdbN062IE8Ua07PcC3MO13XwUFCHRmkdjheRpEW6lxUWBqzUbrYfQti0d8HC7UbL6bPCJSt2G29S9TDp6c1hvvXuedGTbv1Qe9OpikkADI3s/j+z1VJrzaJuWCLhvMBaTnx2DvKKMli5WIltWDpJSrvbeFXi5O1rPX4ZnrRygCuWqmsHiihtc++8oZTpGtxumf+UemKDkybszegFYEvy+na0mpG2kFnVK10aaKdykOEiQnqD86X8VTXmDmeXphqMqioLD/klOGQ0b53Ft3/1qUWZ8YsEkTHgw01G3fy/GTPHFEmBgIep6+rNlpr2FImZjpES6OVDbv9fiVY2MeXCQgRv3WEhwH5OLA3Ky1hZNg5372prEsCWRr49OSFMTNHj80DxFroQTTCToEdqEA1pe2cJR1rX2fdIXJg3c3ACruy/rWHwbS34ijLLCH0xV4TMMK4PG5Uw4djEJetP2eRJGH7GMmSVXYHs0ksx8Lj5bPR5T1D1TXyF1nCSe8ngW7zT7KBgOQE/tVVqi55+U38Nxeu35Zr1UCqbjXQ0o3HLxgTHon3loDzmL8mURkUMkZUdcyyGwtzc0mTWO3NJeJo3MwuSV3HJGYsI9EgVoh12I4rE0bVGEWpal+htstXQtLxx7gnDlTa4qsb8hADucmBJlH47pVT+mXD7JFM/J64mA73HPSSqUIxIUMR+Iy3tyB1wOcpPuj7mI3Yhge7jOOMIGYkBHgcaRAkm0Ht0OQpH3mNVP7pymiho37zlLwg3R1MFlqaUSUN9PibpdnY1yRqvJBIKNmxs4CLTIjHHQniQ+1lWnG33iLiIDIRbK1LEMLpHAIINiYYLxXbpuz9/muha5VJ5HNB8vd38Qny3KYby8CM6MKZImjk4VyJTPoX/hANmZLftirYC7ZKSTvFgVjT6r2zgtNNizjh3LNemQEJGAs+Pdd0ygPzy3qx8xiKBVFcGtnOc71z8t/g11nAQefwg+Vy6ubMW2s2Kh2FVDX+nOcR5oqyx/wkUTrC/mwlyJtTwdVdg7g4BdTAieqLhopvwZYyAvyA9wYFlP/+LSmMrpZNTTr99cylC6d/pLPP04fKhSWtFLJtux7e3WIVvTlcUO5ZLVNtv6tsYctpVUNKoNVn8ulhTJtfHWrSti08Yww45sxKSlAnuzuSmCh6firo1d6BpG8UK4qECG6jl+ZI6pZ98BcWCnaQCuyIHn2wx33bOjQ0nppDZ+1ShwDhE6xzuqF+x9wgINUUQavna0l9tnmZvXZZVIqJCCRoKSeZGHl1Sbc720l6hQjobCXqU4/zRyn/5yFXhci/Bdpbx3SvWoW7dAyKwLvoFObNjKiGBlYx7jI2/9AvWZ/wIeAgRriCM+0PApD5Eo8+7l5WfTB5Y0kBI35dcFY4Kwu1VfNPH91q/JdEDgAvHytMz/SyT6tOcwJIqw9ce4tq8jcZyN9HFKCqQ70NazlQLAbYHmVgefW/bleBB3gNvKKUl60D77neQUTgF1EdEcsmB7P4zUfX1t8lygATjnAr978cO9v6CKuSIP9tZBdrIYunYn41QBs1arm/qlJLCOfiGubex9F7T4M0cIzIYHH4tkBDS4M+dhGGnrmKlU1aitfIptNcsEp5Z4rMeXxbSCoaLIvHMotPF/IXX092Iw67pkj0qX/PmFISbYvFg6zEWUKmm4OKx8l/J3SHbO5mqMjNUKPM3m8+sqTXDnZIKSHvK7jcUit/nqpmzEpfDrRvQUdu6T64I3rztPVY0+v7YD7QgqiLPLrkUvqz/586McCb01hqj4vdHm5U5ftZX55ZnlNwH0Sg3b5miPPbGan0ayQWXcgkBiHCLzitem8pGn1cBJa0MeiQeHxaUFNWhEwvMHIXA2IcTImQO34+1o6HoHUvqT8FITVSx4f3DULe2UxEJTZKI4oZJyoziHLm8Jchj9QMWh2HSC8v1B2nOVOskSnuc+dPIG3S+Xbrk1MvpIjujfdfL0MMJ6vQesCD7xOZtGxEJtdqdTiyThBpaqBn5yCs/JL54Wz2kAFQ7N1+tMH5LGgSV/9Ax2gWhKHTaBTdO9hzjnNuJh7ZWt/MVL49CpL1C1BgLduRAyTFqKCwSDAtKi0Y08aEdEsueIxvcBXy6B0XZqK53/XsTOe3cFBU8BPwRhZLvmsM9s4JhTimTsZymNAXKhlpz0dtrDMFK4tqcvYNEAlvpFSILI2ZnWK4O3rj5LetUtjeuCCeQ0RhF285ZkBWrr4/zUNMA63XITbEJuC8D8MjX0Tcb23m9qsRza0iYdYSg3Xqk5+1Di6UALVhOQILNw1t3tPJlz45D4+ZHhEygbdwp643SE+lD6Yj0oVRFd/Yc1VTasoTuEWldxle+Usx3fLMoOY3eAQuxxUdnqI9k+FimqBGwYcM5dNXLpL9/q19DWR1OzNgNVFZ4yCSo/syEBDYqWo+0N6Nxk5VB0kUlTddC2MFY/bonEhxwtGBT05Fdeh6yS7Pd6qGTO0nC+MlF2uVpPqY4eZa0IDIq/Soyn/6p903KoDOSix8cr1uoKcpXvHgd1s89FFr7SgFEomDxEEpLpI+dlhhLTaRURXvHUPYGXUOKwE6R0jIBsRqGRECI5GAO/HG6etpRg+XL2ygdxWY9gvpVqKurzQVPLdYXd7I3RDDaA/QaebdgzU7+FBErEW1L1RMIJdoZe44Ax4Vfv64C4dYqyIpwJdqQpnxNiRVPEJli7ps7uv59nxv/2FRnLqPtG0t2laC0RaCNKmLHvTjT+0eiOidukPhcC1B8xzdL+OInx2LjB5PQtmuOlfdOaYkBn5WWSMnjXkX8T6mK3oBP9I2LtHyDqoXn8KVPZ/N17z4Prd1IBXyPrQxcMUEZcctRnrfbQpzKZWNykajfozDpjo+089q1JN3frhVjBcPLLUUlqsXyp+wQLq9d9Zj1tZsk9C6POBfSE4eefCUrnvB4FwUauWir7khVoHHGcLnkzfN9Va1BqyLSua1uIJwZYL6Xluo3XDQn8hCdmzL33s2raS7pvQPILBnM0gtHiwINxdsb5GM2tUZEOtbzYN1StFavRuuOhpjlGXMoJtqtjtZ24Vil/OmfqusjUWg8uYjEz9TZS/Vbzns9cr9TZpsANkqhH3/p+0jvfYKQP4IFksCnurmmZXzxkxNEl63uQLxHCMjoE2DjLmkGqEDDxrLIKkhTUbv2Xl7xyq3JFObk/f/tFPWSqyd7nmlp42GPu0SJKlACzPfmquidl7wRvVtkzaVM9+uitfF3DaeaMZnluBD9y8OU0Q+frC6PGNBFDrZt9VJdgN/LlO1N5pJJj4cn1gathydQv0h9P3QUG3bqipRVo5s/OpZvWzD/uwq4u8/zjeVuV3egceOfRZsxd24N6dq9hv6W5Q/pk5z27QTHb/og+uyXW4xZWQH4COjOcSraaAly7acjPXfNu0Sd1T+HeToF1K1JJGW9ObVfCSZ152NJtWTCb2TzezIIH5qhnv2/p3mXU/NM0wV8g8NUJJiawbWL34hMq+nglJLiupVNaB6/xMqmvCSKQGK5s9wUrDrSspPvWvZZDIbdjD1OtOaVC++n0vyESyhTgizNgce+nOwfcp4binL8/NXIJVvq+ZIMH3y0tWNIkKA2d/Dg4f3kn794pvo8Aabb6SYU6SVIwy6POYAXfiMTOKJUzvzsct+Lv57ieYUEri2DHH8PYVr3+5h69TvayM8rzWbn2viabcOr/zEXw587AoauJ3AFii9XL70CkTYjXlO8PwhwhGLrjjbUVtwq/CjOLiCep0d1pPc+kg34yQWxHWMPh6K3t3D99JciU3e38w0ZKlT3TlBl+FvaEZ7cTzn36P5yL6FY7Ef+veDvNtCdORDgB+VJ6qOnqOd9dKm3YWKJdD5lPlNRnsPzDRv4VDV5w7vaYS8s0zd0ruCx2Une4N4oPvRp4eOPlW3Zbo5gYwWv+mZesore1dirpfKtCx6G1lELSfhc48muZAiVHPY8CobZZUCJrIiAsarGDM14PjK2qoUvyUpjvqgeR4KgHQa9TybLw34MR94Sm3FU3MmlUtZjp6kXfXWVb/s1kzyzwKG0RqzWNc51ZNoR0tK9TL3+n9rEhxZGv3WEtOvu1pKpaHDIjHl2Ma17oVazksoF58QalaDHEGDz91BjlFd+MTNBFlh3UYg9sSGnfIFAga+rChTKOp72bGTSop3GnKwM5iMfi2YiSI4uM8qVpdVmpXjaPqRROHya1n3CYLngT8d5Tll4pff1+Zf5mq863PNcuopCkjlkGDoVmzSIENK9omC7/YLXI4P/56voos4lqXbFOZPBhp36ANJyRsGIUrTLrZD40LDpKb5r+eq9URp6uF2NT0FbTZftahwNhMJ9j56i/uqCsfLDRKYUZvj9R9pP/vhp9JN9KXxw9PPCdCa9eJb3wWkDpevoR8ot6IiKigDhWnA3c6JwKa0mw8+UNbvMf13xtnYmxZu77RlUPuNC9D3s+aQmVZS2Tr32Nb70mV5orwntTfuyfWzY1CuNjbtsByClp2zY1Lj5cb7ylatTdctyA3j6IDl/SL7U99sdxqZvd5ht+9h2LXbP2Wd6f3PuROW+5hYeJAcgFYm4DSt3O5xML1Sa1dOLjctu+1B7riHIze9u2PSTD1N3CEv38fXvToRwdexd36AfpmWZzR5559vuM/B7ZzBp+TW+HZleVkAuj05dtyxrXMrwUu85hm+367P/MF+/4f0NhuhfmrJYPGXLMilprQEfalbdzite/+O+LGLv9Q1b3+e7lq1B1VcXwJueFEShSFYwjPxB17FR5z4KT5oVQ0gqDeX2ohXbX72vXV9iWTN2Hzn6UH4qUTpZ3KIzFoOUmcbUTB+UJTuNNy99IzJ0yhOR8wj4sXaZKVRN4VYacMyJAvjJPUStXhnUFfJDvv7dP1lCeu/nv/9tK0ecdS96ddO2sr16Lq94Y6ZIET9Avfglexc8dYb3qsumKI9F2rnw81DSKAGlts2s/HSr+ejsFfpLc9cbuxztplv3h9W28koUH/p4l20ro+GtfNlzw1N1CNvTsR8lBnvRuFXr2MrXzz0SdWu7bNy6P8MhWCoSufd4zwUnDFaubwjyHUt3mf/4bKv58YJtRlVVSzzenLJVpUNUln/fatya2/+qxBYNsbAmGaCtfMXsH6px6z62Lq76aibf+ulb3bUu7onh91jlRG493mE1qQHvUhsLRw5gg47/AN70FK2LbWOL8yCvcFoX7x8x7X+RTULz7rNeRFbZuSmbd4vYrdW8G5s+vpI3brLyK3sQEUJVd2lZjjVMt/5OJ19ansoGHP1rFI68z0rNTNW822M3754zCg2b9rtvtDNn9BgSiB0Nn3kfeg29+bvb16+229fX7FH7+r2ajv03dW55EsI9AQnFh8bb11NibfKLf2Lt61upff3haKlq+fG0r0/9AoeLQAvq8gUOTILikxANB1G7+ga+c/FLwuPqvpcjYw7kCxyKRk9C73EP7vkLHN68EMGGH+ELHFL1XP4xv8Kk4JDT0WvI7/fsFSYeKvr+N3iFSVcv8Rly0uPI6nsuouEfwUt8+l2MQK8Ze/wSn2h7Jd/80QmoXrYuYV09OA4MAjq/xmoaSg9//btfY8URo7qE11jVfoRgwwqE7NdY0Y4y9+Q1VoVHwZ+zj6+xWnsH3/zRfRbL+Xd7jVW3L3Iberdlev4AL3ITQO/qRW6iSl+8yI1XLrhOdAD+t36RW9evMsxnfY+4FbkDbvphX2Vos0OKYNHhtrpPUP3tTXzXsmVWm5tudameA80BvXt36l9O/zxWNP4S5A+67Yd7macOtOx4lu9adh9qK/4Pv8zzu19nOxEFw36FQK+zoXh76HW2rl0gyVRzkPw624d5zZp/CleCQ+XfI+B/OATEnpxsAdMLnYsCLGfAGGTTC50LT4YvfbAFOLsfaKxfaMwH6r5hXF3t+oXO7/DGzZ+h5T/5hc6ppsC6e6V5r1Lmy3deaV4OxVcSf6U5CRFqJJvqleZNK3iw0X6leV0Dws0HX2n+3bhg8byblMKPAgheJgSn7JGF+ikqPCgKoBsiR0ePmFaH31SXJ1XRHBwHx8FxcBwcB8fBgf/Y8f8BeV5NbaF7iNMAAAAASUVORK5CYII=" alt="MEPA" class="icon-project-img" />
+              </span>
+              <span class="link-texts">
+                <span class="link-title">MEPA</span>
+                <span class="link-sub">Eficiência energética</span>
+              </span>
+            </span>
+            <span class="link-arrow" aria-hidden="true">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+            </span>
+          </a>
+
+          <!-- 4. Gov Hub (Logo oficial) -->
+          <a
+            id="link-govhub"
+            class="link-card"
+            href="https://gov-hub.io/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <span class="link-main">
+              <span class="icon-pill icon-pill-project" style="background:#7023E8;" aria-hidden="true">
+                <img src="data:image/png;base64,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" alt="Gov Hub" class="icon-project-img" />
+              </span>
+              <span class="link-texts">
+                <span class="link-title">Gov Hub</span>
+                <span class="link-sub">Dados para gestão pública</span>
+              </span>
+            </span>
+            <span class="link-arrow" aria-hidden="true">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+            </span>
+          </a>
+
+          <!-- 5. Dermalert (Logo oficial) -->
+          <a
+            id="link-dermalert"
+            class="link-card"
+            href="https://www.dermalert.ai/land/dist/index.html"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <span class="link-main">
+              <span class="icon-pill icon-pill-project" style="background:#16325C;" aria-hidden="true">
+                <img src="data:image/png;base64,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" alt="Dermalert" class="icon-project-img" />
+              </span>
+              <span class="link-texts">
+                <span class="link-title">Dermalert</span>
+                <span class="link-sub">Detecção de lesões dermatológicas</span>
+              </span>
+            </span>
+            <span class="link-arrow" aria-hidden="true">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+            </span>
+          </a>
+
+          <!-- 6. Think Ads – É fake? -->
+          <a
+            id="link-thinkads"
+            class="link-card"
+            href="https://think-ads.vercel.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <span class="link-main">
+              <span class="icon-pill icon-pill-thinkads" aria-hidden="true">
+                <svg class="icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <line x1="12" y1="8" x2="12" y2="12"></line>
+                  <line x1="12" y1="16" x2="12.01" y2="16"></line>
+                </svg>
+              </span>
+              <span class="link-texts">
+                <span class="link-title">Think Ads – É fake?</span>
+                <span class="link-sub">IA contra desinformação</span>
+              </span>
+            </span>
+            <span class="link-arrow" aria-hidden="true">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+            </span>
+          </a>
+        </div>
+      </details>
+    </section>
   </main>
 </body>
 </html>
