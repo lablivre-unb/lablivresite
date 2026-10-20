@@ -144,19 +144,20 @@ body {
   margin-bottom: 14px;
 }
 
-/* Card Branco com Logo Oficial em Roxo (#7023E8) */
+/* Card com Logo Inversa Oficial (MIV Pág. 26, L3 C2: Fundo Roxo #7023E8 com Logo Clara #FFE7E1) */
 .logo-badge {
-  background: var(--color-white);
-  border-radius: 20px;
-  padding: 14px 20px;
+  background: var(--color-purple);
+  border-radius: var(--radius-pill);
+  padding: 14px 22px;
   width: 100%;
   max-width: 320px;
   display: flex;
   align-items: center;
   justify-content: center;
   box-shadow: 
-    0 10px 25px rgba(0, 0, 0, 0.28),
-    0 0 0 1px rgba(255, 255, 255, 0.15);
+    0 10px 25px rgba(0, 0, 0, 0.35),
+    0 4px 14px rgba(112, 35, 232, 0.45);
+  border: 1.5px solid rgba(255, 231, 225, 0.22);
   margin-bottom: 14px;
   transition: transform 0.22s ease-out, box-shadow 0.22s ease-out;
 }
@@ -164,8 +165,9 @@ body {
 .logo-badge:hover {
   transform: translateY(-2px);
   box-shadow: 
-    0 14px 30px rgba(0, 0, 0, 0.35),
-    0 0 0 2px rgba(112, 35, 232, 0.3);
+    0 14px 30px rgba(0, 0, 0, 0.42),
+    0 6px 18px rgba(112, 35, 232, 0.6),
+    0 0 0 2px rgba(229, 46, 112, 0.4);
 }
 
 .lab-logo-vector {
@@ -173,6 +175,7 @@ body {
   height: auto;
   max-height: 52px;
   display: block;
+  fill: var(--color-cream);
 }
 
 /* Tagline institucional */
