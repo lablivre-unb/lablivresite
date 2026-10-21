@@ -25,6 +25,9 @@ plugins:
           path: capacitacao/
         - name: treinamentos
           path: treinamentos/
+        - name: pesquisas
+          path: pesquisas/
+          format_date: true
         # English collections (see docs/en/)
         - name: publications_en
           path: en/publications/
@@ -38,6 +41,10 @@ plugins:
           lang: en
         - name: treinamentos_en
           path: en/research-lines/
+          lang: en
+        - name: pesquisas_en
+          path: en/research/
+          format_date: true
           lang: en
 
 extra_css:

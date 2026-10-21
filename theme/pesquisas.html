@@ -1,0 +1,105 @@
+{% extends "main.html" %}
+
+{% block extrahead %}
+<link rel="stylesheet" href="{{ base_url }}/assets/pesquisas/pesquisas.css">
+<script src="{{ base_url }}/assets/pesquisas/pesquisas.js" defer></script>
+{% endblock %}
+
+{% block content %}
+{% set _pesquisas = pesquisas_en if lang == 'en' else pesquisas %}
+<main class="pesquisas-page">
+
+    <!-- Hero -->
+    <section class="pesquisas-page-hero">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-12">
+                    <h1 class="pesquisas-page-title">{{ 'Research' if lang == 'en' else 'Pesquisas' }}</h1>
+                    <p class="pesquisas-page-subtitle">
+                        {% if lang == 'en' %}
+                        Articles, reports and technical papers produced by Lab Livre. Our results are open and available
+                        for everyone to read and download.
+                        {% else %}
+                        Artigos, relatórios e textos técnicos produzidos pelo Lab Livre. Nossos resultados são abertos
+                        e estão disponíveis para leitura e download.
+                        {% endif %}
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Wave hero → conteúdo -->
+    <div class="pesquisas-page-wave">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 80" preserveAspectRatio="none">
+            <path fill="#ffffff"
+                d="M0,40 C240,80 480,0 720,40 C960,80 1200,0 1440,40 L1440,80 L0,80 Z" />
+        </svg>
+    </div>
+
+    <!-- Lista de pesquisas -->
+    <section class="pesquisas-list-section">
+        <div class="container">
+            {% if _pesquisas %}
+            <div class="row mb-4">
+                <div class="col-lg-6 col-12">
+                    <label class="visually-hidden" for="pesquisas-busca">
+                        {{ 'Search research' if lang == 'en' else 'Buscar pesquisas' }}
+                    </label>
+                    <input type="search" id="pesquisas-busca" class="pesquisas-search"
+                        placeholder="{{ 'Search by title, author or keyword' if lang == 'en' else 'Buscar por título, autor ou palavra-chave' }}">
+                </div>
+            </div>
+
+            <div class="row g-4" id="pesquisas-grid">
+                {% for item in _pesquisas %}
+                <div class="col-lg-6 col-12 pesquisa-col">
+                    <article class="pesquisa-card">
+                        <div class="pesquisa-meta">
+                            {% if item.date_formatted %}
+                            <span class="pesquisa-date">{{ item.date_formatted }}</span>
+                            {% endif %}
+                            {% if item.venue %}
+                            <span class="pesquisa-venue">{{ item.venue }}</span>
+                            {% endif %}
+                        </div>
+
+                        <h2 class="pesquisa-title">{{ item.title }}</h2>
+
+                        {% if item.authors %}
+                        <p class="pesquisa-authors">{{ item.authors | join(', ') }}</p>
+                        {% endif %}
+
+                        {% if item.description %}
+                        <p class="pesquisa-description">{{ item.description }}</p>
+                        {% endif %}
+
+                        {% if item.pdf %}
+                        <div class="pesquisa-actions">
+                            <a href="{{ base_url }}/{{ item.pdf }}" target="_blank" rel="noopener"
+                                class="pesquisa-btn pesquisa-btn-primary">
+                                {{ 'Read PDF' if lang == 'en' else 'Ler PDF' }}
+                            </a>
+                            <a href="{{ base_url }}/{{ item.pdf }}" download class="pesquisa-link">
+                                {{ 'Download ↓' if lang == 'en' else 'Baixar ↓' }}
+                            </a>
+                        </div>
+                        {% endif %}
+                    </article>
+                </div>
+                {% endfor %}
+            </div>
+
+            <p class="pesquisas-empty" id="pesquisas-vazio" hidden>
+                {{ 'No research found.' if lang == 'en' else 'Nenhuma pesquisa encontrada.' }}
+            </p>
+            {% else %}
+            <p class="pesquisas-empty">
+                {{ 'No research published yet.' if lang == 'en' else 'Nenhuma pesquisa publicada ainda.' }}
+            </p>
+            {% endif %}
+        </div>
+    </section>
+
+</main>
+{% endblock %}

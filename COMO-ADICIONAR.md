@@ -8,6 +8,7 @@ Este guia explica como adicionar novos itens (projetos, publicações, treinamen
 - [Publicações](#publicações)
 - [Linhas de Pesquisa (Treinamentos)](#linhas-de-pesquisa-treinamentos)
 - [Capacitação](#capacitação)
+- [Pesquisas (PDFs de artigos)](#pesquisas-pdfs-de-artigos)
 - [Referência do Template](#referência-do-template)
 - [Instalação e Configuração do Plugin](#instalação-e-configuração-do-plugin)
 - [Como Testar e Executar Localmente](#como-testar-e-executar-localmente)
@@ -258,6 +259,45 @@ links:
 - **Arquivo:** `theme/home.html`
 - **Linhas:** 69-110
 - **Loop:** `{% for item in capacitacao %}` (linha 78)
+
+---
+
+## Pesquisas (PDFs de artigos)
+
+A página `/pesquisas/` (e `/en/research/`) lista os artigos e relatórios com botão para ler/baixar o PDF. Como o site é estático (GitHub Pages), "subir" um PDF significa colocá-lo no repositório.
+
+### Passo a passo:
+
+1. Coloque o PDF em `docs/assets/pdfs/pesquisas/` (ex.: `2025-meu-artigo.pdf`).
+2. Crie `docs/pesquisas/2025-meu-artigo.md` com o frontmatter abaixo.
+3. Repita em inglês em `docs/en/research/2025-meu-artigo.md` (mesmo PDF, textos traduzidos).
+
+```yaml
+---
+title: "Título do Artigo"
+date: 2025-09-01
+authors:
+  - "Autor 1"
+  - "Autor 2"
+venue: "Nome do evento/revista"   # Opcional
+description: "Resumo curto que aparece no card"
+pdf: "assets/pdfs/pesquisas/2025-meu-artigo.pdf"
+order: 1                          # Opcional
+---
+```
+
+| Campo | Obrigatório | Descrição |
+|-------|-------------|-----------|
+| `title` | Sim | Título do artigo |
+| `pdf` | Sim | Caminho do PDF, relativo à raiz do site |
+| `date` | Recomendado | Data (YYYY-MM-DD), exibida como "Setembro de 2025" |
+| `description` | Recomendado | Resumo mostrado no card |
+| `authors` | Não | Lista de autores |
+| `venue` | Não | Evento/revista |
+| `order` | Não | Ordem de exibição (menor = primeiro) |
+
+- **Template:** `theme/pesquisas.html` (estilos e busca em `theme/assets/pesquisas/`)
+- **Coleções:** `pesquisas` e `pesquisas_en` no `mkdocs.yml`
 
 ---
 
