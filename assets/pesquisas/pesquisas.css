@@ -1,0 +1,205 @@
+/* ─── Hero + wave ─────────────────────────────────────────────────────────── */
+.pesquisas-page-header {
+    background: linear-gradient(135deg, #422556 0%, #5C348B 100%);
+}
+
+.pesquisas-page-hero {
+    padding: 90px 0 0;
+    color: #ffffff;
+}
+
+.pesquisas-page-title {
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 1.1;
+    margin-bottom: 24px;
+    color: #ffffff;
+}
+
+.pesquisas-page-subtitle {
+    font-size: 18px;
+    line-height: 1.7;
+    color: rgba(255, 255, 255, 0.88);
+    max-width: 620px;
+    margin: 0;
+}
+
+/* ─── Wave hero → branco ─────────────────────────────────────────────────── */
+.pesquisas-page-wave {
+    line-height: 0;
+    margin: 0;
+}
+
+.pesquisas-page-wave svg {
+    display: block;
+    width: 100%;
+    height: 60px;
+}
+
+/* ─── Seção de lista ─────────────────────────────────────────────────────── */
+.pesquisas-list-section {
+    padding: 60px 0 100px;
+    background: #ffffff;
+}
+
+.pesquisas-search {
+    width: 100%;
+    font-size: 16px;
+    padding: 12px 18px;
+    border: 2px solid #E3DDEA;
+    border-radius: 10px;
+    background: #F7F7F7;
+    color: #222222;
+    transition: border-color 0.2s ease;
+}
+
+.pesquisas-search:focus {
+    outline: none;
+    border-color: #5C348B;
+    background: #ffffff;
+}
+
+/* ─── Card ────────────────────────────────────────────────────────────────── */
+.pesquisa-col[hidden] {
+    display: none;
+}
+
+.pesquisa-card {
+    background: #F7F7F7;
+    border-radius: 16px;
+    padding: 32px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    transition: box-shadow 0.3s ease;
+}
+
+.pesquisa-card:hover {
+    box-shadow: 0 8px 32px rgba(66, 37, 86, 0.1);
+}
+
+.pesquisa-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px 12px;
+    align-items: center;
+    margin-bottom: 14px;
+}
+
+.pesquisa-date {
+    display: inline-block;
+    background: #F9A10E;
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.6px;
+    text-transform: uppercase;
+    padding: 4px 12px;
+    border-radius: 20px;
+}
+
+.pesquisa-venue {
+    font-size: 14px;
+    font-weight: 700;
+    color: #5C348B;
+}
+
+.pesquisa-title {
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 1.3;
+    color: #422556;
+    margin: 0 0 10px;
+}
+
+.pesquisa-authors {
+    font-size: 14px;
+    color: #555555;
+    margin: 0 0 14px;
+    line-height: 1.5;
+}
+
+.pesquisa-description {
+    font-size: 16px;
+    line-height: 1.7;
+    color: #333333;
+    margin: 0 0 20px;
+}
+
+/* ─── Ações ──────────────────────────────────────────────────────────────── */
+.pesquisa-actions {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 20px;
+    margin-top: auto;
+}
+
+.pesquisa-btn {
+    display: inline-block;
+    font-size: 15px;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 10px 22px;
+    border-radius: 8px;
+    transition: opacity 0.2s ease;
+}
+
+.pesquisa-btn-primary {
+    background: #422556;
+    color: #ffffff;
+}
+
+.pesquisa-btn-primary:hover {
+    opacity: 0.85;
+    color: #ffffff;
+}
+
+.pesquisa-link {
+    font-size: 15px;
+    font-weight: 600;
+    color: #422556;
+    text-decoration: none;
+    border-bottom: 2px solid #F9A10E;
+    padding-bottom: 2px;
+    transition: opacity 0.2s ease;
+}
+
+.pesquisa-link:hover {
+    opacity: 0.75;
+    color: #422556;
+}
+
+.pesquisas-empty {
+    font-size: 16px;
+    color: #555555;
+    text-align: center;
+    margin: 40px 0 0;
+}
+
+/* ─── Responsivo ─────────────────────────────────────────────────────────── */
+@media (max-width: 768px) {
+    .pesquisas-page-hero {
+        padding: 60px 0 0;
+    }
+
+    .pesquisas-page-title {
+        font-size: 36px;
+    }
+
+    .pesquisas-page-subtitle {
+        font-size: 16px;
+    }
+
+    .pesquisas-list-section {
+        padding: 40px 0 80px;
+    }
+
+    .pesquisa-card {
+        padding: 24px;
+    }
+
+    .pesquisa-title {
+        font-size: 20px;
+    }
+}
