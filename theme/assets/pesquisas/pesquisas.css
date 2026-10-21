@@ -1,6 +1,9 @@
-/* ─── Hero ────────────────────────────────────────────────────────────────── */
-.pesquisas-page-hero {
+/* ─── Hero + wave ─────────────────────────────────────────────────────────── */
+.pesquisas-page-header {
     background: linear-gradient(135deg, #422556 0%, #5C348B 100%);
+}
+
+.pesquisas-page-hero {
     padding: 90px 0 0;
     color: #ffffff;
 }
@@ -23,7 +26,6 @@
 
 /* ─── Wave hero → branco ─────────────────────────────────────────────────── */
 .pesquisas-page-wave {
-    background: linear-gradient(135deg, #422556 0%, #5C348B 100%);
     line-height: 0;
     margin: 0;
 }

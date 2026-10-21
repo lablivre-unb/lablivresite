@@ -9,7 +9,8 @@
 {% set _pesquisas = pesquisas_en if lang == 'en' else pesquisas %}
 <main class="pesquisas-page">
 
-    <!-- Hero -->
+    <!-- Hero + wave (o gradiente fica no wrapper para não haver emenda) -->
+    <div class="pesquisas-page-header">
     <section class="pesquisas-page-hero">
         <div class="container">
             <div class="row">
@@ -35,6 +36,7 @@
             <path fill="#ffffff"
                 d="M0,40 C240,80 480,0 720,40 C960,80 1200,0 1440,40 L1440,80 L0,80 Z" />
         </svg>
+    </div>
     </div>
 
     <!-- Lista de pesquisas -->
