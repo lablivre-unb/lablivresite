@@ -8,7 +8,7 @@ Este guia explica como adicionar novos itens (projetos, publicações, treinamen
 - [Publicações](#publicações)
 - [Linhas de Pesquisa (Treinamentos)](#linhas-de-pesquisa-treinamentos)
 - [Capacitação](#capacitação)
-- [Pesquisas (PDFs de artigos)](#pesquisas-pdfs-de-artigos)
+- [Pesquisas Científicas (PDFs de artigos)](#pesquisas-científicas-pdfs-de-artigos)
 - [Referência do Template](#referência-do-template)
 - [Instalação e Configuração do Plugin](#instalação-e-configuração-do-plugin)
 - [Como Testar e Executar Localmente](#como-testar-e-executar-localmente)
@@ -262,7 +262,7 @@ links:
 
 ---
 
-## Pesquisas (PDFs de artigos)
+## Pesquisas Científicas (PDFs de artigos)
 
 A página `/pesquisas/` (e `/en/research/`) lista os artigos e relatórios com botão para ler/baixar o PDF. Como o site é estático (GitHub Pages), "subir" um PDF significa colocá-lo no repositório.
 
