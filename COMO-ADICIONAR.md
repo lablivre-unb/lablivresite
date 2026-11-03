@@ -290,10 +290,10 @@ order: 1                          # Opcional
 |-------|-------------|-----------|
 | `title` | Sim | Título do artigo |
 | `pdf` | Sim | Caminho do PDF, relativo à raiz do site |
-| `date` | Recomendado | Data (YYYY-MM-DD), exibida como "Setembro de 2025" |
+| `date` | Não | Data (YYYY-MM-DD), usada só para ordenar; não aparece no card |
 | `description` | Recomendado | Resumo mostrado no card |
 | `authors` | Não | Lista de autores |
-| `venue` | Não | Evento/revista |
+| `venue` | Não | Evento/revista (não aparece no card) |
 | `order` | Não | Ordem de exibição (menor = primeiro) |
 
 - **Template:** `theme/pesquisas.html` (estilos e busca em `theme/assets/pesquisas/`)

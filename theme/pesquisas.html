@@ -57,15 +57,6 @@
                 {% for item in _pesquisas %}
                 <div class="col-lg-6 col-12 pesquisa-col">
                     <article class="pesquisa-card">
-                        <div class="pesquisa-meta">
-                            {% if item.date_formatted %}
-                            <span class="pesquisa-date">{{ item.date_formatted }}</span>
-                            {% endif %}
-                            {% if item.venue %}
-                            <span class="pesquisa-venue">{{ item.venue }}</span>
-                            {% endif %}
-                        </div>
-
                         <h2 class="pesquisa-title">{{ item.title }}</h2>
 
                         {% if item.authors %}
